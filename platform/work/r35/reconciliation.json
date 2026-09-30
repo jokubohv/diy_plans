@@ -1,0 +1,1052 @@
+{
+  "sourceRoot": "private://owner-supplied-r35",
+  "generatedBy": "work/r35/author-r35.mjs",
+  "rule": "Every CSV row is represented, excluded with a reason, or merged into a named record. No spare stock becomes an installed part and no row is double counted (assembly vs leaf).",
+  "files": [
+    {
+      "file": "output/data/parts-R33-CONCEPT.csv",
+      "inputRows": 46,
+      "rows": [
+        {
+          "row": 1,
+          "id": "W1-S01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s01"
+          ],
+          "reason": "Candidate W1 stud centre 0.75 from the CSV; height and connection held."
+        },
+        {
+          "row": 2,
+          "id": "W1-S02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s02"
+          ],
+          "reason": "Candidate W1 stud centre 16 from the CSV; height and connection held."
+        },
+        {
+          "row": 3,
+          "id": "W1-S03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s03"
+          ],
+          "reason": "Candidate W1 stud centre 32 from the CSV; height and connection held."
+        },
+        {
+          "row": 4,
+          "id": "W1-S04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s04"
+          ],
+          "reason": "Candidate W1 stud centre 48 from the CSV; height and connection held."
+        },
+        {
+          "row": 5,
+          "id": "W1-S05",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s05"
+          ],
+          "reason": "Candidate W1 stud centre 64 from the CSV; height and connection held."
+        },
+        {
+          "row": 6,
+          "id": "W1-S06",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s06"
+          ],
+          "reason": "Candidate W1 stud centre 80 from the CSV; height and connection held."
+        },
+        {
+          "row": 7,
+          "id": "W1-S07",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s07"
+          ],
+          "reason": "Candidate W1 stud centre 96 from the CSV; height and connection held."
+        },
+        {
+          "row": 8,
+          "id": "W1-S08",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s08"
+          ],
+          "reason": "Candidate W1 stud centre 112 from the CSV; height and connection held."
+        },
+        {
+          "row": 9,
+          "id": "W1-S09",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s09"
+          ],
+          "reason": "Candidate W1 stud centre 128 from the CSV; height and connection held."
+        },
+        {
+          "row": 10,
+          "id": "W1-S10",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s10"
+          ],
+          "reason": "Candidate W1 stud centre 144 from the CSV; height and connection held."
+        },
+        {
+          "row": 11,
+          "id": "W1-S11",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s11"
+          ],
+          "reason": "Candidate W1 stud centre 148.75 from the CSV; height and connection held."
+        },
+        {
+          "row": 12,
+          "id": "W1-S12",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.stud-s12"
+          ],
+          "reason": "Candidate W1 stud centre 156 from the CSV; height and connection held."
+        },
+        {
+          "row": 13,
+          "id": "W2-S01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.stud-s01"
+          ],
+          "reason": "Candidate W2 stud centre 0.75 from the CSV; height and connection held."
+        },
+        {
+          "row": 14,
+          "id": "W2-S02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.stud-s02"
+          ],
+          "reason": "Candidate W2 stud centre 16 from the CSV; height and connection held."
+        },
+        {
+          "row": 15,
+          "id": "W2-S03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.stud-s03"
+          ],
+          "reason": "Candidate W2 stud centre 32 from the CSV; height and connection held."
+        },
+        {
+          "row": 16,
+          "id": "W2-S04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.stud-s04"
+          ],
+          "reason": "Candidate W2 stud centre 48 from the CSV; height and connection held."
+        },
+        {
+          "row": 17,
+          "id": "W2-S05",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.stud-s05"
+          ],
+          "reason": "Candidate W2 stud centre (blank; field-fit) from the CSV; height and connection held."
+        },
+        {
+          "row": 18,
+          "id": "W1-TP",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.top-plate"
+          ],
+          "reason": "Candidate plate comparison length 156.75; no cut released."
+        },
+        {
+          "row": 19,
+          "id": "W1-BP",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w1.bottom-plate"
+          ],
+          "reason": "Candidate plate comparison length 156.75; no cut released."
+        },
+        {
+          "row": 20,
+          "id": "W2-TP",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.top-plate"
+          ],
+          "reason": "Candidate plate comparison length 53 to 53 1/8; no cut released."
+        },
+        {
+          "row": 21,
+          "id": "W2-BP",
+          "disposition": "represented",
+          "entityIds": [
+            "part.w2.bottom-plate"
+          ],
+          "reason": "Candidate plate comparison length 53 to 53 1/8; no cut released."
+        },
+        {
+          "row": 22,
+          "id": "TOP-B01",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b01"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B01 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"13.75\" in.",
+          "mergedInto": [
+            "part.backing.top-b01"
+          ]
+        },
+        {
+          "row": 23,
+          "id": "TOP-B02",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b02"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B02 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b02"
+          ]
+        },
+        {
+          "row": 24,
+          "id": "TOP-B03",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b03"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B03 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b03"
+          ]
+        },
+        {
+          "row": 25,
+          "id": "TOP-B04",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b04"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B04 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b04"
+          ]
+        },
+        {
+          "row": 26,
+          "id": "TOP-B05",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b05"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B05 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b05"
+          ]
+        },
+        {
+          "row": 27,
+          "id": "TOP-B08",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b08"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B08 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b08"
+          ]
+        },
+        {
+          "row": 28,
+          "id": "TOP-B09",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b09"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B09 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.top-b09"
+          ]
+        },
+        {
+          "row": 29,
+          "id": "TOP-B10",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.top-b10"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row TOP-B10 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"3.25\" in.",
+          "mergedInto": [
+            "part.backing.top-b10"
+          ]
+        },
+        {
+          "row": 30,
+          "id": "U3LOW-B01",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u3low-b01"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U3LOW-B01 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"13.75\" in.",
+          "mergedInto": [
+            "part.backing.u3low-b01"
+          ]
+        },
+        {
+          "row": 31,
+          "id": "U3LOW-B02",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u3low-b02"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U3LOW-B02 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u3low-b02"
+          ]
+        },
+        {
+          "row": 32,
+          "id": "U3LOW-B03",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u3low-b03"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U3LOW-B03 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u3low-b03"
+          ]
+        },
+        {
+          "row": 33,
+          "id": "U1LOW-B03",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u1low-b03"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U1LOW-B03 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u1low-b03"
+          ]
+        },
+        {
+          "row": 34,
+          "id": "U1LOW-B04",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u1low-b04"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U1LOW-B04 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u1low-b04"
+          ]
+        },
+        {
+          "row": 35,
+          "id": "U1LOW-B05",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u1low-b05"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U1LOW-B05 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u1low-b05"
+          ]
+        },
+        {
+          "row": 36,
+          "id": "U2LOW-B08",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u2low-b08"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U2LOW-B08 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u2low-b08"
+          ]
+        },
+        {
+          "row": 37,
+          "id": "U2LOW-B09",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u2low-b09"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U2LOW-B09 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.u2low-b09"
+          ]
+        },
+        {
+          "row": 38,
+          "id": "U2LOW-B10",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.u2low-b10"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row U2LOW-B10 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"3.25\" in.",
+          "mergedInto": [
+            "part.backing.u2low-b10"
+          ]
+        },
+        {
+          "row": 39,
+          "id": "BASE-B03",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b03"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B03 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b03"
+          ]
+        },
+        {
+          "row": 40,
+          "id": "BASE-B04",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b04"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B04 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b04"
+          ]
+        },
+        {
+          "row": 41,
+          "id": "BASE-B05",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b05"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B05 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b05"
+          ]
+        },
+        {
+          "row": 42,
+          "id": "BASE-B06",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b06"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B06 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b06"
+          ]
+        },
+        {
+          "row": 43,
+          "id": "BASE-B07",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b07"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B07 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b07"
+          ]
+        },
+        {
+          "row": 44,
+          "id": "BASE-B08",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b08"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B08 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b08"
+          ]
+        },
+        {
+          "row": 45,
+          "id": "BASE-B09",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b09"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B09 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"14.5\" in.",
+          "mergedInto": [
+            "part.backing.base-b09"
+          ]
+        },
+        {
+          "row": 46,
+          "id": "BASE-B10",
+          "disposition": "merged",
+          "entityIds": [
+            "part.backing.base-b10"
+          ],
+          "reason": "Same block as cabinet-backing-R31-CONCEPT.csv row BASE-B10 (the backing CSV is authoritative for the 25 blocks); merged to avoid double counting, with the length mix cross-checked against \"3.25\" in.",
+          "mergedInto": [
+            "part.backing.base-b10"
+          ]
+        }
+      ],
+      "totals": {
+        "inputRows": 46,
+        "representedEntities": 21,
+        "excluded": 0,
+        "merged": 25,
+        "spareOnly": 0
+      },
+      "notes": "12 W1 studs + 5 W2 studs + 4 plates = 21 represented rows; the 25 cabinet-blocking rows merge into the authoritative cabinet-backing CSV parts (no double counting). W2-S05 has no CSV centre (field-fit); the R34 face map candidate is recorded with the part."
+    },
+    {
+      "file": "output/data/cabinet-backing-R31-CONCEPT.csv",
+      "inputRows": 25,
+      "rows": [
+        {
+          "row": 1,
+          "id": "TOP-B01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b01"
+          ],
+          "reason": "One part per row: 13.75 in flat 2x6 block (1.5 to 15.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 2,
+          "id": "TOP-B02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b02"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (16.75 to 31.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 3,
+          "id": "TOP-B03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b03"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (32.75 to 47.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 4,
+          "id": "TOP-B04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b04"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (48.75 to 63.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 5,
+          "id": "TOP-B05",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b05"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (64.75 to 79.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 6,
+          "id": "TOP-B08",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b08"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (112.75 to 127.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 7,
+          "id": "TOP-B09",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b09"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (128.75 to 143.25 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 8,
+          "id": "TOP-B10",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.top-b10"
+          ],
+          "reason": "One part per row: 3.25 in flat 2x6 block (144.75 to 148 in) in the TOP band (91.25 to 96.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 9,
+          "id": "U3LOW-B01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u3low-b01"
+          ],
+          "reason": "One part per row: 13.75 in flat 2x6 block (1.5 to 15.25 in) in the U3LOW band (71.25 to 76.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 10,
+          "id": "U3LOW-B02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u3low-b02"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (16.75 to 31.25 in) in the U3LOW band (71.25 to 76.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 11,
+          "id": "U3LOW-B03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u3low-b03"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (32.75 to 47.25 in) in the U3LOW band (71.25 to 76.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 12,
+          "id": "U1LOW-B03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u1low-b03"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (32.75 to 47.25 in) in the U1LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 13,
+          "id": "U1LOW-B04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u1low-b04"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (48.75 to 63.25 in) in the U1LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 14,
+          "id": "U1LOW-B05",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u1low-b05"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (64.75 to 79.25 in) in the U1LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 15,
+          "id": "U2LOW-B08",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u2low-b08"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (112.75 to 127.25 in) in the U2LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 16,
+          "id": "U2LOW-B09",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u2low-b09"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (128.75 to 143.25 in) in the U2LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 17,
+          "id": "U2LOW-B10",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.u2low-b10"
+          ],
+          "reason": "One part per row: 3.25 in flat 2x6 block (144.75 to 148 in) in the U2LOW band (61.25 to 66.75 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 18,
+          "id": "BASE-B03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b03"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (32.75 to 47.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 19,
+          "id": "BASE-B04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b04"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (48.75 to 63.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 20,
+          "id": "BASE-B05",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b05"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (64.75 to 79.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 21,
+          "id": "BASE-B06",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b06"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (80.75 to 95.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 22,
+          "id": "BASE-B07",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b07"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (96.75 to 111.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 23,
+          "id": "BASE-B08",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b08"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (112.75 to 127.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 24,
+          "id": "BASE-B09",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b09"
+          ],
+          "reason": "One part per row: 14.5 in flat 2x6 block (128.75 to 143.25 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        },
+        {
+          "row": 25,
+          "id": "BASE-B10",
+          "disposition": "represented",
+          "entityIds": [
+            "part.backing.base-b10"
+          ],
+          "reason": "One part per row: 3.25 in flat 2x6 block (144.75 to 148 in) in the BASE band (28.5 to 34 in AFF); bay field-fit, no automatic fastener quantity."
+        }
+      ],
+      "totals": {
+        "inputRows": 25,
+        "representedEntities": 25,
+        "excluded": 0,
+        "merged": 0,
+        "spareOnly": 0
+      },
+      "notes": "Length mix 20 x 14.5 + 2 x 13.75 + 3 x 3.25 = 327.25 in net; the CSV row set is authoritative for the 25 parts."
+    },
+    {
+      "file": "output/data/drywall-panel-schedule-R34-CONCEPT.csv",
+      "inputRows": 12,
+      "rows": [
+        {
+          "row": 1,
+          "id": "W1-P-01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-p-01"
+          ],
+          "reason": "W1-P panel 0 to 48 in (48 in), ½-in board, stock H01; height field-fit, no cut released."
+        },
+        {
+          "row": 2,
+          "id": "W1-P-02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-p-02"
+          ],
+          "reason": "W1-P panel 48 to 96 in (48 in), ½-in board, stock H02; height field-fit, no cut released."
+        },
+        {
+          "row": 3,
+          "id": "W1-P-03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-p-03"
+          ],
+          "reason": "W1-P panel 96 to 144 in (48 in), ½-in board, stock H03; height field-fit, no cut released."
+        },
+        {
+          "row": 4,
+          "id": "W1-P-04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-p-04"
+          ],
+          "reason": "W1-P panel 144 to 149½ in (5½ in), ½-in board, stock H08; height field-fit, no cut released."
+        },
+        {
+          "row": 5,
+          "id": "W1-R-01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-r-01"
+          ],
+          "reason": "W1-R panel 0 to 16 in (16 in), ½-in board, stock H07; height field-fit, no cut released."
+        },
+        {
+          "row": 6,
+          "id": "W1-R-02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-r-02"
+          ],
+          "reason": "W1-R panel 16 to 64 in (48 in), ½-in board, stock H04; height field-fit, no cut released."
+        },
+        {
+          "row": 7,
+          "id": "W1-R-03",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-r-03"
+          ],
+          "reason": "W1-R panel 64 to 112 in (48 in), ½-in board, stock H05; height field-fit, no cut released."
+        },
+        {
+          "row": 8,
+          "id": "W1-R-04",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w1-r-04"
+          ],
+          "reason": "W1-R panel 112 to 157⅜ in (45⅜ in), ½-in board, stock H06; height field-fit, no cut released."
+        },
+        {
+          "row": 9,
+          "id": "W2-P-01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w2-p-01"
+          ],
+          "reason": "W2-P panel 0 to 31½ in (31½ in), ½-in board, stock H07; height field-fit, no cut released."
+        },
+        {
+          "row": 10,
+          "id": "W2-P-02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w2-p-02"
+          ],
+          "reason": "W2-P panel 31½ to 52⅝ in (21⅛ in), ½-in board, stock H08; height field-fit, no cut released."
+        },
+        {
+          "row": 11,
+          "id": "W2-R-01",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w2-r-01"
+          ],
+          "reason": "W2-R panel -4 to 15½ in (19½ in), ⅝-in board, stock E01; height field-fit, no cut released."
+        },
+        {
+          "row": 12,
+          "id": "W2-R-02",
+          "disposition": "represented",
+          "entityIds": [
+            "part.drywall.w2-r-02"
+          ],
+          "reason": "W2-R panel 15½ to 52⅝ in (37⅛ in), ⅝-in board, stock E02; height field-fit, no cut released."
+        }
+      ],
+      "totals": {
+        "inputRows": 12,
+        "representedEntities": 12,
+        "excluded": 0,
+        "merged": 0,
+        "spareOnly": 0
+      },
+      "notes": "The W2-R 31/2 endpoints parse as 15.5 in (division), matching the seam value; no original-data correction is authorized or needed."
+    },
+    {
+      "file": "output/data/materials-R35-CONCEPT.csv",
+      "inputRows": 17,
+      "rows": [
+        {
+          "row": 1,
+          "id": "L-W1-S",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w1-stud"
+          ],
+          "reason": "Planning quantity 12 + spare 1; proposed only, never purchased or approved."
+        },
+        {
+          "row": 2,
+          "id": "L-W2-S",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w2-stud"
+          ],
+          "reason": "Planning quantity 5 + spare 1; proposed only, never purchased or approved."
+        },
+        {
+          "row": 3,
+          "id": "L-W1-TP",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w1-top-plate"
+          ],
+          "reason": "Planning quantity 1 + spare 0; proposed only, never purchased or approved."
+        },
+        {
+          "row": 4,
+          "id": "L-W1-BP",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w1-bottom-plate"
+          ],
+          "reason": "Planning quantity 1 + spare 0; proposed only, never purchased or approved."
+        },
+        {
+          "row": 5,
+          "id": "L-W2-TP",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w2-top-plate"
+          ],
+          "reason": "Planning quantity 1 + spare 0; proposed only, never purchased or approved."
+        },
+        {
+          "row": 6,
+          "id": "L-W2-BP",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.w2-bottom-plate"
+          ],
+          "reason": "Planning quantity 1 + spare 0; proposed only, never purchased or approved."
+        },
+        {
+          "row": 7,
+          "id": "L-BACK",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.backing"
+          ],
+          "reason": "Planning quantity 4 + spare 1; proposed only, never purchased or approved."
+        },
+        {
+          "row": 8,
+          "id": "L-PRACTICE",
+          "disposition": "represented",
+          "entityIds": [
+            "material.lumber.practice"
+          ],
+          "reason": "Planning quantity 1 + spare 0; proposed only, never purchased or approved."
+        },
+        {
+          "row": 9,
+          "id": "G-1/2",
+          "disposition": "represented",
+          "entityIds": [
+            "material.gypsum.half"
+          ],
+          "reason": "Planning quantity 8 + spare 1 optional before EX1; proposed only, never purchased or approved."
+        },
+        {
+          "row": 10,
+          "id": "G-5/8",
+          "disposition": "represented",
+          "entityIds": [
+            "material.gypsum.five-eighth"
+          ],
+          "reason": "Planning quantity 2 + spare 1 optional before EX1; proposed only, never purchased or approved."
+        },
+        {
+          "row": 11,
+          "id": "T-BASE",
+          "disposition": "excluded",
+          "entityIds": [],
+          "reason": "Linear-foot length is field-measured; no quantity is released. Represented by op.install-baseboard and the baseboard hold."
+        },
+        {
+          "row": 12,
+          "id": "S-SHIM",
+          "disposition": "excluded",
+          "entityIds": [],
+          "reason": "Field measure only; frame plane must be checked and severe bow/twist replaced first. No pack quantity is released."
+        },
+        {
+          "row": 13,
+          "id": "O-EX1",
+          "disposition": "excluded",
+          "entityIds": [],
+          "reason": "Design-specific existing-wall system; EX1 role/services/opening detail held. Represented by the EX1 issue and operation."
+        },
+        {
+          "row": 14,
+          "id": "F-ANGLE",
+          "disposition": "merged",
+          "entityIds": [
+            "connection.w1.stud-to-plate",
+            "connection.w2.stud-to-plate",
+            "connection.backing.angle"
+          ],
+          "reason": "Candidate angle family merged into candidate connection records; installed quantity and capacity held.",
+          "mergedInto": [
+            "connection.w1.stud-to-plate",
+            "connection.w2.stud-to-plate",
+            "connection.backing.angle"
+          ]
+        },
+        {
+          "row": 15,
+          "id": "F-SD",
+          "disposition": "merged",
+          "entityIds": [
+            "fastener.sd9112",
+            "connection.practice.angle-scrap"
+          ],
+          "reason": "Screw pattern merged into the candidate fastener spec and practice connection; installed project quantity held.",
+          "mergedInto": [
+            "fastener.sd9112",
+            "connection.practice.angle-scrap"
+          ]
+        },
+        {
+          "row": 16,
+          "id": "T-DRIVE",
+          "disposition": "merged",
+          "entityIds": [
+            "tool.hex-nutsetter"
+          ],
+          "reason": "Bit merged into the tool record; verify the actual driver and screw packaging.",
+          "mergedInto": [
+            "tool.hex-nutsetter"
+          ]
+        },
+        {
+          "row": 17,
+          "id": "F-OTHER",
+          "disposition": "excluded",
+          "entityIds": [],
+          "reason": "Concrete anchors, truss/end/corner, cabinet/shelf, drywall and trim hardware are design-specific with separate specs/counts held; SD9112 is not a substitute everywhere."
+        }
+      ],
+      "totals": {
+        "inputRows": 17,
+        "representedEntities": 10,
+        "excluded": 4,
+        "merged": 3,
+        "spareOnly": 0
+      },
+      "notes": "10 rows map to material records; 4 are excluded with reasons; 3 merge into connection/spec/tool records. Spare quantities stay separate from installed parts."
+    }
+  ],
+  "totals": {
+    "inputRows": 100,
+    "representedEntities": 68,
+    "excluded": 4,
+    "merged": 28,
+    "spareOnly": 0
+  }
+}

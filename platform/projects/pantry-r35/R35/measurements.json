@@ -1,0 +1,1545 @@
+[
+  {
+    "id": "measurement.w1.finished-inside",
+    "label": "W1 finished inside width",
+    "original": {
+      "display": "149 in",
+      "value": "149",
+      "unit": "in"
+    },
+    "canonicalMm": "3784.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.finished.inside.width",
+      "citation.card.p02-plan.inside",
+      "citation.card.p04-survey.steps"
+    ]
+  },
+  {
+    "id": "measurement.w1.finished-thickness-candidate",
+    "label": "W1 finished thickness candidate",
+    "original": {
+      "display": "4 1/2 in (2x4 + 1/2 in board each face)",
+      "value": "4.5",
+      "unit": "in"
+    },
+    "canonicalMm": "114.3",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.finished.thickness.candidate",
+      "citation.card.p02-plan.clear"
+    ]
+  },
+  {
+    "id": "measurement.w1.outside-depth-trial",
+    "label": "W1 outside finished face depth trial from the existing finished EX1 wall",
+    "original": {
+      "display": "about 68 in trial (2 in less than the superseded 70-in basis)",
+      "value": "68",
+      "unit": "in"
+    },
+    "canonicalMm": "1727.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.outside.face.depth.trial",
+      "citation.card.p02-plan.outside",
+      "citation.json.measurements.2.value"
+    ]
+  },
+  {
+    "id": "measurement.w1.move-from-old-70",
+    "label": "W1 movement from the superseded 70-in basis",
+    "original": {
+      "display": "2 in less than the old 70-in line",
+      "value": "-2",
+      "unit": "in"
+    },
+    "canonicalMm": "-50.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.move.from.old.70",
+      "citation.json.layout.W1.outside.face.depth.trial"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.w1.outside-depth-trial"
+    ]
+  },
+  {
+    "id": "measurement.w1.clear-depth-derived",
+    "label": "Derived clear pantry depth",
+    "original": {
+      "display": "about 63 1/2 in",
+      "value": "63.5",
+      "unit": "in"
+    },
+    "canonicalMm": "1612.9",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.inside.clear.depth.derived",
+      "citation.card.p02-plan.clear"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.w1.outside-depth-trial",
+      "measurement.w1.finished-thickness-candidate"
+    ]
+  },
+  {
+    "id": "measurement.w2.finished-thickness",
+    "label": "W2 finished return thickness",
+    "original": {
+      "display": "8 3/8 in",
+      "value": "8.375",
+      "unit": "in"
+    },
+    "canonicalMm": "212.725",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.finished.thickness",
+      "citation.card.p11-w2-layout.chain",
+      "citation.svg.r31-truss.w2-8-3-8-finished"
+    ]
+  },
+  {
+    "id": "measurement.w2.core-thickness",
+    "label": "W2 actual dry 2x8 core thickness",
+    "original": {
+      "display": "7 1/4 in actual dry 2x8 core",
+      "value": "7.25",
+      "unit": "in"
+    },
+    "canonicalMm": "184.15",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.section.candidate",
+      "citation.card.p11-w2-layout.chain"
+    ]
+  },
+  {
+    "id": "measurement.w2.pantry-board",
+    "label": "W2 pantry-side board (1/2 in gypsum)",
+    "original": {
+      "display": "1/2 in",
+      "value": "0.5",
+      "unit": "in"
+    },
+    "canonicalMm": "12.7",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.section.candidate",
+      "citation.card.p11-w2-layout.chain"
+    ]
+  },
+  {
+    "id": "measurement.w2.room-board",
+    "label": "W2 room-side board (5/8 in gypsum)",
+    "original": {
+      "display": "5/8 in",
+      "value": "0.625",
+      "unit": "in"
+    },
+    "canonicalMm": "15.875",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.section.candidate",
+      "citation.card.p11-w2-layout.chain"
+    ]
+  },
+  {
+    "id": "measurement.w2.section-sum",
+    "label": "W2 finished thickness chain sum",
+    "original": {
+      "display": "1/2 + 7 1/4 + 5/8 = 8 3/8 in",
+      "value": "8.375",
+      "unit": "in"
+    },
+    "canonicalMm": "212.725",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.finished.thickness",
+      "citation.card.p11-w2-layout.chain"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.w2.pantry-board",
+      "measurement.w2.core-thickness",
+      "measurement.w2.room-board"
+    ]
+  },
+  {
+    "id": "measurement.w2.plate-53",
+    "label": "W2 candidate plate comparison at the A3 11-in projection",
+    "original": {
+      "display": "53 in",
+      "value": "53",
+      "unit": "in"
+    },
+    "canonicalMm": "1346.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.plate.comparison.at.11.projection",
+      "citation.card.p11-w2-layout.projection",
+      "citation.svg.r31-truss.w2-plate-53"
+    ]
+  },
+  {
+    "id": "measurement.w2.plate-53.125",
+    "label": "W2 candidate plate comparison at the reported 10 7/8-in projection",
+    "original": {
+      "display": "53 1/8 in",
+      "value": "53.125",
+      "unit": "in"
+    },
+    "canonicalMm": "1349.375",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W2.plate.comparison.at.10.7.8.projection",
+      "citation.card.p11-w2-layout.projection",
+      "citation.svg.r34-corners.w2-plate-53-125"
+    ]
+  },
+  {
+    "id": "measurement.w1.plate-156.75",
+    "label": "W1 candidate plate comparison (through-corner model)",
+    "original": {
+      "display": "156 3/4 in",
+      "value": "156.75",
+      "unit": "in"
+    },
+    "canonicalMm": "3981.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.plate.comparison.at.selected.corner",
+      "citation.card.p08-w1-plates.arithmetic",
+      "citation.svg.r34-wood-junction.w1-frame-156-75"
+    ]
+  },
+  {
+    "id": "measurement.w1.outside-plane-157.375",
+    "label": "W1 outside finished-plane comparison to the W2 outer face",
+    "original": {
+      "display": "157 3/8 in",
+      "value": "157.375",
+      "unit": "in"
+    },
+    "canonicalMm": "3997.325",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.layout.W1.outside.finished.plane.comparison",
+      "citation.card.p22-drywall-map.w1r",
+      "citation.svg.r34-corners.w1-r-terminus"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s01.centre",
+    "label": "W1 candidate stud S01 centre from the left plate end",
+    "original": {
+      "display": "0.75 in",
+      "value": "0.75",
+      "unit": "in"
+    },
+    "canonicalMm": "19.05",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.0",
+      "citation.csv.parts.w1-s01.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s02.centre",
+    "label": "W1 candidate stud S02 centre from the left plate end",
+    "original": {
+      "display": "16 in",
+      "value": "16",
+      "unit": "in"
+    },
+    "canonicalMm": "406.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.1",
+      "citation.csv.parts.w1-s02.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s03.centre",
+    "label": "W1 candidate stud S03 centre from the left plate end",
+    "original": {
+      "display": "32 in",
+      "value": "32",
+      "unit": "in"
+    },
+    "canonicalMm": "812.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.2",
+      "citation.csv.parts.w1-s03.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s04.centre",
+    "label": "W1 candidate stud S04 centre from the left plate end",
+    "original": {
+      "display": "48 in",
+      "value": "48",
+      "unit": "in"
+    },
+    "canonicalMm": "1219.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.3",
+      "citation.csv.parts.w1-s04.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s05.centre",
+    "label": "W1 candidate stud S05 centre from the left plate end",
+    "original": {
+      "display": "64 in",
+      "value": "64",
+      "unit": "in"
+    },
+    "canonicalMm": "1625.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.4",
+      "citation.csv.parts.w1-s05.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s06.centre",
+    "label": "W1 candidate stud S06 centre from the left plate end",
+    "original": {
+      "display": "80 in",
+      "value": "80",
+      "unit": "in"
+    },
+    "canonicalMm": "2032",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.5",
+      "citation.csv.parts.w1-s06.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s07.centre",
+    "label": "W1 candidate stud S07 centre from the left plate end",
+    "original": {
+      "display": "96 in",
+      "value": "96",
+      "unit": "in"
+    },
+    "canonicalMm": "2438.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.6",
+      "citation.csv.parts.w1-s07.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s08.centre",
+    "label": "W1 candidate stud S08 centre from the left plate end",
+    "original": {
+      "display": "112 in",
+      "value": "112",
+      "unit": "in"
+    },
+    "canonicalMm": "2844.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.7",
+      "citation.csv.parts.w1-s08.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s09.centre",
+    "label": "W1 candidate stud S09 centre from the left plate end",
+    "original": {
+      "display": "128 in",
+      "value": "128",
+      "unit": "in"
+    },
+    "canonicalMm": "3251.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.8",
+      "citation.csv.parts.w1-s09.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s10.centre",
+    "label": "W1 candidate stud S10 centre from the left plate end",
+    "original": {
+      "display": "144 in",
+      "value": "144",
+      "unit": "in"
+    },
+    "canonicalMm": "3657.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.9",
+      "citation.csv.parts.w1-s10.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s11.centre",
+    "label": "W1 candidate stud S11 centre from the left plate end",
+    "original": {
+      "display": "148.75 in",
+      "value": "148.75",
+      "unit": "in"
+    },
+    "canonicalMm": "3778.25",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.10",
+      "citation.csv.parts.w1-s11.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w1.stud-s12.centre",
+    "label": "W1 candidate stud S12 centre from the left plate end",
+    "original": {
+      "display": "156 in",
+      "value": "156",
+      "unit": "in"
+    },
+    "canonicalMm": "3962.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.candidate.W1.stud.centers.from.left.plate.end.in.11",
+      "citation.csv.parts.w1-s12.candidate_center_in",
+      "citation.card.p08-w1-plates.centres"
+    ]
+  },
+  {
+    "id": "measurement.w2.stud-s01.centre",
+    "label": "W2 candidate stud S01 centre from the W1 pantry finished face",
+    "original": {
+      "display": "1/4 in",
+      "value": "1/4",
+      "unit": "in"
+    },
+    "canonicalMm": "6.35",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.2.studs.0",
+      "citation.csv.parts.w2-s01.candidate_center_in"
+    ]
+  },
+  {
+    "id": "measurement.w2.stud-s02.centre",
+    "label": "W2 candidate stud S02 centre from the W1 pantry finished face",
+    "original": {
+      "display": "31/2 in",
+      "value": "31/2",
+      "unit": "in"
+    },
+    "canonicalMm": "393.7",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.2.studs.1",
+      "citation.csv.parts.w2-s02.candidate_center_in"
+    ]
+  },
+  {
+    "id": "measurement.w2.stud-s03.centre",
+    "label": "W2 candidate stud S03 centre from the W1 pantry finished face",
+    "original": {
+      "display": "63/2 in",
+      "value": "63/2",
+      "unit": "in"
+    },
+    "canonicalMm": "800.1",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.2.studs.2",
+      "citation.csv.parts.w2-s03.candidate_center_in"
+    ]
+  },
+  {
+    "id": "measurement.w2.stud-s04.centre",
+    "label": "W2 candidate stud S04 centre from the W1 pantry finished face",
+    "original": {
+      "display": "95/2 in",
+      "value": "95/2",
+      "unit": "in"
+    },
+    "canonicalMm": "1206.5",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.2.studs.3",
+      "citation.csv.parts.w2-s04.candidate_center_in"
+    ]
+  },
+  {
+    "id": "measurement.w2.stud-s05.centre",
+    "label": "W2 candidate stud S05 centre from the W1 pantry finished face",
+    "original": {
+      "display": "415/8 in",
+      "value": "415/8",
+      "unit": "in"
+    },
+    "canonicalMm": "1317.625",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.2.studs.4",
+      "citation.csv.parts.w2-s05.candidate_center_in"
+    ]
+  },
+  {
+    "id": "measurement.ceiling.reported",
+    "label": "Reported finished ceiling height (user report)",
+    "original": {
+      "display": "111 in reported, floor to ceiling",
+      "value": "111",
+      "unit": "in"
+    },
+    "canonicalMm": "2819.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "not_applicable",
+    "citationIds": [
+      "citation.json.site.ceiling.finished.height.user.report",
+      "citation.card.p04-survey.no-cut",
+      "citation.svg.r31-backing.reported-ceiling-111"
+    ],
+    "conflictNote": "User report, not field-verified. Declared not_applicable for cutting: member heights are field-fit and no cut may derive from this value."
+  },
+  {
+    "id": "measurement.cabinets.combined",
+    "label": "B1+B2+B3 base boxes measured together",
+    "original": {
+      "display": "106 1/2 in measured together; individual widths unknown",
+      "value": "106.5",
+      "unit": "in"
+    },
+    "canonicalMm": "2705.1",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.base.boxes.combined",
+      "citation.card.p03-elevation.boxes",
+      "citation.card.p27-fixtures.steps"
+    ],
+    "conflictNote": "Combined width only. Nominal 12/48/48 labels are not measured widths; no individual cut or mounting location is authoritative."
+  },
+  {
+    "id": "measurement.cabinets.filler-f1",
+    "label": "Between-box filler F1",
+    "original": {
+      "display": "3/4 in",
+      "value": "0.75",
+      "unit": "in"
+    },
+    "canonicalMm": "19.05",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.base.fillers.between.boxes.0",
+      "citation.card.p03-elevation.fillers"
+    ]
+  },
+  {
+    "id": "measurement.cabinets.filler-f2",
+    "label": "Between-box filler F2",
+    "original": {
+      "display": "3/4 in",
+      "value": "0.75",
+      "unit": "in"
+    },
+    "canonicalMm": "19.05",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.base.fillers.between.boxes.1",
+      "citation.card.p03-elevation.fillers"
+    ]
+  },
+  {
+    "id": "measurement.cabinets.divider",
+    "label": "Refrigerator/base-cabinet divider",
+    "original": {
+      "display": "3/4 in",
+      "value": "0.75",
+      "unit": "in"
+    },
+    "canonicalMm": "19.05",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.divider",
+      "citation.card.p03-elevation.chain"
+    ]
+  },
+  {
+    "id": "measurement.cabinets.left-space",
+    "label": "Left-end wall-side allowance",
+    "original": {
+      "display": "3 1/4 in",
+      "value": "3.25",
+      "unit": "in"
+    },
+    "canonicalMm": "82.55",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.left.end.space",
+      "citation.card.p03-elevation.chain",
+      "citation.card.p03-elevation.operating-fit"
+    ]
+  },
+  {
+    "id": "measurement.cabinets.base-row",
+    "label": "Base cabinet installed row (boxes plus fillers)",
+    "original": {
+      "display": "108 in",
+      "value": "108",
+      "unit": "in"
+    },
+    "canonicalMm": "2743.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.base.installed.row",
+      "citation.card.p27-fixtures.steps"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.cabinets.combined",
+      "measurement.cabinets.filler-f1",
+      "measurement.cabinets.filler-f2"
+    ]
+  },
+  {
+    "id": "measurement.fridge.clear-bay",
+    "label": "Refrigerator clear finished bay",
+    "original": {
+      "display": "37 in",
+      "value": "37",
+      "unit": "in"
+    },
+    "canonicalMm": "939.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.fridge.clear.bay",
+      "citation.card.p27-fixtures.steps",
+      "citation.svg.r33-cabinet-elevation.fridge-bay-37"
+    ]
+  },
+  {
+    "id": "measurement.fridge.bin-removal-required",
+    "label": "GE family freezer-bin removal requirement (family-source note)",
+    "original": {
+      "display": "about 14 1/4 in at the freezer-side wall",
+      "value": "14.25",
+      "unit": "in"
+    },
+    "canonicalMm": "361.95",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p03-elevation.operating-fit",
+      "citation.json.fixtures.refrigerator.access"
+    ],
+    "conflictNote": "Family-source requirement (about 14 1/4 in) versus the planned 3 1/4-in left-end allowance; physical bin removal is unverified. Not a confirmed service clearance."
+  },
+  {
+    "id": "measurement.fridge.closed-front-clearance",
+    "label": "Nominal closed-front clearance to the opposite wall",
+    "original": {
+      "display": "about 26 3/4 in nominal",
+      "value": "26.75",
+      "unit": "in"
+    },
+    "canonicalMm": "679.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.closed.refrigerator.front.to.opposite.wall.nominal",
+      "citation.card.p03-elevation.operating-fit",
+      "citation.svg.r33-cabinet-elevation.counter-to-upper-26"
+    ],
+    "conflictNote": "Depth subtraction with GE family dimensions and a 2-in rear gap; not door-sweep proof."
+  },
+  {
+    "id": "measurement.fridge.door90-clearance",
+    "label": "Nominal 90-degree door condition",
+    "original": {
+      "display": "about 11 in at the stated 90-degree projection",
+      "value": "11",
+      "unit": "in"
+    },
+    "canonicalMm": "279.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.door.90.front.to.opposite.wall.nominal",
+      "citation.card.p03-elevation.operating-fit"
+    ],
+    "conflictNote": "Nominal only; neither the closed nor the 90-degree figure proves actual swing or service access."
+  },
+  {
+    "id": "measurement.fridge.rear-gap",
+    "label": "Assumed rear gap behind the refrigerator",
+    "original": {
+      "display": "2 in rear gap (aisle note)",
+      "value": "2",
+      "unit": "in"
+    },
+    "canonicalMm": "50.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.fixtures.aisle.note",
+      "citation.card.p03-elevation.operating-fit"
+    ]
+  },
+  {
+    "id": "measurement.column.projection",
+    "label": "Existing column projection (reported)",
+    "original": {
+      "display": "10 7/8 in",
+      "value": "10.875",
+      "unit": "in"
+    },
+    "canonicalMm": "276.225",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.site.column.projection.user.report",
+      "citation.card.p11-w2-layout.projection",
+      "citation.svg.r34-corners.column-front-plane"
+    ]
+  },
+  {
+    "id": "measurement.column.width",
+    "label": "Existing column finished width (reported)",
+    "original": {
+      "display": "8 3/8 in",
+      "value": "8.375",
+      "unit": "in"
+    },
+    "canonicalMm": "212.725",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.site.column.finished.width.user.report",
+      "citation.svg.r33-cabinet-elevation.w2-8-3-8"
+    ]
+  },
+  {
+    "id": "measurement.closet.inside-width",
+    "label": "Existing closet inside width (survey reference)",
+    "original": {
+      "display": "37 in",
+      "value": "37",
+      "unit": "in"
+    },
+    "canonicalMm": "939.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p04-survey.steps",
+      "citation.card.p20-ex1.scope",
+      "citation.json.trim.retained"
+    ],
+    "conflictNote": "Survey/reference fact only; it does not define the EX1 rough opening width."
+  },
+  {
+    "id": "measurement.closet.depth",
+    "label": "Existing closet depth (survey reference)",
+    "original": {
+      "display": "23 in",
+      "value": "23",
+      "unit": "in"
+    },
+    "canonicalMm": "584.2",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p04-survey.steps",
+      "citation.card.p20-ex1.scope",
+      "citation.json.trim.retained"
+    ],
+    "conflictNote": "Survey/reference fact only; it does not define the EX1 rough opening or header."
+  },
+  {
+    "id": "measurement.ex1.finished-clear-width-min",
+    "label": "EX1 minimum finished-clear width requirement",
+    "original": {
+      "display": "at least 37 in finished clear",
+      "value": "37",
+      "unit": "in"
+    },
+    "canonicalMm": "939.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.pvt.owner-ex1-requirement.minimum-37-in-finished-clear"
+    ],
+    "conflictNote": "Owner requirement only. Actual finished width, finish/jamb buildup, rough opening, height, offsets and framing remain UNKNOWN / NOT APPROVED."
+  },
+  {
+    "id": "measurement.ex1.plan-column-to-closet-span",
+    "label": "EX1 plan-derived column-to-closet framing span",
+    "original": {
+      "display": "30 1/8 in before finishes (original-plan arithmetic)",
+      "value": "30.125",
+      "unit": "in"
+    },
+    "canonicalMm": "765.175",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.permit.p3.a3-ex1-column-obstruction-chain"
+    ],
+    "conflictNote": "Original-plan arithmetic, before finishes. It is not a measured clear opening and cannot locate demolition or establish the current column/wall condition."
+  },
+  {
+    "id": "measurement.ex1.plan-shortfall-before-finishes",
+    "label": "EX1 minimum geometric shortfall before finish allowance",
+    "original": {
+      "display": "at least 6 7/8 in beyond the 30 1/8-in plan span to reach 37 in",
+      "value": "6.875",
+      "unit": "in"
+    },
+    "canonicalMm": "174.625",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.pvt.owner-ex1-requirement.extend-toward-refrigerator-side",
+      "citation.permit.p3.a3-ex1-minimum-shortfall"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.ex1.finished-clear-width-min",
+      "measurement.ex1.plan-column-to-closet-span"
+    ],
+    "conflictNote": "Minimum geometric difference only. The actual extension must be greater once the approved finish/jamb build-up is known; it is not a cut or rough-opening dimension."
+  },
+  {
+    "id": "measurement.truss.center-trial",
+    "label": "A7 candidate truss centre from the existing finished face",
+    "original": {
+      "display": "about 65 7/8 in (schematic)",
+      "value": "65.86",
+      "unit": "in"
+    },
+    "canonicalMm": "1672.844",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.roof.plan.alignment.drawing.truss.center.from.existing.finished.face",
+      "citation.card.p02-plan.truss",
+      "citation.svg.r31-truss.truss-centre-65-875"
+    ],
+    "conflictNote": "Drawing comparison only; the roof truss is not as-built verified and no attachment is released."
+  },
+  {
+    "id": "measurement.truss.plate-centre-65.75",
+    "label": "Candidate W1 top-plate centre on the 68-in trial",
+    "original": {
+      "display": "about 65 3/4 in",
+      "value": "65.75",
+      "unit": "in"
+    },
+    "canonicalMm": "1670.05",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.roof.plan.alignment.candidate.W1.top.plate.center.at.68",
+      "citation.card.p02-plan.truss",
+      "citation.svg.r31-truss.plate-centre-65-75"
+    ]
+  },
+  {
+    "id": "measurement.backing.net-length",
+    "label": "Backing net cut length",
+    "original": {
+      "display": "20 x 14 1/2 + 2 x 13 3/4 + 3 x 3 1/4 = 327 1/4 in net",
+      "value": "327.25",
+      "unit": "in"
+    },
+    "canonicalMm": "8312.15",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.net.length.in",
+      "citation.json.backing.planning.cut.mix.in",
+      "citation.card.p18-backing.mix"
+    ],
+    "derivedFromMeasurementIds": []
+  },
+  {
+    "id": "measurement.backing.band-top.low",
+    "label": "Provisional TOP band above finished tile — lower elevation",
+    "original": {
+      "display": "91.25 in above finished tile",
+      "value": "91.25",
+      "unit": "in"
+    },
+    "canonicalMm": "2317.75",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.TOP.0",
+      "citation.json.backing.band.status",
+      "citation.svg.r31-backing.bands-above-finished-tile"
+    ],
+    "conflictNote": "Provisional zone only; set from actual cabinet mounting-rail/hole locations and not a release."
+  },
+  {
+    "id": "measurement.backing.band-top.high",
+    "label": "Provisional TOP band above finished tile — upper elevation",
+    "original": {
+      "display": "96.75 in above finished tile",
+      "value": "96.75",
+      "unit": "in"
+    },
+    "canonicalMm": "2457.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.TOP.1",
+      "citation.json.backing.band.status"
+    ]
+  },
+  {
+    "id": "measurement.backing.band-u3low.low",
+    "label": "Provisional U3 lower-rail band — lower elevation",
+    "original": {
+      "display": "71.25 in above finished tile",
+      "value": "71.25",
+      "unit": "in"
+    },
+    "canonicalMm": "1809.75",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U3LOW.0",
+      "citation.json.backing.band.status",
+      "citation.svg.r31-backing.bands-above-finished-tile"
+    ],
+    "conflictNote": "Provisional zone only; set from actual cabinet mounting-rail/hole locations and not a release."
+  },
+  {
+    "id": "measurement.backing.band-u3low.high",
+    "label": "Provisional U3 lower-rail band — upper elevation",
+    "original": {
+      "display": "76.75 in above finished tile",
+      "value": "76.75",
+      "unit": "in"
+    },
+    "canonicalMm": "1949.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U3LOW.1",
+      "citation.json.backing.band.status"
+    ]
+  },
+  {
+    "id": "measurement.backing.band-u1low.low",
+    "label": "Provisional U1 lower-rail band — lower elevation",
+    "original": {
+      "display": "61.25 in above finished tile",
+      "value": "61.25",
+      "unit": "in"
+    },
+    "canonicalMm": "1555.75",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U1LOW.0",
+      "citation.json.backing.band.status",
+      "citation.svg.r31-backing.bands-above-finished-tile"
+    ],
+    "conflictNote": "Provisional zone only; set from actual cabinet mounting-rail/hole locations and not a release."
+  },
+  {
+    "id": "measurement.backing.band-u1low.high",
+    "label": "Provisional U1 lower-rail band — upper elevation",
+    "original": {
+      "display": "66.75 in above finished tile",
+      "value": "66.75",
+      "unit": "in"
+    },
+    "canonicalMm": "1695.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U1LOW.1",
+      "citation.json.backing.band.status"
+    ]
+  },
+  {
+    "id": "measurement.backing.band-u2low.low",
+    "label": "Provisional U2 lower-rail band — lower elevation",
+    "original": {
+      "display": "61.25 in above finished tile",
+      "value": "61.25",
+      "unit": "in"
+    },
+    "canonicalMm": "1555.75",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U2LOW.0",
+      "citation.json.backing.band.status",
+      "citation.svg.r31-backing.bands-above-finished-tile"
+    ],
+    "conflictNote": "Provisional zone only; set from actual cabinet mounting-rail/hole locations and not a release."
+  },
+  {
+    "id": "measurement.backing.band-u2low.high",
+    "label": "Provisional U2 lower-rail band — upper elevation",
+    "original": {
+      "display": "66.75 in above finished tile",
+      "value": "66.75",
+      "unit": "in"
+    },
+    "canonicalMm": "1695.45",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.U2LOW.1",
+      "citation.json.backing.band.status"
+    ]
+  },
+  {
+    "id": "measurement.backing.band-base.low",
+    "label": "Provisional base-cabinet band — lower elevation",
+    "original": {
+      "display": "28.5 in above finished tile",
+      "value": "28.5",
+      "unit": "in"
+    },
+    "canonicalMm": "723.9",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.BASE.0",
+      "citation.json.backing.band.status",
+      "citation.svg.r31-backing.bands-above-finished-tile"
+    ],
+    "conflictNote": "Provisional zone only; set from actual cabinet mounting-rail/hole locations and not a release."
+  },
+  {
+    "id": "measurement.backing.band-base.high",
+    "label": "Provisional base-cabinet band — upper elevation",
+    "original": {
+      "display": "34 in above finished tile",
+      "value": "34",
+      "unit": "in"
+    },
+    "canonicalMm": "863.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "candidate",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.bands.above.finished.tile.in.BASE.1",
+      "citation.json.backing.band.status"
+    ]
+  },
+  {
+    "id": "measurement.backing.block-face",
+    "label": "Flat 2x6 block vertical face",
+    "original": {
+      "display": "5 1/2 in vertical face",
+      "value": "5.5",
+      "unit": "in"
+    },
+    "canonicalMm": "139.7",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.section.actual.target.in",
+      "citation.json.backing.orientation",
+      "citation.card.p18-backing.scope"
+    ]
+  },
+  {
+    "id": "measurement.backing.block-depth",
+    "label": "Flat 2x6 block cavity depth",
+    "original": {
+      "display": "1 1/2 in into the 3.5-in cavity",
+      "value": "1.5",
+      "unit": "in"
+    },
+    "canonicalMm": "38.1",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.backing.orientation",
+      "citation.card.p19-backing-connection.flat",
+      "citation.card.p19-backing-connection.space"
+    ]
+  },
+  {
+    "id": "measurement.connector.bend",
+    "label": "Candidate A34/A34Z bend length",
+    "original": {
+      "display": "2 1/2 in along bend",
+      "value": "2.5",
+      "unit": "in"
+    },
+    "canonicalMm": "63.5",
+    "installationToleranceMm": null,
+    "evidenceStatus": "manufacturer_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p10-connector.candidate",
+      "citation.esr.fig5",
+      "citation.json.connections.R35"
+    ]
+  },
+  {
+    "id": "measurement.connector.leg",
+    "label": "Candidate A34/A34Z leg length",
+    "original": {
+      "display": "1 7/16 in each leg",
+      "value": "1.4375",
+      "unit": "in"
+    },
+    "canonicalMm": "36.5125",
+    "installationToleranceMm": null,
+    "evidenceStatus": "manufacturer_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p10-connector.candidate",
+      "citation.esr.fig5"
+    ]
+  },
+  {
+    "id": "measurement.connector.screw-length",
+    "label": "Candidate SD Connector screw length",
+    "original": {
+      "display": "1 1/2 in (#9 x 1 1/2 in SD Connector screw)",
+      "value": "1.5",
+      "unit": "in"
+    },
+    "canonicalMm": "38.1",
+    "installationToleranceMm": null,
+    "evidenceStatus": "manufacturer_verified",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p10-connector.candidate",
+      "citation.card.p14-sd9112.spec",
+      "citation.esr.table"
+    ],
+    "conflictNote": "Screw identity only. The installed project quantity, angle count, orientation and capacity are held; no total is derived."
+  },
+  {
+    "id": "measurement.drywall.w1p-width",
+    "label": "W1 pantry face candidate board width",
+    "original": {
+      "display": "149 1/2 in",
+      "value": "149.5",
+      "unit": "in"
+    },
+    "canonicalMm": "3797.3",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p22-drywall-map.w1p",
+      "citation.svg.r34-drywall-layout.w1p-board-width"
+    ]
+  },
+  {
+    "id": "measurement.drywall.w1r-width",
+    "label": "W1 room face candidate board width",
+    "original": {
+      "display": "157 3/8 in",
+      "value": "157.375",
+      "unit": "in"
+    },
+    "canonicalMm": "3997.325",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p22-drywall-map.w1r",
+      "citation.svg.r34-drywall-layout.w1r-board-width"
+    ]
+  },
+  {
+    "id": "measurement.drywall.w2p-width",
+    "label": "W2 pantry face candidate board width",
+    "original": {
+      "display": "52 5/8 in",
+      "value": "52.625",
+      "unit": "in"
+    },
+    "canonicalMm": "1336.675",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p22-drywall-map.w2p",
+      "citation.svg.r34-drywall-layout.w2p-board-width"
+    ]
+  },
+  {
+    "id": "measurement.drywall.w2r-width",
+    "label": "W2 room face candidate board width",
+    "original": {
+      "display": "56 5/8 in",
+      "value": "56.625",
+      "unit": "in"
+    },
+    "canonicalMm": "1438.275",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p22-drywall-map.w2r",
+      "citation.svg.r34-drywall-layout.w2r-board-width",
+      "citation.json.drywall.panel.layout.coordinates.W2.local.q"
+    ]
+  },
+  {
+    "id": "measurement.drywall.seam-w2r",
+    "label": "W2 room face candidate seam at the second panel joint",
+    "original": {
+      "display": "15 1/2 in (parsed from \"31/2\" as a division, never 3 1/2)",
+      "value": "15.5",
+      "unit": "in"
+    },
+    "canonicalMm": "393.7",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.json.drywall.panel.layout.faces.3.seams.0",
+      "citation.csv.panels.w2-r-01.end_in",
+      "citation.csv.panels.w2-r-02.start_in",
+      "citation.card.p22-drywall-map.w2r"
+    ],
+    "conflictNote": "SRC-R35-01 parsing regression check: 31/2 = 15 1/2, with -4 + 19 1/2 = 15 1/2 and 52 5/8 - 15 1/2 = 37 1/8. The CSV rows W2-R-01/02 agree; no source-data correction is authorized or needed."
+  },
+  {
+    "id": "measurement.drywall.w2r-01-length",
+    "label": "W2-R-01 panel length",
+    "original": {
+      "display": "19 1/2 in",
+      "value": "19.5",
+      "unit": "in"
+    },
+    "canonicalMm": "495.3",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.csv.panels.w2-r-01.candidate_width_in",
+      "citation.json.drywall.panel.layout.faces.3.panels.0.width"
+    ]
+  },
+  {
+    "id": "measurement.drywall.w2r-02-length",
+    "label": "W2-R-02 panel length",
+    "original": {
+      "display": "37 1/8 in",
+      "value": "37.125",
+      "unit": "in"
+    },
+    "canonicalMm": "942.975",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.csv.panels.w2-r-02.candidate_width_in",
+      "citation.json.drywall.panel.layout.faces.3.panels.1.width"
+    ],
+    "conflictNote": "52 5/8 - 15 1/2 = 37 1/8; matches the CSV row."
+  },
+  {
+    "id": "measurement.practice.board-length",
+    "label": "Practice board length",
+    "original": {
+      "display": "10 ft (120 in)",
+      "value": "120",
+      "unit": "in"
+    },
+    "canonicalMm": "3048",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p13-practice.yield",
+      "citation.csv.materials.l-practice.planning_net"
+    ]
+  },
+  {
+    "id": "measurement.practice.plate-length",
+    "label": "Practice mock-frame plate length",
+    "original": {
+      "display": "24 in",
+      "value": "24",
+      "unit": "in"
+    },
+    "canonicalMm": "609.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p13-practice.yield"
+    ]
+  },
+  {
+    "id": "measurement.practice.stud-length",
+    "label": "Practice mock-frame stud length",
+    "original": {
+      "display": "21 in",
+      "value": "21",
+      "unit": "in"
+    },
+    "canonicalMm": "533.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p13-practice.yield"
+    ]
+  },
+  {
+    "id": "measurement.practice.yield-net",
+    "label": "Practice net cut length from the practice board",
+    "original": {
+      "display": "2 x 24 + 3 x 21 = 111 in, with kerf/waste checked against 120 in",
+      "value": "111",
+      "unit": "in"
+    },
+    "canonicalMm": "2819.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p13-practice.yield",
+      "citation.json.framing.materials.concept"
+    ],
+    "conflictNote": "Loose-stock only. It never counts as house framing and never enters the installed takeoff."
+  },
+  {
+    "id": "measurement.counter.top-elevation",
+    "label": "Intended counter top elevation",
+    "original": {
+      "display": "36 in (after base heights and top thickness are measured)",
+      "value": "36",
+      "unit": "in"
+    },
+    "canonicalMm": "914.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps"
+    ]
+  },
+  {
+    "id": "measurement.upper.bottom-elevation",
+    "label": "Intended U1/U2 bottom elevation",
+    "original": {
+      "display": "62 in (planned clear distance basis)",
+      "value": "62",
+      "unit": "in"
+    },
+    "canonicalMm": "1574.8",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps"
+    ]
+  },
+  {
+    "id": "measurement.counter-upper.clearance",
+    "label": "Planned counter-to-upper-bottom distance",
+    "original": {
+      "display": "26 in",
+      "value": "26",
+      "unit": "in"
+    },
+    "canonicalMm": "660.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps",
+      "citation.svg.r33-cabinet-elevation.counter-upper-26"
+    ],
+    "derivedFromMeasurementIds": [
+      "measurement.counter.top-elevation",
+      "measurement.upper.bottom-elevation"
+    ]
+  },
+  {
+    "id": "measurement.upper.u1u2-height",
+    "label": "Upper cabinets U1/U2 height",
+    "original": {
+      "display": "34 in",
+      "value": "34",
+      "unit": "in"
+    },
+    "canonicalMm": "863.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps"
+    ]
+  },
+  {
+    "id": "measurement.upper.u3-height",
+    "label": "Over-fridge upper cabinet U3 height",
+    "original": {
+      "display": "24 in",
+      "value": "24",
+      "unit": "in"
+    },
+    "canonicalMm": "609.6",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps"
+    ]
+  },
+  {
+    "id": "measurement.upper.width",
+    "label": "Upper cabinet width (U1/U2/U3)",
+    "original": {
+      "display": "36 in",
+      "value": "36",
+      "unit": "in"
+    },
+    "canonicalMm": "914.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps",
+      "citation.svg.r33-cabinet-elevation.u1-36x34"
+    ]
+  },
+  {
+    "id": "measurement.shelves.length",
+    "label": "Butcher-block shelf length (three shelves)",
+    "original": {
+      "display": "36 in each, three shelves",
+      "value": "36",
+      "unit": "in"
+    },
+    "canonicalMm": "914.4",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps",
+      "citation.svg.r33-cabinet-elevation.three-shelves-36",
+      "citation.json.backing.shelves"
+    ]
+  }
+]

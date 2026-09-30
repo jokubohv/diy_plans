@@ -1,0 +1,17 @@
+{
+  "name": "@diyguide/viewer-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-free ViewerAdapter contract, viewer host, step-state and presentation logic.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@diyguide/schema": "0.1.0"
+  }
+}

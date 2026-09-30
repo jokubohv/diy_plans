@@ -1,0 +1,899 @@
+[
+  {
+    "id": "step.p4-survey",
+    "sequence": 10,
+    "title": "Survey before cutting (p4)",
+    "phaseLabel": "Survey & logistics",
+    "prerequisiteStepIds": [],
+    "operationIds": [
+      "op.survey-finished-faces"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tape-measure",
+      "tool.pencil",
+      "tool.level-48",
+      "tool.straightedge-laser"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p04-survey.ready",
+      "citation.card.p04-survey.steps",
+      "citation.card.p02-plan.inside"
+    ]
+  },
+  {
+    "id": "step.p5-trim-survey",
+    "sequence": 20,
+    "title": "Non-destructive trim survey (p5)",
+    "phaseLabel": "Survey & logistics",
+    "prerequisiteStepIds": [
+      "step.p4-survey"
+    ],
+    "operationIds": [
+      "op.survey-trim"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.utility-knife",
+      "tool.putty-knife",
+      "tool.eye-protection"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p05-trim.scope",
+      "citation.card.p05-trim.bounds"
+    ]
+  },
+  {
+    "id": "step.p7-setup",
+    "sequence": 30,
+    "title": "Set up the work area and prove the route (p7)",
+    "phaseLabel": "Survey & logistics",
+    "prerequisiteStepIds": [
+      "step.p4-survey"
+    ],
+    "operationIds": [
+      "op.protect-route",
+      "op.stage-tools"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.circular-saw",
+      "tool.drill-driver",
+      "tool.work-platform",
+      "tool.clamps"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p07-setup.ready",
+      "citation.card.p07-setup.steps",
+      "citation.card.p07-setup.method"
+    ]
+  },
+  {
+    "id": "step.p13-practice",
+    "sequence": 40,
+    "title": "Review the highlighted cut list, cut and dry-fit the mock frame (p13)",
+    "phaseLabel": "Loose-stock practice",
+    "prerequisiteStepIds": [
+      "step.p7-setup"
+    ],
+    "operationIds": [
+      "op.prepare-practice",
+      "op.cut-practice",
+      "op.fit-practice-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.circular-saw",
+      "tool.square",
+      "tool.clamps",
+      "tool.eye-protection"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p13-practice.ready",
+      "citation.card.p13-practice.yield"
+    ]
+  },
+  {
+    "id": "step.p14-sd9112",
+    "sequence": 50,
+    "title": "Read the connector card and drive practice screws (p14)",
+    "phaseLabel": "Loose-stock practice",
+    "prerequisiteStepIds": [
+      "step.p13-practice"
+    ],
+    "operationIds": [
+      "op.read-connector-card",
+      "op.drive-practice-screws"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.drill-driver",
+      "tool.hex-nutsetter"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.card.p14-sd9112.conditional",
+      "citation.card.p14-sd9112.spec",
+      "citation.esr.note"
+    ]
+  },
+  {
+    "id": "step.p5-trim-removal",
+    "sequence": 60,
+    "title": "Remove only the marked baseboard (p5, held/bounded)",
+    "phaseLabel": "Layout & reviews",
+    "prerequisiteStepIds": [
+      "step.p5-trim-survey",
+      "step.p14-sd9112"
+    ],
+    "operationIds": [
+      "op.remove-trim-selective"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.utility-knife",
+      "tool.putty-knife",
+      "tool.pry-bar",
+      "tool.end-nippers"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p05-trim.zones",
+      "citation.json.releases"
+    ]
+  },
+  {
+    "id": "step.p8-w1-layout",
+    "sequence": 70,
+    "title": "Mark W1 plate footprints (p8)",
+    "phaseLabel": "Layout & reviews",
+    "prerequisiteStepIds": [
+      "step.p4-survey",
+      "step.p14-sd9112"
+    ],
+    "operationIds": [
+      "op.layout-w1-plates"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.pencil",
+      "tool.tape-measure",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p08-w1-plates.centres",
+      "citation.card.p08-w1-plates.arithmetic",
+      "citation.card.p08-w1-plates.hold"
+    ]
+  },
+  {
+    "id": "step.p11-w2-layout",
+    "sequence": 80,
+    "title": "Mark W2 2x8 plate candidates (p11)",
+    "phaseLabel": "Layout & reviews",
+    "prerequisiteStepIds": [
+      "step.p4-survey",
+      "step.p14-sd9112"
+    ],
+    "operationIds": [
+      "op.layout-w2-plates"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.pencil",
+      "tool.tape-measure"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p11-w2-layout.projection",
+      "citation.card.p11-w2-layout.hold"
+    ]
+  },
+  {
+    "id": "step.p10-connector",
+    "sequence": 90,
+    "title": "Review the A34/A34Z candidate and ESR limits (p10)",
+    "phaseLabel": "Layout & reviews",
+    "prerequisiteStepIds": [
+      "step.p14-sd9112"
+    ],
+    "operationIds": [
+      "op.review-connector"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p10-connector.conditional",
+      "citation.card.p10-connector.esr-limits"
+    ]
+  },
+  {
+    "id": "step.p15-slab",
+    "sequence": 100,
+    "title": "Investigate the tile/slab base (p15, held)",
+    "phaseLabel": "Layout & reviews",
+    "prerequisiteStepIds": [
+      "step.p4-survey",
+      "step.p14-sd9112"
+    ],
+    "operationIds": [
+      "op.review-slab-base"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tile-bit",
+      "tool.concrete-drill",
+      "tool.dust-control"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p15-slab.hold",
+      "citation.card.p15-slab.steps"
+    ]
+  },
+  {
+    "id": "step.p16-base-plates",
+    "sequence": 110,
+    "title": "Position and anchor the base plates (p16, held)",
+    "phaseLabel": "Wall framing (held)",
+    "prerequisiteStepIds": [
+      "step.p8-w1-layout",
+      "step.p11-w2-layout",
+      "step.p10-connector",
+      "step.p15-slab"
+    ],
+    "operationIds": [
+      "op.set-bottom-plates",
+      "op.anchor-base-plates"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.level-48",
+      "tool.concrete-drill"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p16-plates.order",
+      "citation.card.p16-plates.steps"
+    ]
+  },
+  {
+    "id": "step.p16-top-restraint",
+    "sequence": 120,
+    "title": "Position top plates and the nonbearing restraint (p16, held)",
+    "phaseLabel": "Wall framing (held)",
+    "prerequisiteStepIds": [
+      "step.p16-base-plates"
+    ],
+    "operationIds": [
+      "op.restrain-top-plates"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.level-48",
+      "tool.work-platform"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p16-plates.steps",
+      "citation.card.p16-plates.truss"
+    ]
+  },
+  {
+    "id": "step.p9-w1-studs",
+    "sequence": 130,
+    "title": "Build W1 in place, S01-S12 (p9, held)",
+    "phaseLabel": "Wall framing (held)",
+    "prerequisiteStepIds": [
+      "step.p16-top-restraint"
+    ],
+    "operationIds": [
+      "op.fit-w1-studs",
+      "op.fasten-w1-studs"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.level-48",
+      "tool.drill-driver",
+      "tool.hex-nutsetter",
+      "tool.clamps"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p09-w1-frame.scope",
+      "citation.card.p09-w1-frame.steps"
+    ]
+  },
+  {
+    "id": "step.p12-w2-frame",
+    "sequence": 140,
+    "title": "Build W2 and tie the corner (p12, held)",
+    "phaseLabel": "Wall framing (held)",
+    "prerequisiteStepIds": [
+      "step.p9-w1-studs"
+    ],
+    "operationIds": [
+      "op.fit-w2-frame",
+      "op.fasten-w2-frame",
+      "op.tie-corner-column"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tape-measure",
+      "tool.drill-driver",
+      "tool.hex-nutsetter"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p12-w2-frame.scope",
+      "citation.card.p12-w2-frame.steps"
+    ]
+  },
+  {
+    "id": "step.p17-straightening",
+    "sequence": 150,
+    "title": "Check and correct the frame plane (p17, held)",
+    "phaseLabel": "Wall framing (held)",
+    "prerequisiteStepIds": [
+      "step.p12-w2-frame"
+    ],
+    "operationIds": [
+      "op.check-straightness"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.level-48",
+      "tool.straightedge-laser",
+      "tool.mason-line",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p17-straightening.hold",
+      "citation.card.p17-straightening.handbook"
+    ]
+  },
+  {
+    "id": "step.p18-backing",
+    "sequence": 160,
+    "title": "Field-fit the 25 backing blocks (p18, held)",
+    "phaseLabel": "Cabinet backing (held)",
+    "prerequisiteStepIds": [
+      "step.p17-straightening"
+    ],
+    "operationIds": [
+      "op.fit-backing-blocks"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tape-measure",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p18-backing.hold",
+      "citation.card.p18-backing.mix"
+    ]
+  },
+  {
+    "id": "step.p19-backing-connection",
+    "sequence": 170,
+    "title": "Resolve and fasten the backing connection (p19, held)",
+    "phaseLabel": "Cabinet backing (held)",
+    "prerequisiteStepIds": [
+      "step.p18-backing"
+    ],
+    "operationIds": [
+      "op.review-backing-connection",
+      "op.fasten-backing-blocks"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.drill-driver",
+      "tool.hex-nutsetter"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p19-backing-connection.hold",
+      "citation.card.p19-backing-connection.conflict"
+    ]
+  },
+  {
+    "id": "step.p20-ex1",
+    "sequence": 180,
+    "title": "Form the EX1 closet passage (p20, held)",
+    "phaseLabel": "Existing opening (held)",
+    "prerequisiteStepIds": [
+      "step.p19-backing-connection"
+    ],
+    "operationIds": [
+      "op.open-ex1-passage"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.utility-knife",
+      "tool.putty-knife"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p20-ex1.hold",
+      "citation.card.p20-ex1.scope-limits"
+    ]
+  },
+  {
+    "id": "step.p21-drywall-plan",
+    "sequence": 190,
+    "title": "Plan the drywall faces and supports (p21, held)",
+    "phaseLabel": "Drywall (held)",
+    "prerequisiteStepIds": [
+      "step.p19-backing-connection"
+    ],
+    "operationIds": [
+      "op.plan-drywall-faces",
+      "op.inspect-faces-supports"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.t-square",
+      "tool.tape-measure"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p21-drywall-faces.hold",
+      "citation.card.p21-drywall-faces.steps"
+    ]
+  },
+  {
+    "id": "step.p23-junction-drawings",
+    "sequence": 200,
+    "title": "Review junction and corner drawings (p22-p24, held)",
+    "phaseLabel": "Drywall (held)",
+    "prerequisiteStepIds": [
+      "step.p21-drywall-plan"
+    ],
+    "operationIds": [
+      "op.review-drywall-drawings"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p23-24-junction.junction",
+      "citation.card.p23-24-junction.corners",
+      "citation.card.p22-drywall-map.release"
+    ]
+  },
+  {
+    "id": "step.p25-drywall-hang",
+    "sequence": 210,
+    "title": "Inspect pre-close, hang and check drywall (p25, held)",
+    "phaseLabel": "Drywall (held)",
+    "prerequisiteStepIds": [
+      "step.p23-junction-drawings"
+    ],
+    "operationIds": [
+      "op.inspect-preclose",
+      "op.hang-drywall",
+      "op.inspect-drywall"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.screwgun",
+      "tool.drywall-lift",
+      "tool.utility-knife",
+      "tool.rasp"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p25-drywall-hang.hold",
+      "citation.card.p25-drywall-hang.steps"
+    ]
+  },
+  {
+    "id": "step.p26-finish",
+    "sequence": 220,
+    "title": "Tape, finish, paint and baseboard (p26, conditional/held)",
+    "phaseLabel": "Drywall (held)",
+    "prerequisiteStepIds": [
+      "step.p25-drywall-hang"
+    ],
+    "operationIds": [
+      "op.finish-drywall",
+      "op.install-baseboard"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.paint-tools",
+      "tool.tape-measure"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p26-finish.conditional",
+      "citation.card.p26-finish.baseboard"
+    ]
+  },
+  {
+    "id": "step.p27-cabinets",
+    "sequence": 230,
+    "title": "Install cabinets, counter and shelves (p27, held)",
+    "phaseLabel": "Fixtures & release (held)",
+    "prerequisiteStepIds": [
+      "step.p26-finish"
+    ],
+    "operationIds": [
+      "op.dry-fit-fixtures",
+      "op.set-counter-uppers-shelves"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tape-measure",
+      "tool.drill-driver"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p27-fixtures.hold",
+      "citation.card.p27-fixtures.steps"
+    ]
+  },
+  {
+    "id": "step.p27-refrigerator",
+    "sequence": 240,
+    "title": "Set the refrigerator and prove the fit (p27, held)",
+    "phaseLabel": "Fixtures & release (held)",
+    "prerequisiteStepIds": [
+      "step.p27-cabinets"
+    ],
+    "operationIds": [
+      "op.set-refrigerator"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [
+      "tool.tape-measure"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p27-fixtures.steps",
+      "citation.card.p03-elevation.operating-fit"
+    ]
+  },
+  {
+    "id": "step.p28-gates",
+    "sequence": 250,
+    "title": "G1-G7 release and as-built gates (p28, held)",
+    "phaseLabel": "Fixtures & release (held)",
+    "prerequisiteStepIds": [
+      "step.p27-refrigerator"
+    ],
+    "operationIds": [
+      "op.gate-g1-layout",
+      "op.gate-g2-floor",
+      "op.gate-g3-frame",
+      "op.gate-g4-ex1",
+      "op.gate-g5-fixtures",
+      "op.gate-g6-closeup",
+      "op.gate-g7-finish",
+      "op.update-field-model"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.card.p28-gates.status",
+      "citation.card.p28-gates.gates",
+      "citation.card.p28-gates.process"
+    ]
+  },
+  {
+    "id": "step.p29-source-record",
+    "sequence": 260,
+    "title": "Source record, supersession and limits (p29)",
+    "phaseLabel": "Fixtures & release (held)",
+    "prerequisiteStepIds": [
+      "step.p28-gates"
+    ],
+    "operationIds": [
+      "op.record-source-status"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.w1",
+      "assembly.backing",
+      "assembly.w2",
+      "assembly.drywall",
+      "assembly.fixtures",
+      "assembly.trim",
+      "assembly.practice"
+    ],
+    "toolIds": [],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.card.p29-source-record.status",
+      "citation.card.p29-source-record.sources",
+      "citation.card.p29-source-record.cart",
+      "citation.card.p29-source-record.review"
+    ]
+  }
+]

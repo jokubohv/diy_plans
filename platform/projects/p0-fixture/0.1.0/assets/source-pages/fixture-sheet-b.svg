@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="700" fill="#f7f5ef"/>
+  <rect x="10" y="10" width="980" height="680" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="30" y="44" font-size="22" font-weight="bold">P0 FIXTURE SHEET B — BACKING BLOCK DETAIL (SYNTHETIC, NOT A CONSTRUCTION DOCUMENT)</text>
+
+  <!-- band region: 60,60,420,300 -->
+  <g>
+    <rect x="60" y="60" width="420" height="300" fill="#fff" stroke="#888"/>
+    <text x="76" y="88" font-size="18" font-weight="bold">2x6 FLAT BACKING BLOCKS</text>
+    <text x="76" y="118" font-size="15">Block A: 368.3 mm (14.5 in) — stud 2 to stud 3 bay</text>
+    <rect x="90" y="140" width="180" height="34" fill="#efe6cf" stroke="#555"/>
+    <text x="340" y="163" font-size="14">2x6 flat, 139.7 mm wide</text>
+    <text x="76" y="212" font-size="15">Block B: 336.55 mm (13.25 in) — stud 3 to king bay</text>
+    <rect x="90" y="234" width="165" height="34" fill="#efe6cf" stroke="#555"/>
+    <text x="320" y="257" font-size="14">same board yields both blocks</text>
+    <text x="76" y="312" font-size="15">Top edge 1136.6 mm above the finished floor;</text>
+    <text x="76" y="334" font-size="15">faces flush with the stud faces.</text>
+  </g>
+
+  <!-- connection region: 520,60,420,300 -->
+  <g>
+    <rect x="520" y="60" width="420" height="300" fill="#fff" stroke="#888"/>
+    <text x="536" y="88" font-size="18" font-weight="bold">CONNECTION PLACEHOLDER — FASTENER NOT SPECIFIED</text>
+    <line x1="600" y1="200" x2="860" y2="200" stroke="#333"/>
+    <circle cx="640" cy="200" r="10" fill="none" stroke="#b00" stroke-dasharray="4 3"/>
+    <circle cx="820" cy="200" r="10" fill="none" stroke="#b00" stroke-dasharray="4 3"/>
+    <text x="560" y="252" font-size="16" fill="#b00">hold: fastener type, length,</text>
+    <text x="560" y="276" font-size="16" fill="#b00">pattern, edge distance unreleased</text>
+    <text x="560" y="316" font-size="15">proposed block-to-stud locations only</text>
+  </g>
+
+  <!-- inspect region: 60,400,420,220 -->
+  <g>
+    <rect x="60" y="400" width="420" height="220" fill="#fff" stroke="#888"/>
+    <text x="76" y="430" font-size="18" font-weight="bold">FLUSHNESS INSPECTION</text>
+    <text x="76" y="466" font-size="15">Block faces within 1.5 mm of the stud faces.</text>
+    <text x="76" y="492" font-size="15">All released fastener points driven.</text>
+    <text x="76" y="528" font-size="15">Record a photo or field measurement.</text>
+    <text x="76" y="576" font-size="14" fill="#666">inspection precedes covering</text>
+  </g>
+
+  <!-- cover region: 520,400,420,220 -->
+  <g>
+    <rect x="520" y="400" width="420" height="220" fill="#fff" stroke="#888"/>
+    <text x="536" y="430" font-size="18" font-weight="bold">COVER PANEL INSTALLATION</text>
+    <text x="536" y="466" font-size="15">1/2 in gypsum panel against stud faces,</text>
+    <text x="536" y="492" font-size="15">trimmed to the door opening.</text>
+    <text x="536" y="528" font-size="15">No fasteners may penetrate the backing blocks.</text>
+    <text x="536" y="576" font-size="14" fill="#666">Do not cover before inspection is accepted.</text>
+  </g>
+  <text x="30" y="686" font-size="13" fill="#666">P0 fixture sheet B · generated for the DIY guide platform P0 gate · synthetic</text>
+</svg>

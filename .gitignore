@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.vite/
+.vite-ifc/
+.venv-ifc/
+__pycache__/
+*.pyc
+test-results/
+playwright-report/
+blob-report/
+.DS_Store
+
+# Generated static data (produced by `npm run data`)
+platform/apps/guide-site/public/data/
+# Generated compiled output inside project fixtures (produced by `npm run -w @diyguide/compiler compile`)
+platform/projects/*/*/compiled/
+platform/projects/*/*/model/id-map.json
+platform/projects/*/*/model/*.ifc
+platform/dist/
+
+# Local planning packets, validation logs, screenshots, and historical release evidence.
+platform/work/3d-platform/

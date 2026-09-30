@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Helvetica, Arial, sans-serif">
+  <rect width="640" height="360" fill="#20242b"/>
+  <text x="24" y="44" font-size="24" font-weight="bold" fill="#f5f2ea">Wall Frame &amp; Cabinet Backing</text>
+  <text x="24" y="76" font-size="16" fill="#c9c4b6">frame first · 4 held steps · preview only</text>
+  <g stroke="#8fb3ff" stroke-width="3" fill="none">
+    <rect x="60" y="150" width="380" height="30"/>
+    <rect x="72" y="180" width="14" height="110"/>
+    <rect x="238" y="180" width="14" height="110"/>
+    <rect x="404" y="180" width="14" height="110"/>
+  </g>
+  <rect x="180" y="220" width="180" height="30" fill="#ffd479" stroke="#b1841b"/>
+  <text x="24" y="330" font-size="14" fill="#8b93a5">concept · contains held steps · not a construction plan</text>
+</svg>

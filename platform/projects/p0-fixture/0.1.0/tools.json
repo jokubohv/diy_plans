@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tool.tape",
+    "name": "Tape measure",
+    "category": "measuring",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.level",
+    "name": "Spirit level",
+    "category": "measuring",
+    "setup": "Check the vial before use",
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.pencil",
+    "name": "Pencil",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.square",
+    "name": "Carpenter's square",
+    "category": "measuring",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.miter-saw",
+    "name": "Miter saw",
+    "category": "cutting",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.driver",
+    "name": "Power driver",
+    "category": "driving",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.drill",
+    "name": "Drill",
+    "category": "drilling",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.utility-knife",
+    "name": "Utility knife",
+    "category": "cutting",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.safety-glasses",
+    "name": "Safety glasses",
+    "category": "safety",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "tool.hand-saw",
+    "name": "Hand saw (doorway cut-out)",
+    "category": "cutting",
+    "setup": null,
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  }
+]

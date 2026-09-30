@@ -1,0 +1,198 @@
+[
+  {
+    "id": "material.lumber.plate",
+    "name": "2x4x8 plate stock",
+    "category": "lumber",
+    "sizeLabel": "2x4x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 2,
+    "spareQuantity": 0,
+    "notes": "Board 1: continuous sole plate at full length 2438.4 mm (no cut). Board 2: top plate at full length 2438.4 mm (no cut). The doorway section is removed from the anchored sole plate, not pre-cut.",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "material.lumber.stud",
+    "name": "2x4x8 stud stock",
+    "category": "lumber",
+    "sizeLabel": "2x4x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 8,
+    "spareQuantity": 0,
+    "notes": "6 boards: one per full-height stud (2362.2 mm + 3 mm kerf = 2365.2 <= 2438.4). 2 boards: one per jack stud (2032 mm) whose offcut also yields one cripple (190.5 mm): 2032 + 190.5 + 2 x 3 mm kerf = 2228.5 <= 2438.4. Kerf convention: one 3 mm kerf per claimed cut.",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "material.lumber.header",
+    "name": "2x6x8 header stock",
+    "category": "lumber",
+    "sizeLabel": "2x6x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "One board yields both header plies: 2 x 1104.9 + 2 x 3 mm kerf = 2215.8 <= 2438.4 mm.",
+    "citationIds": [
+      "citation.sheet-d.joints"
+    ]
+  },
+  {
+    "id": "material.panel.header-spacer",
+    "name": "1/2 in plywood header spacer",
+    "category": "panel",
+    "sizeLabel": "1/2 in",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "1104.9 mm strip cut from 1/2 in plywood offcut (no board yield claimed); fills the 2x4 wall thickness between the header plies.",
+    "citationIds": [
+      "citation.sheet-d.joints"
+    ]
+  },
+  {
+    "id": "material.lumber.brace",
+    "name": "2x4x8 temporary racking brace",
+    "category": "lumber",
+    "sizeLabel": "2x4x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "One board yields the in-plane racking brace (1336.2 mm + 3 mm kerf = 1339.2 <= 2438.4) and leaves a reusable offcut. It resists racking; it does not hold the wall plumb.",
+    "citationIds": [
+      "citation.sheet-d.inspection"
+    ]
+  },
+  {
+    "id": "material.lumber.prop",
+    "name": "2x4x8 temporary plumb prop",
+    "category": "lumber",
+    "sizeLabel": "2x4x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "One board yields the out-of-plane plumb prop (2425.9 mm + 3 mm kerf = 2428.9 <= 2438.4 mm).",
+    "citationIds": [
+      "citation.sheet-d.inspection"
+    ]
+  },
+  {
+    "id": "material.lumber.block",
+    "name": "2x6x8 backing block stock",
+    "category": "lumber",
+    "sizeLabel": "2x6x8",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "One board yields both backing blocks: 368.3 + 336.55 + 2 x 3 mm kerf = 710.85 <= 2438.4 mm.",
+    "citationIds": [
+      "citation.sheet-b.band"
+    ]
+  },
+  {
+    "id": "material.fastener.frame-screw",
+    "name": "Synthetic structural screw 8 x 63 mm (demonstration)",
+    "category": "fastener",
+    "sizeLabel": "8 x 63 mm",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 40,
+    "spareQuantity": 0,
+    "notes": "Two screws at every frame joint: 14 plate joints, 2 header joints and 4 cripple ends (20 joints, 40 screws). Synthetic demonstration value only.",
+    "citationIds": [
+      "citation.sheet-d.joints"
+    ]
+  },
+  {
+    "id": "material.fastener.frame-anchor",
+    "name": "Synthetic mechanical anchor M10 x 100 mm (demonstration)",
+    "category": "fastener",
+    "sizeLabel": "M10 x 100 mm",
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 3,
+    "spareQuantity": 0,
+    "notes": "Anchors on the permanent plate segments only (152.4, 762 and 2320 mm), 609.6 mm on centre where the plate allows; pilot 10 mm x 60 mm (synthetic). No anchor remains in the door opening.",
+    "citationIds": [
+      "citation.sheet-d.anchors"
+    ]
+  },
+  {
+    "id": "material.panel.drywall",
+    "name": "1/2 in gypsum panel 4x8",
+    "category": "panel",
+    "sizeLabel": "1/2 in",
+    "actualSizeMm": null,
+    "unit": "sheet",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Trimmed to the door opening for the demonstration.",
+    "citationIds": [
+      "citation.sheet-b.cover"
+    ]
+  },
+  {
+    "id": "material.panel.temp",
+    "name": "Temporary protection panel",
+    "category": "panel",
+    "sizeLabel": null,
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Reused after removal.",
+    "citationIds": [
+      "citation.sheet-a.remove"
+    ]
+  },
+  {
+    "id": "material.fastener.screw",
+    "name": "Backing screw (specification withheld)",
+    "category": "fastener",
+    "sizeLabel": null,
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 8,
+    "spareQuantity": 0,
+    "notes": "Proposed only; the backing connection is held.",
+    "citationIds": [
+      "citation.sheet-b.connection"
+    ]
+  },
+  {
+    "id": "material.electrical.cable",
+    "name": "Schematic cable 14/2",
+    "category": "electrical",
+    "sizeLabel": null,
+    "actualSizeMm": null,
+    "unit": "m",
+    "quantityProposed": 4,
+    "spareQuantity": 0,
+    "notes": "Non-energized demonstration route.",
+    "citationIds": [
+      "citation.sheet-c.route"
+    ]
+  },
+  {
+    "id": "material.fastener.angle",
+    "name": "Loose angle bracket",
+    "category": "fastener",
+    "sizeLabel": null,
+    "actualSizeMm": null,
+    "unit": "each",
+    "quantityProposed": 3,
+    "spareQuantity": 0,
+    "notes": "Demonstration loose parts, not installed.",
+    "citationIds": [
+      "citation.sheet-a.general"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="700" fill="#fdf9e8"/>
+  <rect x="10" y="10" width="980" height="680" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="30" y="44" font-size="22" font-weight="bold">P0 FIXTURE FIELD NOTE 01 (SYNTHETIC CONFLICT DEMONSTRATION)</text>
+
+  <!-- field-note region: 60,60,880,200 -->
+  <g>
+    <rect x="60" y="60" width="880" height="200" fill="#fff" stroke="#888"/>
+    <text x="80" y="96" font-size="18" font-weight="bold">OPENING MEASURED IN THE FIELD</text>
+    <text x="80" y="136" font-size="17">"measured the rough opening today: 965 mm across, to the finished face"</text>
+    <text x="80" y="172" font-size="16" fill="#b00">CONFLICT: sheet A gives 952.5 mm (37 1/2 in) clear. Value is held.</text>
+    <text x="80" y="212" font-size="15">Recorded by: P0 fixture author (synthetic) · date 2026-09-29 · not a site measurement</text>
+  </g>
+  <text x="30" y="686" font-size="13" fill="#666">P0 fixture field note 01 · synthetic · resolves only through an explicit decision record</text>
+</svg>

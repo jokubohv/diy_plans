@@ -1,0 +1,44 @@
+[
+  {
+    "id": "assembly.existing",
+    "name": "Existing conditions",
+    "parentId": null,
+    "trade": "general",
+    "stage": "existing"
+  },
+  {
+    "id": "assembly.wall-a",
+    "name": "Wall A framing",
+    "parentId": null,
+    "trade": "framing",
+    "stage": "rough",
+    "placement": {
+      "translationMm": [
+        347,
+        82,
+        0
+      ]
+    }
+  },
+  {
+    "id": "assembly.wall-a.cover",
+    "name": "Wall A cover",
+    "parentId": "assembly.wall-a",
+    "trade": "drywall",
+    "stage": "cover"
+  },
+  {
+    "id": "assembly.cabinet",
+    "name": "Cabinet envelope",
+    "parentId": null,
+    "trade": "cabinetry",
+    "stage": "fixture"
+  },
+  {
+    "id": "assembly.demo",
+    "name": "Demonstration schematic",
+    "parentId": null,
+    "trade": "general",
+    "stage": "rough"
+  }
+]

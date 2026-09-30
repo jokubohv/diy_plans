@@ -1,0 +1,316 @@
+[
+  {
+    "id": "view.iso",
+    "name": "Pantry overview (isometric)",
+    "kind": "iso",
+    "camera": {
+      "positionMm": [
+        -2315.4,
+        -4700,
+        3900
+      ],
+      "targetMm": [
+        1734.6,
+        620,
+        1350
+      ],
+      "fov": 47
+    },
+    "description": "Concept overview from the pantry side of W1, W2, the existing context and the fixture envelopes."
+  },
+  {
+    "id": "view.plan",
+    "name": "Plan",
+    "kind": "plan",
+    "camera": {
+      "positionMm": [
+        1884.6,
+        700,
+        5200
+      ],
+      "targetMm": [
+        1884.6,
+        700,
+        0
+      ],
+      "fov": 45,
+      "upMm": [
+        0,
+        1,
+        0
+      ]
+    },
+    "description": "Plan view showing the candidate footprints and the 68-in trial depth."
+  },
+  {
+    "id": "view.elevation-w1",
+    "name": "W1 room-face elevation",
+    "kind": "elevation",
+    "camera": {
+      "positionMm": [
+        1794.6,
+        -5400,
+        1450
+      ],
+      "targetMm": [
+        1794.6,
+        -57,
+        1400
+      ],
+      "fov": 44
+    },
+    "description": "W1 room-face elevation with the 12 candidate stud positions, backing bands and W1-R sheet boundaries."
+  },
+  {
+    "id": "view.elevation-w1-pantry",
+    "name": "W1 pantry-face drywall",
+    "kind": "elevation",
+    "camera": {
+      "positionMm": [
+        1794.6,
+        1500,
+        1450
+      ],
+      "targetMm": [
+        1794.6,
+        -6.35,
+        1400
+      ],
+      "fov": 100
+    },
+    "description": "W1 pantry-face elevation from inside the pantry, showing all four W1-P sheet boundaries without treating schematic height as a cut."
+  },
+  {
+    "id": "view.elevation-w2",
+    "name": "W2 room-face elevation",
+    "kind": "elevation",
+    "camera": {
+      "positionMm": [
+        -4315.4,
+        660,
+        1500
+      ],
+      "targetMm": [
+        -204.7875,
+        660,
+        1400
+      ],
+      "fov": 45
+    },
+    "description": "W2 room-face elevation showing both 5/8-in W2-R sheet boundaries."
+  },
+  {
+    "id": "view.elevation-w2-pantry",
+    "name": "W2 pantry-face drywall",
+    "kind": "elevation",
+    "camera": {
+      "positionMm": [
+        4184.6,
+        660,
+        1500
+      ],
+      "targetMm": [
+        -6.35,
+        660,
+        1400
+      ],
+      "fov": 45
+    },
+    "description": "W2 pantry-face elevation showing both 1/2-in W2-P sheet boundaries."
+  },
+  {
+    "id": "view.closeup-corner",
+    "name": "W1/W2 corner close-up",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        -1015.4,
+        2100,
+        1800
+      ],
+      "targetMm": [
+        -105.4,
+        900,
+        500
+      ],
+      "fov": 50
+    },
+    "description": "Corner close-up for the S11/S12/S01 candidate footprints and the held receiver."
+  },
+  {
+    "id": "view.closeup-backing",
+    "name": "Backing bands close-up",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1371.6,
+        -2200,
+        1800
+      ],
+      "targetMm": [
+        1371.6,
+        -30,
+        1500
+      ],
+      "fov": 50
+    },
+    "description": "Backing bands close-up over the candidate stud bays."
+  },
+  {
+    "id": "view.closeup-slab",
+    "name": "Base and slab close-up",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        3184.6,
+        -900,
+        700
+      ],
+      "targetMm": [
+        3184.6,
+        800,
+        0
+      ],
+      "fov": 50
+    },
+    "description": "Base/slab close-up: retained tile and the unresolved layer stack."
+  },
+  {
+    "id": "view.closeup-connector",
+    "name": "Connector card close-up",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1284.6,
+        -1800,
+        1400
+      ],
+      "targetMm": [
+        1284.6,
+        -57,
+        800
+      ],
+      "fov": 50
+    },
+    "description": "Representative cavity-side joint zone for the candidate angle review."
+  },
+  {
+    "id": "view.top-plates",
+    "name": "Top plates — framing view",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1684.6,
+        -3000,
+        3350
+      ],
+      "targetMm": [
+        484.6,
+        300,
+        2760
+      ],
+      "fov": 54
+    },
+    "description": "Upward diagonal framing view of both single top plates. Elevation is the labelled 111-in schematic reference only; restraint and member heights remain held."
+  },
+  {
+    "id": "view.installer-eye",
+    "name": "Installer eye line",
+    "kind": "installer_eye",
+    "camera": {
+      "positionMm": [
+        5584.6,
+        1100,
+        2200
+      ],
+      "targetMm": [
+        1934.6,
+        -57,
+        1350
+      ],
+      "fov": 50
+    },
+    "description": "Installer eye line from inside the pantry toward W1 and the W1/W2 corner."
+  },
+  {
+    "id": "view.room-inside",
+    "name": "Inside pantry — eye level",
+    "kind": "installer_eye",
+    "camera": {
+      "positionMm": [
+        2084.6,
+        1250,
+        1650
+      ],
+      "targetMm": [
+        234.6,
+        150,
+        1350
+      ],
+      "fov": 72
+    },
+    "description": "Upright diagonal eye-level view from inside the pantry toward the W1/W2 corner. Use slow orbit and wheel movement to turn toward W2 or move back outside."
+  },
+  {
+    "id": "view.room-outside",
+    "name": "Outside room — eye level",
+    "kind": "installer_eye",
+    "camera": {
+      "positionMm": [
+        2084.6,
+        -1800,
+        1650
+      ],
+      "targetMm": [
+        284.6,
+        150,
+        1350
+      ],
+      "fov": 68
+    },
+    "description": "Upright diagonal eye-level view from the room side toward the W1/W2 corner. Use slow orbit and wheel movement to enter or turn around the corner."
+  },
+  {
+    "id": "view.ex1-opening",
+    "name": "EX1 door-like candidate (held)",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        469.9,
+        -1800,
+        1500
+      ],
+      "targetMm": [
+        469.9,
+        1657.35,
+        1016
+      ],
+      "upMm": [
+        0,
+        0,
+        1
+      ],
+      "fov": 48
+    },
+    "description": "Front close-up of the presentation-only EX1 door-like outline: 37-in minimum finished-clear width, the 30 1/8-in original-plan obstruction limit and the minimum 6 7/8-in refrigerator-side extension. The 80-in displayed height is schematic only; actual height, demolition boundary and rough opening remain unknown."
+  },
+  {
+    "id": "view.practice-bench",
+    "name": "Loose-stock practice bench",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        5775,
+        5000,
+        1050
+      ],
+      "targetMm": [
+        5505,
+        4200,
+        305
+      ],
+      "fov": 46
+    },
+    "description": "Separate loose-stock practice area, away from the house walls."
+  }
+]

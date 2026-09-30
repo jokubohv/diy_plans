@@ -1,0 +1,402 @@
+{
+  "sourceRoot": "private://owner-supplied-r35",
+  "generatedBy": "work/r35/author-r35.mjs",
+  "policy": "Newest filename alone is not a precedence rule: R35 carries forward older geometry/drawing schedules but supersedes the nailer assembly method. Field-level mapping below records both.",
+  "entries": [
+    {
+      "id": "cf.supersedes-geometry.0",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/0",
+      "sourceValue": "R27",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.supersedes-geometry.1",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/1",
+      "sourceValue": "R28",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.supersedes-geometry.2",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/2",
+      "sourceValue": "R29-pre-truss",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.supersedes-geometry.3",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/3",
+      "sourceValue": "R30-backing-not-yet-updated",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.supersedes-geometry.4",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/4",
+      "sourceValue": "R31-no-trim-map",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.supersedes-geometry.5",
+      "field": "supersedes_geometry",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_geometry/5",
+      "sourceValue": "R32-pre-cabinet-order",
+      "normalizedValue": "superseded",
+      "status": "superseded",
+      "supersededBy": "/revision (R35-screw-metal-connector-manual) and /changes_R35",
+      "reason": "R35 explicitly carries forward older geometry drawings while superseding the earlier assembly/geometry revision named here."
+    },
+    {
+      "id": "cf.changes.retained",
+      "field": "changes_R35.retained",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/changes_R35/retained",
+      "sourceValue": "149-in inside W1, 68-in trial outside depth, 111-in reported ceiling, W2 8-3/8-in finished, 25 flat 2x6 blocks, R34 four-face drywall and cabinet layout",
+      "normalizedValue": "carried into drafted/measurements/parts as conditional content",
+      "status": "carried_conditional",
+      "reason": "Geometry, block map and drywall/cabinet layout are retained; no cut, fastener or load release is implied."
+    },
+    {
+      "id": "cf.retained.0",
+      "field": "149-in inside W1",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/layout/W1_finished_inside_width",
+      "sourceValue": "149-in inside W1",
+      "normalizedValue": "measurement.w1.finished-inside",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.retained.1",
+      "field": "68-in trial outside depth",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/layout/W1_outside_face_depth_trial",
+      "sourceValue": "68-in trial outside depth",
+      "normalizedValue": "measurement.w1.outside-depth-trial",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.retained.2",
+      "field": "111-in reported ceiling",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/site/ceiling_finished_height_user_report",
+      "sourceValue": "111-in reported ceiling",
+      "normalizedValue": "measurement.ceiling.reported",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.retained.3",
+      "field": "W2 8-3/8-in finished",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/layout/W2_finished_thickness",
+      "sourceValue": "W2 8-3/8-in finished",
+      "normalizedValue": "measurement.w2.finished-thickness",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.retained.4",
+      "field": "25 flat 2x6 blocks",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/backing/number_of_blocks",
+      "sourceValue": "25 flat 2x6 blocks",
+      "normalizedValue": "part.backing.top-b01 (representative) + cabinet-backing CSV rows",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.retained.5",
+      "field": "R34 four-face drywall and cabinet layout",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/drywall/panel_layout",
+      "sourceValue": "R34 four-face drywall and cabinet layout",
+      "normalizedValue": "part.drywall.w1-p-01 (representative) + drywall CSV rows",
+      "status": "carried_conditional",
+      "reason": "Retained by R35 as conditional source content; not a construction release."
+    },
+    {
+      "id": "cf.superseded-method.0",
+      "field": "21-degree framing nailer",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "21-degree framing nailer",
+      "normalizedValue": "tool/method not required; superseded by in-place screws and metal connectors",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.1",
+      "field": "framing nail strips",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "framing nail strips",
+      "normalizedValue": "not required; removed from the later cart",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.2",
+      "field": "flat-built wall assembly",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "flat-built wall assembly",
+      "normalizedValue": "superseded by in-place plate-then-stud fitting",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.3",
+      "field": "full-height tilt-up frame",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "full-height tilt-up frame",
+      "normalizedValue": "not planned; logistics state no full-height tilt-up",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.4",
+      "field": "R27 nail count",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 nail count",
+      "normalizedValue": "superseded; no nail count is carried into any quantity",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.5",
+      "field": "R27 screw grid",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 screw grid",
+      "normalizedValue": "superseded; no screw grid is carried into any quantity",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.6",
+      "field": "R27 2x4 W2 studs",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 2x4 W2 studs",
+      "normalizedValue": "superseded by the W2 2x8 candidate section",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.7",
+      "field": "R27 2x4 backing",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 2x4 backing",
+      "normalizedValue": "superseded by the owner-selected flat 2x6 blocking (D4 still depicts 2x4 and is not this modification)",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.8",
+      "field": "R27 nine-sheet drywall map",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 nine-sheet drywall map",
+      "normalizedValue": "superseded by the R34 four-face candidate nest",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.superseded-method.9",
+      "field": "R27 slab anchor/cart line",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/supersedes_documents and /changes_R35/method",
+      "sourceValue": "R27 slab anchor/cart line",
+      "normalizedValue": "not current for this layout; base anchorage held",
+      "status": "superseded",
+      "supersededBy": "/changes_R35/request (screws and metal plates instead of a 21-degree framing nailer) and /changes_R35/method (in-place plates then individually fitted studs)",
+      "reason": "R35 change record supersedes the flat-assembly/nailer method; no earlier review is represented as approval of the screw connections."
+    },
+    {
+      "id": "cf.retained-geometry.0",
+      "field": "R33 W1 stud centres S01-S12",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/backing/candidate_W1_stud_centers_from_left_plate_end_in",
+      "sourceValue": "R33 W1 stud centres S01-S12",
+      "normalizedValue": "candidate centres in measurement.w1.stud-sNN.centre and the W1 stud parts",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.1",
+      "field": "R31 flat 2x6 backing map (25 blocks, bays, bands)",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/backing + cabinet-backing-R31-CONCEPT.csv",
+      "sourceValue": "R31 flat 2x6 backing map (25 blocks, bays, bands)",
+      "normalizedValue": "25 backing parts, one per CSV row",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.2",
+      "field": "R31 68-in truss-line trial",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/roof_plan_alignment",
+      "sourceValue": "R31 68-in truss-line trial",
+      "normalizedValue": "part.reference.truss-band and measurement.truss.center-trial (trial only)",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.3",
+      "field": "R32 baseboard removal map",
+      "sourceFile": "output/images/pantry-R32-baseboard-removal-map.svg (TR-01..TR-03 labels)",
+      "sourceLocator": "output/images/pantry-R32-baseboard-removal-map.svg (TR-01..TR-03 labels)",
+      "sourceValue": "R32 baseboard removal map",
+      "normalizedValue": "trim parts and bounded removal operation (held)",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.4",
+      "field": "R33 cabinet elevation chain",
+      "sourceFile": "output/images/pantry-R33-cabinet-elevation.svg + /fixtures",
+      "sourceLocator": "output/images/pantry-R33-cabinet-elevation.svg + /fixtures",
+      "sourceValue": "R33 cabinet elevation chain",
+      "normalizedValue": "fixture envelopes and clearance volumes (schematic subdivisions)",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.5",
+      "field": "R34 four-face drywall map",
+      "sourceFile": "output/data/project-R35-conditional-manual.json",
+      "sourceLocator": "/drywall/panel_layout/faces + drywall-panel-schedule-R34-CONCEPT.csv",
+      "sourceValue": "R34 four-face drywall map",
+      "normalizedValue": "12 panel parts with faces/endpoints; height field-fit",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.retained-geometry.6",
+      "field": "R34 wood junction and gypsum corners",
+      "sourceFile": "output/images/pantry-R34-wood-junction.svg and pantry-R34-wall-and-gypsum-corners.svg",
+      "sourceLocator": "output/images/pantry-R34-wood-junction.svg and pantry-R34-wall-and-gypsum-corners.svg",
+      "sourceValue": "R34 wood junction and gypsum corners",
+      "normalizedValue": "corner footprints/board laps recorded; connection held",
+      "status": "retained_conditional",
+      "reason": "Retained by R35 for geometry/drawing continuity only; connections and cuts remain conditional or held."
+    },
+    {
+      "id": "cf.cart.publication-statement",
+      "field": "page-29 cart statement (publication time)",
+      "sourceFile": "output/pdf/pantry-complete-framing-drywall-and-cabinet-plan-R35.pdf",
+      "sourceLocator": "printed page 29, cart-status paragraph",
+      "sourceValue": "The R34 cart still includes a framing nailer and nail strips. Those are no longer required by R35. This revision does not mutate the live cart.",
+      "normalizedValue": "historical statement at R35 publication; nailer/strips already obsolete for the method",
+      "status": "historical",
+      "supersededBy": "R35-change-record.md cart section (later observation)",
+      "reason": "Publication-time note; the cart was updated after the revision was published."
+    },
+    {
+      "id": "cf.cart.later-state",
+      "field": "lowes-cart-R35.json pickup-only cart (after the revision was published)",
+      "sourceFile": "output/data/lowes-cart-R35.json",
+      "sourceLocator": "$.observed_final_units / $.merchandise_subtotal_before_tax / $.checkout_completed / $.project_lines F-ANGLE-PRACTICE, T-DRIVE, T-SAW",
+      "sourceValue": "observed_final_units=49; merchandise_subtotal_before_tax=657.55; checkout_completed=false; project lines: Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only; Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held; DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit; Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only; Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held; DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit",
+      "normalizedValue": "later observation reconciled with the publication statement; framing nailer absent and nail strips removed; A34Z samples and the nutsetter added for loose practice; installed connector purchase held; procurement non-authoritative for engineering properties",
+      "status": "current",
+      "supersededBy": null,
+      "reason": "Consecutive statements, not a contradiction: no stale nailer requirement survives anywhere; installed connector quantity stays held.",
+      "verifiedFacts": {
+        "checkoutCompleted": false,
+        "observedFinalUnits": 49,
+        "merchandiseSubtotalBeforeTax": 657.55,
+        "nailerAbsent": true,
+        "practiceLines": [
+          "Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only",
+          "Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held",
+          "DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit",
+          "Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only",
+          "Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held",
+          "DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit"
+        ]
+      }
+    },
+    {
+      "id": "cf.cart.wood-reserve",
+      "field": "lowes-cart-R35-wood-reserve.json wood reserve cart (later companion observation)",
+      "sourceFile": "output/data/lowes-cart-R35-wood-reserve.json",
+      "sourceLocator": "$.observed_final_units / $.merchandise_subtotal_before_tax / $.checkout_completed / $.wood_reserve_allocation",
+      "sourceValue": "observed_final_units=51; merchandise_subtotal_before_tax=623.49; checkout_completed=false; Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only; Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held; DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit; Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only; Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held; DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit",
+      "normalizedValue": "later companion cart state (wood reserve); consecutive observations only, procurement non-authoritative for engineering properties",
+      "status": "current",
+      "supersededBy": null,
+      "reason": "Both cart files reconcile the timeline; neither releases quantities, connections or load paths.",
+      "verifiedFacts": {
+        "checkoutCompleted": false,
+        "observedFinalUnits": 51,
+        "merchandiseSubtotalBeforeTax": 623.49,
+        "practiceLines": [
+          "Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only",
+          "Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held",
+          "DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit",
+          "Simpson A34Z 18-gauge G185 framing angle; loose-practice samples only",
+          "Simpson SD Connector #9 x 1-1/2-in, 1/4-in hex drive, mechanically galvanized, 100-count box; loose practice; final installed count held",
+          "DEWALT 1/4-in x 1-7/8-in nutsetter impact driver bit"
+        ]
+      }
+    },
+    {
+      "id": "cf.cart.wood-reserve-allocation",
+      "field": "wood-reserve allocation",
+      "sourceFile": "output/data/lowes-cart-R35-wood-reserve.json",
+      "sourceLocator": "$.wood_reserve_allocation",
+      "sourceValue": "R35 wood/material lines with reserve boards",
+      "normalizedValue": "not read as an engineering input; cart state is procurement-only",
+      "status": "reference",
+      "supersededBy": null,
+      "reason": "Cart files reconcile the timeline; they never release quantities, connections or load paths."
+    }
+  ],
+  "summary": {
+    "superseded": 16,
+    "carried_conditional": 7,
+    "retained_conditional": 7,
+    "historical": 1,
+    "current": 2,
+    "reference": 1
+  }
+}

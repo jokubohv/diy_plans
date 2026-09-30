@@ -1,0 +1,65 @@
+[
+  {
+    "id": "assembly.existing",
+    "name": "Existing conditions (reference)",
+    "parentId": null,
+    "trade": "general",
+    "stage": "existing"
+  },
+  {
+    "id": "assembly.w1",
+    "name": "W1 pantry wall framing",
+    "parentId": null,
+    "trade": "framing",
+    "stage": "rough"
+  },
+  {
+    "id": "assembly.backing",
+    "name": "W1 cabinet backing blocks",
+    "parentId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough"
+  },
+  {
+    "id": "assembly.w2",
+    "name": "W2 return wall framing",
+    "parentId": null,
+    "trade": "framing",
+    "stage": "rough"
+  },
+  {
+    "id": "assembly.drywall",
+    "name": "Drywall faces",
+    "parentId": null,
+    "trade": "drywall",
+    "stage": "cover"
+  },
+  {
+    "id": "assembly.fixtures",
+    "name": "Cabinets, shelves and refrigerator envelopes",
+    "parentId": null,
+    "trade": "cabinetry",
+    "stage": "fixture"
+  },
+  {
+    "id": "assembly.trim",
+    "name": "Selective trim zones (reference)",
+    "parentId": null,
+    "trade": "finishes",
+    "stage": "existing"
+  },
+  {
+    "id": "assembly.practice",
+    "name": "Loose-stock practice (not house framing)",
+    "parentId": null,
+    "trade": "general",
+    "stage": "demo",
+    "placement": {
+      "translationMm": [
+        5200,
+        4200,
+        0
+      ]
+    }
+  }
+]

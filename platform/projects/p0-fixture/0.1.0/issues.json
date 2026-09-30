@@ -1,0 +1,62 @@
+[
+  {
+    "id": "issue.p0-01",
+    "severity": "major",
+    "status": "open",
+    "title": "Opening width conflict between sheet A and field note 01",
+    "detail": "Sheet A dimension chain gives 952.5 mm (37 1/2 in) clear opening; field note 01 reports 965 mm to the finished face. The measurement is conflicted and held until an authorized content revision resolves it.",
+    "affectedIds": [
+      "measurement.wall-a.opening.width",
+      "part.wall-a.opening"
+    ],
+    "sourceRefIds": [
+      "citation.sheet-a.opening",
+      "citation.field-note.opening"
+    ]
+  },
+  {
+    "id": "issue.p0-02",
+    "severity": "major",
+    "status": "open",
+    "title": "Backing fastener specification not released",
+    "detail": "The backing blocks have no released fastener type, length, spacing or edge distance; the fastening step stays held and only proposed connection locations may be shown.",
+    "affectedIds": [
+      "connection.backing-a.stud-2",
+      "connection.backing-b.king-left",
+      "op.fasten-backing"
+    ],
+    "sourceRefIds": [
+      "citation.sheet-b.connection"
+    ]
+  },
+  {
+    "id": "issue.p0-03",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Loose demonstration connectors are not installed parts",
+    "detail": "The three loose angle brackets lie on the existing surface and are included in takeoff only as demonstration loose parts; they are never installed by this guide.",
+    "affectedIds": [
+      "part.loose.angle-1",
+      "part.loose.angle-2",
+      "part.loose.angle-3"
+    ],
+    "sourceRefIds": [],
+    "resolution": "Accepted as demonstration-only content."
+  },
+  {
+    "id": "issue.p0-04",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Frame fastening and anchoring values are synthetic demonstration data",
+    "detail": "Header plies, header spacer, frame screws, anchors and the temporary bracing are synthetic demonstration values with no structural or code meaning.",
+    "affectedIds": [
+      "connection.frame.plate-to-stud",
+      "connection.frame.plate-to-slab"
+    ],
+    "sourceRefIds": [
+      "citation.sheet-d.joints",
+      "citation.sheet-d.anchors"
+    ],
+    "resolution": "Accepted for the synthetic demonstration; not a construction authorization."
+  }
+]

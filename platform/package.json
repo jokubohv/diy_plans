@@ -1,0 +1,43 @@
+{
+  "name": "diy-guide-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Reusable DIY BIM guide platform (P0). Implementation root per docs/plan-p3.md section 12.",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "data": "npm run data --workspace @diyguide/compiler",
+    "dev": "npm run data && npm run dev --workspace @diyguide/guide-site",
+    "build": "npm run data && npm run build --workspace @diyguide/guide-site",
+    "preview": "npm run preview --workspace @diyguide/guide-site",
+    "e2e": "playwright test",
+    "gate:contracts": "vitest run packages/schema packages/compiler/tests/contracts",
+    "gate:operations": "vitest run packages/compiler/tests/operations",
+    "gate:viewer": "vitest run packages/viewer-core packages/viewer-three",
+    "gate:bim": "bash scripts/ifc.sh",
+    "gate:docs": "node scripts/gate-docs.mjs",
+    "gate:thin-e2e": "playwright test tests/e2e/thin-journey.spec.ts",
+    "gate:ux": "playwright test tests/e2e/ux.spec.ts",
+    "gate:p0": "node scripts/gate-p0.mjs",
+    "gate:r35": "node scripts/gate-r35.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.10.0",
+    "@types/pngjs": "^6.0.5",
+    "axe-core": "^4.13.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.2"
+  }
+}

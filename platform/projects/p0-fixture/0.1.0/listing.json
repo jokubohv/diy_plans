@@ -1,0 +1,16 @@
+{
+  "slug": "p0-fixture",
+  "title": "Wall Frame & Cabinet Backing",
+  "summary": "Verify the layout, frame the wall (continuous sole plate, flush end studs, common studs on the 16 in module, king and jack studs, doubled 2x6 header with spacer and cripples), raise it with in-plane racking bracing and an out-of-plane plumb prop, anchor the plate, cut the doorway open and inspect — then fit the cabinet backing blocks and finish the services. Demonstration data; four steps are held and shown as previews only.",
+  "projectType": "fixture_demo",
+  "scope": "concept",
+  "revision": "0.1.0",
+  "updated": "2026-09-29",
+  "thumbnailAssetPath": "assets/thumbnails/p0-fixture.svg",
+  "tags": [
+    "demo",
+    "framing",
+    "door opening",
+    "held steps"
+  ]
+}

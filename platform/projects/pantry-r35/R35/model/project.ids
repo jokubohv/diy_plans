@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Minimal IDS 1.0 requirements for the Pantry R35 IFC.
+
+  One specification per expected product class, requiring a GlobalId and the
+  Pset_DiyGuide property set with a partId. R35 is a concept: this file proves the
+  generated IFC contains exactly the compiled guidance parts with their guide
+  properties; geometry and counts are checked by tools/ifc/check_ifc.py.
+-->
+<ids xmlns="http://standards.buildingsmart.org/IDS"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>Pantry R35 product requirements</title>
+    <version>R35</version>
+    <description>Expects the compiled R35 product classes with a GlobalId and Pset_DiyGuide.partId.</description>
+    <author>pantry-r35-conversion@example.invalid</author>
+    <date>2026-09-29</date>
+    <purpose>Prove the generated IFC contains exactly the compiled guidance parts with their guide properties.</purpose>
+    <milestone>R35 concept - conditional manual, no construction release</milestone>
+  </info>
+  <specifications>
+    <specification name="Expected IfcBuildingElementProxy products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcBuildingElementProxy</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcColumn products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcColumn</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcCovering products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcCovering</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcDiscreteAccessory products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcDiscreteAccessory</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcDoor products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcDoor</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcFurniture products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcFurniture</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcMember products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcMember</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcPlate products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcPlate</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcSlab products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcSlab</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcVirtualElement products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcVirtualElement</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Expected IfcWall products" ifcVersion="IFC4X3_ADD2">
+      <applicability minOccurs="1" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IfcWall</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <attribute cardinality="required">
+          <name><simpleValue>GlobalId</simpleValue></name>
+        </attribute>
+        <property cardinality="required">
+          <propertySet><simpleValue>Pset_DiyGuide</simpleValue></propertySet>
+          <baseName><simpleValue>partId</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>

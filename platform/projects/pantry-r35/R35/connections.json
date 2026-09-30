@@ -1,0 +1,168 @@
+{
+  "connections": [
+    {
+      "id": "connection.w1.stud-to-plate",
+      "fromPartId": "part.w1.stud-s01",
+      "toPartId": "part.w1.bottom-plate",
+      "method": "bracket",
+      "fastenerSpecId": "fastener.sd9112",
+      "pattern": {
+        "type": "field",
+        "count": 8,
+        "spacingMm": null,
+        "startOffsetMm": null,
+        "endOffsetMm": null,
+        "edgeDistanceMm": null
+      },
+      "pilotHole": null,
+      "toolSetup": "Owned Ryobi drill/driver with a compatible 1/4-in hex nut setter; no hammer-drill mode.",
+      "declaredReleaseStatus": "held",
+      "holdReason": "Candidate A34/A34Z cavity-side angle (C-SP1). Project load direction, rotation restraint, orientation, installed count and the complete loaded-wall capacity are held; the published screw table does not establish the project joint.",
+      "citationIds": [
+        "citation.card.p10-connector.candidate",
+        "citation.card.p10-connector.esr-limits",
+        "citation.esr.table",
+        "citation.json.connections.R35.0"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.w2.stud-to-plate",
+      "fromPartId": "part.w2.stud-s01",
+      "toPartId": "part.w2.bottom-plate",
+      "method": "bracket",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "C-SP2: same candidate family, but a separate 2x8 placement/access review is required. No W1 quantity or edge location may be copied; nothing is released.",
+      "citationIds": [
+        "citation.json.connections.R35.1",
+        "citation.card.p12-w2-frame.steps"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.backing.angle",
+      "fromPartId": "part.backing.top-b01",
+      "toPartId": "part.w1.stud-s01",
+      "method": "bracket",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "C-BACK: rear cavity-side angle concept for the 25 flat 2x6 blocks. Opposing angles on the 1.5-in studs conflict with the ESR-3096 minimum 3-in member thickness (no automatic vertical-stagger exception); the exact backing detail and loaded row are held.",
+      "citationIds": [
+        "citation.json.connections.R35.2",
+        "citation.card.p19-backing-connection.conflict",
+        "citation.card.p19-backing-connection.quantity",
+        "citation.card.p19-backing-connection.space"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.corner.tie",
+      "fromPartId": "part.w2.stud-s01",
+      "toPartId": "part.w1.stud-s12",
+      "method": "other",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "C-CORNER: the W1/W2 junction and the existing end/column ties have only 1.5-in candidate wood contact and need their own receiver/load path. A small stud angle is not the automatic solution.",
+      "citationIds": [
+        "citation.json.connections.R35.3",
+        "citation.card.p12-w2-frame.steps",
+        "citation.svg.r34-wood-junction.corner-contact-1-5"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.top.restraint",
+      "fromPartId": "part.w1.top-plate",
+      "toPartId": "part.reference.truss-band",
+      "method": "other",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "C-TOP: nonbearing roof-truss restraint. The actual chord, movement detail and accepted non-rigid restraint are unresolved; ordinary rigid stud angles are not truss clips and no attachment is released.",
+      "citationIds": [
+        "citation.json.connections.R35.4",
+        "citation.card.p16-plates.truss",
+        "citation.card.p16-plates.steps"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.base.anchor",
+      "fromPartId": "part.w1.bottom-plate",
+      "toPartId": "part.existing.slab",
+      "method": "mechanical_anchor",
+      "fastenerSpecId": null,
+      "pattern": {
+        "type": "line",
+        "count": null,
+        "spacingMm": 304.8,
+        "startOffsetMm": null,
+        "endOffsetMm": null,
+        "edgeDistanceMm": null
+      },
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "C-BASE: original-house D5/18 is reference-only and shows Hilti X-CF nails or equal at 12 in o.c., staggered from a 2x4 PT sill plate to concrete. It gives no first offset, exact product/length, diameter/embedment, edge distance, tile clearance, W1/W2 retrofit coordinates, W2 2x8 applicability or field service clearance. The project anchorage therefore remains held; SD Connector screws are not concrete anchors.",
+      "citationIds": [
+        "citation.json.connections.R35.5",
+        "citation.card.p15-slab.limits",
+        "citation.card.p16-plates.steps",
+        "citation.permit.p13.d5-detail-18-base-reference"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.practice.angle-scrap",
+      "fromPartId": "part.practice.angle",
+      "toPartId": "part.practice.plate-a",
+      "method": "bracket",
+      "fastenerSpecId": "fastener.sd9112",
+      "pattern": {
+        "type": "field",
+        "count": 8,
+        "spacingMm": null,
+        "startOffsetMm": null,
+        "endOffsetMm": null,
+        "edgeDistanceMm": null
+      },
+      "pilotHole": null,
+      "toolSetup": "Owned drill/driver with the matched 1/4-in hex nut setter; low speed, heads seated without crushing.",
+      "declaredReleaseStatus": "conditional",
+      "holdReason": "Loose-scrap practice only. The candidate angle and its documented per-angle screw pattern may be tried on separate offcuts; this is not a house connection and it releases nothing on W1/W2.",
+      "citationIds": [
+        "citation.card.p13-practice.yield",
+        "citation.card.p14-sd9112.spec",
+        "citation.esr.table",
+        "citation.json.connections.R35"
+      ],
+      "proposedPointsMm": null
+    }
+  ],
+  "fastenerSpecs": [
+    {
+      "id": "fastener.sd9112",
+      "name": "SD9112 #9 x 1-1/2 in SD Connector screw (candidate)",
+      "description": "Candidate connector screw for the A34/A34Z review and the loose-scrap practice. 4 screws into each connected member = 8 per accepted angle. Project quantity, angle count, orientation and capacity are held; SDWS structural screws, mending plates and nail-only ties are different products and are not substitutes.",
+      "lengthMm": 38.1,
+      "citationIds": [
+        "citation.card.p10-connector.candidate",
+        "citation.card.p14-sd9112.spec",
+        "citation.esr.table",
+        "citation.csv.materials.f-sd.planning_net"
+      ]
+    }
+  ]
+}

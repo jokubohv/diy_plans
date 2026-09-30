@@ -1,0 +1,17 @@
+{
+  "slug": "pantry-r35",
+  "title": "Pantry R35 — Wall Framing, Backing and Cabinet Plan (conditional concept)",
+  "summary": "Real-source conversion of the R35 pantry manual: survey and loose-scrap practice are the only ready scopes. W1 2x4 and W2 2x8 walls are built in place with screw-fastened metal connectors, 25 flat 2x6 backing blocks and a four-face drywall map — all house cuts, drilling, truss attachment, the EX1 opening, drywall close-up, fixture loading and baseboard work remain held by the source releases. Candidate A34/A34Z data only; no installed angle count, orientation or capacity.",
+  "projectType": "pantry",
+  "scope": "concept",
+  "revision": "R35",
+  "updated": "2026-09-29",
+  "thumbnailAssetPath": "assets/thumbnails/pantry-r35.svg",
+  "tags": [
+    "pantry",
+    "in-place framing",
+    "concept",
+    "held steps",
+    "metal connectors"
+  ]
+}

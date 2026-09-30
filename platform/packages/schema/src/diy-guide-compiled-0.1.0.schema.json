@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diyguide.local/schema/0.1.0/compiled.json",
+  "title": "Compiled DIY Guide v0.1.0 (browser-ready contract)",
+  "description": "Single deterministic browser-ready document produced by the compiler from the authored bundle. Contains resolved world transforms, effective release statuses, step state snapshots and derived overlay objects. Volatile values (compiler identity, timestamps) are excluded from contentHash.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "schemaVersion",
+    "meta",
+    "project",
+    "datums",
+    "sources",
+    "citations",
+    "measurements",
+    "assemblies",
+    "parts",
+    "materials",
+    "tools",
+    "systems",
+    "connections",
+    "fastenerSpecs",
+    "operations",
+    "steps",
+    "views",
+    "issues",
+    "overlays",
+    "stepStates",
+    "stats",
+    "idMap"
+  ],
+  "properties": {
+    "schema": { "const": "diy-guide-compiled" },
+    "schemaVersion": { "const": "0.1.0" },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contentVersion",
+        "packageRevision",
+        "sourceSetHash",
+        "contentHash",
+        "minimumBuilderVersion",
+        "capabilities",
+        "compiler",
+        "acceptanceStatus"
+      ],
+      "properties": {
+        "contentVersion": { "type": "string" },
+        "packageRevision": { "type": "integer", "minimum": 1 },
+        "sourceSetHash": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/sha256" },
+        "contentHash": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/sha256" },
+        "minimumBuilderVersion": { "type": "string" },
+        "capabilities": {
+          "type": "array",
+          "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/capability" }
+        },
+        "compiler": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version"],
+          "properties": {
+            "name": { "type": "string" },
+            "version": { "type": "string" }
+          }
+        },
+        "acceptanceStatus": { "enum": ["accepted", "rejected", "pending"] }
+      }
+    },
+    "project": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/project" },
+    "datums": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/datum" }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/source" }
+    },
+    "citations": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/citation" }
+    },
+    "measurements": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/measurement" }
+    },
+    "assemblies": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/assembly" }
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/part" },
+          { "required": ["worldTransform", "boundsMm"] }
+        ]
+      }
+    },
+    "materials": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/material" }
+    },
+    "tools": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/tool" }
+    },
+    "systems": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/system" }
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/connection" },
+          { "required": ["effectiveReleaseStatus"] }
+        ]
+      }
+    },
+    "fastenerSpecs": {
+      "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/connectionsFile/properties/fastenerSpecs"
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/operation" },
+          { "required": ["effectiveReleaseStatus"] }
+        ]
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/step" },
+          { "required": ["effectiveReleaseStatus"] }
+        ]
+      }
+    },
+    "views": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/view" }
+    },
+    "issues": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/issue" }
+    },
+    "overlays": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/overlayObject" }
+    },
+    "stepStates": {
+      "type": "array",
+      "items": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/stepState" }
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "partCount",
+        "selectablePartCount",
+        "takeoffPartCount",
+        "operationCount",
+        "stepCount",
+        "readyOperationCount",
+        "conditionalOperationCount",
+        "heldOperationCount",
+        "openIssueCount",
+        "overlayCount",
+        "sourceCount"
+      ],
+      "properties": {
+        "partCount": { "type": "integer", "minimum": 0 },
+        "selectablePartCount": { "type": "integer", "minimum": 0 },
+        "takeoffPartCount": { "type": "integer", "minimum": 0 },
+        "operationCount": { "type": "integer", "minimum": 0 },
+        "stepCount": { "type": "integer", "minimum": 0 },
+        "readyOperationCount": { "type": "integer", "minimum": 0 },
+        "conditionalOperationCount": { "type": "integer", "minimum": 0 },
+        "heldOperationCount": { "type": "integer", "minimum": 0 },
+        "openIssueCount": { "type": "integer", "minimum": 0 },
+        "overlayCount": { "type": "integer", "minimum": 0 },
+        "sourceCount": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "idMap": { "$ref": "https://diyguide.local/schema/0.1.0/bundle.json#/$defs/idMap" }
+  }
+}

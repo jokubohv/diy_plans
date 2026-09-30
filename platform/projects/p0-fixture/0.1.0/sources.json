@@ -1,0 +1,258 @@
+{
+  "sources": [
+    {
+      "id": "source.sheet-a",
+      "kind": "fixture_sheet",
+      "title": "P0 Fixture Sheet A - wall layout (synthetic)",
+      "authority": "P0 fixture author (agent)",
+      "date": "2026-09-29",
+      "revision": "P0",
+      "privacy": "public",
+      "assetPath": "assets/source-pages/fixture-sheet-a.svg",
+      "relationship": "current",
+      "locatorNote": "Synthetic sheet; not a construction document."
+    },
+    {
+      "id": "source.sheet-b",
+      "kind": "fixture_sheet",
+      "title": "P0 Fixture Sheet B — backing block detail (synthetic)",
+      "authority": "P0 fixture author (agent)",
+      "date": "2026-09-29",
+      "revision": "P0",
+      "privacy": "public",
+      "assetPath": "assets/source-pages/fixture-sheet-b.svg",
+      "relationship": "current",
+      "locatorNote": "Synthetic sheet; the connection placeholder is intentionally unreleased."
+    },
+    {
+      "id": "source.sheet-c",
+      "kind": "fixture_sheet",
+      "title": "P0 Fixture Sheet C - cable route schematic (synthetic)",
+      "authority": "P0 fixture author (agent)",
+      "date": "2026-09-29",
+      "revision": "P0",
+      "privacy": "public",
+      "assetPath": "assets/source-pages/fixture-sheet-c.svg",
+      "relationship": "current",
+      "locatorNote": "Schematic, non-energized demonstration route."
+    },
+    {
+      "id": "source.sheet-d",
+      "kind": "fixture_sheet",
+      "title": "P0 Fixture Sheet D — frame schedule (synthetic)",
+      "authority": "P0 fixture author (agent)",
+      "date": "2026-09-29",
+      "revision": "P0",
+      "privacy": "public",
+      "assetPath": "assets/source-pages/fixture-sheet-d.svg",
+      "relationship": "current",
+      "locatorNote": "Synthetic frame assembly sheet; fastening and anchoring values are demonstration-only."
+    },
+    {
+      "id": "source.field-note-01",
+      "kind": "field_note",
+      "title": "P0 Fixture Field Note 01 (synthetic)",
+      "authority": "P0 fixture author (agent)",
+      "date": "2026-09-29",
+      "revision": "P0",
+      "privacy": "public",
+      "assetPath": "assets/source-pages/fixture-field-note-01.svg",
+      "relationship": "current",
+      "locatorNote": "Reports a 965 mm opening that conflicts with sheet A."
+    }
+  ],
+  "citations": [
+    {
+      "id": "citation.sheet-a.survey",
+      "sourceId": "source.sheet-a",
+      "label": "Wall layout and framed dimensions",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 60,
+        "width": 420,
+        "height": 240
+      }
+    },
+    {
+      "id": "citation.sheet-a.wall-length",
+      "sourceId": "source.sheet-a",
+      "label": "96 in dimension chain",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 330,
+        "width": 420,
+        "height": 150
+      }
+    },
+    {
+      "id": "citation.sheet-a.opening",
+      "sourceId": "source.sheet-a",
+      "label": "Door rough opening callout",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 60,
+        "width": 420,
+        "height": 240
+      }
+    },
+    {
+      "id": "citation.sheet-a.cabinet",
+      "sourceId": "source.sheet-a",
+      "label": "Cabinet elevation",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 330,
+        "width": 420,
+        "height": 300
+      }
+    },
+    {
+      "id": "citation.sheet-a.remove",
+      "sourceId": "source.sheet-a",
+      "label": "Temporary protection note",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 510,
+        "width": 420,
+        "height": 150
+      }
+    },
+    {
+      "id": "citation.sheet-b.band",
+      "sourceId": "source.sheet-b",
+      "label": "2x6 flat backing block detail",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 60,
+        "width": 420,
+        "height": 300
+      }
+    },
+    {
+      "id": "citation.sheet-b.connection",
+      "sourceId": "source.sheet-b",
+      "label": "Proposed block-to-stud connection (fastener NOT specified)",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 60,
+        "width": 420,
+        "height": 300
+      }
+    },
+    {
+      "id": "citation.sheet-b.inspect",
+      "sourceId": "source.sheet-b",
+      "label": "Flushness inspection note",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 400,
+        "width": 420,
+        "height": 220
+      }
+    },
+    {
+      "id": "citation.sheet-b.cover",
+      "sourceId": "source.sheet-b",
+      "label": "Cover panel installation note",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 400,
+        "width": 420,
+        "height": 220
+      }
+    },
+    {
+      "id": "citation.sheet-c.route",
+      "sourceId": "source.sheet-c",
+      "label": "Non-energized cable route schematic",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 60,
+        "width": 880,
+        "height": 380
+      }
+    },
+    {
+      "id": "citation.field-note.opening",
+      "sourceId": "source.field-note-01",
+      "label": "Opening measured 965 mm (conflict)",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 60,
+        "width": 880,
+        "height": 200
+      }
+    },
+    {
+      "id": "citation.sheet-a.general",
+      "sourceId": "source.sheet-a",
+      "label": "General fixture notes",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 510,
+        "width": 880,
+        "height": 150
+      }
+    },
+    {
+      "id": "citation.sheet-d.cuts",
+      "sourceId": "source.sheet-d",
+      "label": "Cut list and stock checks (synthetic)",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 60,
+        "width": 420,
+        "height": 240
+      }
+    },
+    {
+      "id": "citation.sheet-d.joints",
+      "sourceId": "source.sheet-d",
+      "label": "Joint schedule: doubled header, 20 joints, 40 screws (synthetic)",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 60,
+        "width": 420,
+        "height": 240
+      }
+    },
+    {
+      "id": "citation.sheet-d.anchors",
+      "sourceId": "source.sheet-d",
+      "label": "Permanent-segment anchor schedule (synthetic)",
+      "kind": "region",
+      "region": {
+        "x": 60,
+        "y": 340,
+        "width": 420,
+        "height": 260
+      }
+    },
+    {
+      "id": "citation.sheet-d.inspection",
+      "sourceId": "source.sheet-d",
+      "label": "Frame inspection and temporary bracing criteria (synthetic)",
+      "kind": "region",
+      "region": {
+        "x": 520,
+        "y": 340,
+        "width": 420,
+        "height": 260
+      }
+    }
+  ]
+}

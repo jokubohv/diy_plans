@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="700" fill="#f7f5ef"/>
+  <rect x="10" y="10" width="980" height="680" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="30" y="44" font-size="22" font-weight="bold">P0 FIXTURE SHEET D — FRAME SCHEDULE (SYNTHETIC, NOT A CONSTRUCTION DOCUMENT)</text>
+
+  <!-- cuts region: 60,60,420,240 -->
+  <g>
+    <rect x="60" y="60" width="420" height="240" fill="#fff" stroke="#888"/>
+    <text x="76" y="86" font-size="17" font-weight="bold">CUT LIST (SYNTHETIC)</text>
+    <text x="76" y="112" font-size="13">sole plate 2438.4 (96 in) — used full length, not pre-cut</text>
+    <text x="76" y="132" font-size="13">top plate 2438.4 (96 in) — used full length</text>
+    <text x="76" y="152" font-size="13">full-height studs 2362.2 (93 in) x 6 — one board each</text>
+    <text x="76" y="172" font-size="13">jack studs 2032 (80 in) x 2 — one board each</text>
+    <text x="76" y="192" font-size="13">header plies 1104.9 (43.5 in) x 2 — one board yields both</text>
+    <text x="76" y="212" font-size="13">header spacer 1104.9 (43.5 in) — 1/2 in ply strip</text>
+    <text x="76" y="232" font-size="13">cripples 190.5 (7.5 in) x 2 — from jack offcuts</text>
+    <text x="76" y="252" font-size="13">racking brace 1336.2 · plumb prop 2425.9 (temporary)</text>
+    <text x="76" y="276" font-size="13" fill="#b00">Yields include a 3 mm kerf per cut; never more than 2438.4 mm per board.</text>
+  </g>
+
+  <!-- joints region: 520,60,420,240 -->
+  <g>
+    <rect x="520" y="60" width="420" height="240" fill="#fff" stroke="#888"/>
+    <text x="536" y="86" font-size="17" font-weight="bold">JOINT AND HEADER SCHEDULE (SYNTHETIC)</text>
+    <text x="536" y="112" font-size="13">doubled 2x6 header: 2 plies 1104.9 + 1/2 in spacer</text>
+    <text x="536" y="132" font-size="13">(38.1 + 12.7 + 38.1 = 88.9 mm wall thickness)</text>
+    <text x="536" y="158" font-size="13">2 screws at every joint, 80 mm apart:</text>
+    <text x="536" y="178" font-size="13" font-weight="bold">14 plate joints + 2 header joints + 4 cripple ends</text>
+    <text x="536" y="198" font-size="13" font-weight="bold">= 20 joints, 40 screws total</text>
+    <text x="536" y="224" font-size="13">both header plies bear fully on both jack studs;</text>
+    <text x="536" y="244" font-size="13">cripples bear on the header and the top plate.</text>
+    <text x="536" y="272" font-size="13" fill="#666">Synthetic 8 x 63 mm screw (demonstration only).</text>
+  </g>
+
+  <!-- anchors region: 60,340,420,260 -->
+  <g>
+    <rect x="60" y="340" width="420" height="260" fill="#fff" stroke="#888"/>
+    <text x="76" y="368" font-size="17" font-weight="bold">PERMANENT-SEGMENT ANCHORS (SYNTHETIC)</text>
+    <rect x="90" y="420" width="360" height="34" fill="#efe6cf" stroke="#555"/>
+    <rect x="210" y="420" width="120" height="34" fill="#f6d9d6" stroke="#b00" stroke-dasharray="5 4"/>
+    <rect x="60" y="454" width="420" height="40" fill="#e3e3e3" stroke="#777"/>
+    <g stroke="#b00" stroke-width="3">
+      <line x1="112" y1="404" x2="112" y2="470"/>
+      <line x1="203" y1="404" x2="203" y2="470"/>
+      <line x1="385" y1="404" x2="385" y2="470"/>
+    </g>
+    <text x="76" y="530" font-size="13">3 anchors: 152.4, 762 and 2320 mm (609.6 o.c. where</text>
+    <text x="76" y="550" font-size="13">permanent plate allows; 10 x 60 mm pilot, synthetic)</text>
+    <text x="76" y="574" font-size="13" fill="#b00">dashed section = door opening cut out later: no anchor there</text>
+  </g>
+
+  <!-- inspection region: 520,340,420,260 -->
+  <g>
+    <rect x="520" y="340" width="420" height="260" fill="#fff" stroke="#888"/>
+    <text x="536" y="368" font-size="17" font-weight="bold">FRAME INSPECTION AND BRACING (SYNTHETIC)</text>
+    <text x="536" y="394" font-size="13">Plumb within 3 mm; diagonals differ 3 mm or less</text>
+    <text x="536" y="414" font-size="13">Framed length and height 2438.4 mm</text>
+    <text x="536" y="434" font-size="13">Door opening 952.5 x 2070.1 mm clear</text>
+    <text x="536" y="454" font-size="13">Both header plies bear on both jack studs</text>
+    <text x="536" y="480" font-size="13">In-plane diagonal resists racking (shear);</text>
+    <text x="536" y="500" font-size="13">out-of-plane prop holds the frame plumb.</text>
+    <text x="536" y="524" font-size="13">Remove both temporary members after inspection;</text>
+    <text x="536" y="544" font-size="13">store them for reuse.</text>
+    <text x="536" y="572" font-size="13" fill="#666">Backing work starts only after this inspection is accepted.</text>
+  </g>
+  <text x="30" y="686" font-size="13" fill="#666">P0 fixture sheet D · generated for the DIY guide platform P0 gate · synthetic</text>
+</svg>

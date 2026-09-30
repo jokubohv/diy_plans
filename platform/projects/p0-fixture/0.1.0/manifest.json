@@ -1,0 +1,15 @@
+{
+  "schema": "diy-guide",
+  "schemaVersion": "0.1.0",
+  "contentVersion": "P0-FIXTURE",
+  "packageRevision": 1,
+  "minimumBuilderVersion": "0.1.0",
+  "capabilities": [
+    { "name": "woodFraming", "version": 1 },
+    { "name": "drywall", "version": 1 },
+    { "name": "cabinetry", "version": 1 },
+    { "name": "electricalUS", "version": 1 },
+    { "name": "demonstrationOverlays", "version": 1 }
+  ],
+  "notes": "Synthetic P0 fixture. Demonstrates the frozen bundle -> IFC -> viewer -> guide pipeline capabilities; nothing here is construction guidance."
+}

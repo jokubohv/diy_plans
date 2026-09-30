@@ -1,0 +1,567 @@
+[
+  {
+    "id": "issue.r35.hold-01",
+    "severity": "major",
+    "status": "open",
+    "title": "Roof-truss chord location and W1 top restraint unverified",
+    "detail": "Hold point 1 from the R35 manual: Confirm actual roof-truss bottom chord location and W1 full-span alignment; verify accepted nonbearing top restraint/movement.",
+    "affectedIds": [
+      "part.reference.truss-band",
+      "part.w1.top-plate",
+      "op.restrain-top-plates"
+    ],
+    "sourceRefIds": [
+      "citation.card.p16-plates.truss",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-02",
+    "severity": "major",
+    "status": "open",
+    "title": "Individual base box widths and appliance access unmeasured",
+    "detail": "Hold point 2 from the R35 manual: Measure individual base box widths and check final end-scribe tolerance, door/drawer/pull and refrigerator bin access on taped footprint.",
+    "affectedIds": [
+      "measurement.cabinets.combined",
+      "part.fixture.base-row",
+      "part.fixture.fridge"
+    ],
+    "sourceRefIds": [
+      "citation.card.p03-elevation.operating-fit",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-03",
+    "severity": "major",
+    "status": "open",
+    "title": "W1/W2 finished endpoints and column surfaces unmeasured",
+    "detail": "Hold point 3 from the R35 manual: Measure W1/W2 finished endpoints at floor/mid/ceiling, actual 10 7/8-in column projection and thickness.",
+    "affectedIds": [
+      "measurement.w1.finished-inside",
+      "part.existing.column",
+      "measurement.column.projection"
+    ],
+    "sourceRefIds": [
+      "citation.card.p04-survey.steps",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-04",
+    "severity": "major",
+    "status": "open",
+    "title": "W2 material grade, connections and drywall schedule unresolved",
+    "detail": "Hold point 4 from the R35 manual: Resolve W2 2x8 material grade, top/base/corner connections and drywall schedule before cuts.",
+    "affectedIds": [
+      "part.w2.bottom-plate",
+      "part.w2.top-plate",
+      "connection.w2.stud-to-plate"
+    ],
+    "sourceRefIds": [
+      "citation.card.p11-w2-layout.projection",
+      "citation.card.p12-w2-frame.steps",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-05",
+    "severity": "major",
+    "status": "open",
+    "title": "Tile/slab layers, hidden services and retrofit anchor coordinates unresolved",
+    "detail": "Hold point 5 from the R35 manual: Resolve tile/slab layers, hidden services, allowable hole envelopes and tested anchor detail before drilling.",
+    "affectedIds": [
+      "part.existing.slab",
+      "part.existing.tile-floor",
+      "connection.base.anchor"
+    ],
+    "sourceRefIds": [
+      "citation.card.p15-slab.hold",
+      "citation.permit.p13.d5-detail-18-base-reference",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-06",
+    "severity": "major",
+    "status": "open",
+    "title": "EX1 37-in clear target conflicts with the 30 1/8-in plan span; opening detail unresolved",
+    "detail": "Hold point 6 from the R35 manual: Resolve EX1 existing wall role/services and approved walk-through opening detail before demolition.",
+    "affectedIds": [
+      "part.existing.ex1-wall",
+      "part.existing.column",
+      "measurement.ex1.finished-clear-width-min",
+      "measurement.ex1.plan-column-to-closet-span",
+      "measurement.ex1.plan-shortfall-before-finishes",
+      "op.open-ex1-passage"
+    ],
+    "sourceRefIds": [
+      "citation.card.p20-ex1.steps",
+      "citation.pvt.owner-ex1-requirement.minimum-clear-target-hold",
+      "citation.permit.p3.a3-ex1-column-conflict-hold",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-07",
+    "severity": "major",
+    "status": "open",
+    "title": "Cabinet rail/shelf bracket load path unresolved before close-up",
+    "detail": "Hold point 7 from the R35 manual: Resolve actual cabinet rail/shelf bracket templates, backing connection and entire load path before close-up/loading.",
+    "affectedIds": [
+      "part.fixture.upper-u1",
+      "part.fixture.shelves",
+      "connection.backing.angle"
+    ],
+    "sourceRefIds": [
+      "citation.card.p19-backing-connection.hold",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-08",
+    "severity": "major",
+    "status": "open",
+    "title": "Alteration permit and inspection sequence to confirm",
+    "detail": "Hold point 8 from the R35 manual: Confirm alteration permit/inspection sequence with Dade City.",
+    "affectedIds": [],
+    "sourceRefIds": [
+      "citation.card.p20-ex1.hold",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-09",
+    "severity": "major",
+    "status": "open",
+    "title": "Owner-selected 2x6 blocking band vs D4 2x4 backing",
+    "detail": "Hold point 9 from the R35 manual: Reconcile the user-selected 2x6 blocking band and block-to-stud fastening with actual cabinet manufacturer rails, bracket instructions and approved loaded-wall connection; D4 depicts 2x4 backing, not this modification.",
+    "affectedIds": [
+      "part.backing.top-b01",
+      "connection.backing.angle"
+    ],
+    "sourceRefIds": [
+      "citation.card.p18-backing.scope",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-10",
+    "severity": "major",
+    "status": "open",
+    "title": "Existing baseboard/shoe removal marks pending verified boundaries",
+    "detail": "Hold point 10 from the R35 manual: Mark exact existing baseboard/shoe removal at W1 left receiver, W2 column and both EX1 faces after wall footprint and approved opening boundaries are verified; check hidden fasteners/services and preserve retained trim/tile.",
+    "affectedIds": [
+      "part.trim.tr-01",
+      "part.trim.tr-02",
+      "part.trim.tr-03",
+      "part.trim.tr-04"
+    ],
+    "sourceRefIds": [
+      "citation.card.p05-trim.zones",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-11",
+    "severity": "major",
+    "status": "open",
+    "title": "B1/B2/B3 individual widths and rail templates unresolved",
+    "detail": "Hold point 11 from the R35 manual: Measure B1/B2/B3 separately and obtain the B1 door/hinge/pull and all cabinet rail templates before freezing seams, cabinet screw paths or backing bands.",
+    "affectedIds": [
+      "measurement.cabinets.combined",
+      "part.fixture.base-row"
+    ],
+    "sourceRefIds": [
+      "citation.card.p03-elevation.boxes",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-12",
+    "severity": "major",
+    "status": "open",
+    "title": "R35 stud-angle count/orientation and loaded-wall capacity unreleased",
+    "detail": "Hold point 12 from the R35 manual: R35 stud-angle count/orientation and complete loaded-wall capacity need manufacturer/qualified acceptance; retained geometry alone does not release new screw method.",
+    "affectedIds": [
+      "connection.w1.stud-to-plate",
+      "connection.w2.stud-to-plate"
+    ],
+    "sourceRefIds": [
+      "citation.card.p10-connector.conditional",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-13",
+    "severity": "major",
+    "status": "open",
+    "title": "Opposing angles on 1.5-in studs conflict with the ESR-3096 3-in minimum",
+    "detail": "Hold point 13 from the R35 manual: R35 backing adjacent-bay opposing angles on1.5in studs conflict with ESR3096 minimum3in requirement; detail before connector quantity/order.",
+    "affectedIds": [
+      "connection.backing.angle"
+    ],
+    "sourceRefIds": [
+      "citation.card.p19-backing-connection.conflict",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.hold-14",
+    "severity": "major",
+    "status": "open",
+    "title": "Pressure-treated end-tag treatment/retention must select the connector coating",
+    "detail": "Hold point 14 from the R35 manual: Verify PT end-tag treatment/retention and exposure to select compatible connector/screw coating.",
+    "affectedIds": [
+      "part.w1.bottom-plate",
+      "part.w2.bottom-plate",
+      "connection.base.anchor"
+    ],
+    "sourceRefIds": [
+      "citation.card.p10-connector.limits",
+      "citation.json.hold.points"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g1-layout",
+    "severity": "major",
+    "status": "open",
+    "title": "G1 layout gate not satisfied",
+    "detail": "W1/W2 measured finished endpoints at 3 heights, the physical truss centre and the approved line are required before house cuts. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "measurement.w1.finished-inside",
+      "part.reference.truss-band"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p28-gates.process"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g2-floor",
+    "severity": "major",
+    "status": "open",
+    "title": "G2 floor gate not satisfied",
+    "detail": "Tile/mortar/slab layers, hole clearance, a tested anchor/support and the repair approach are required before any drilling. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "part.existing.slab",
+      "part.existing.tile-floor",
+      "connection.base.anchor"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p15-slab.hold"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g3-frame",
+    "severity": "major",
+    "status": "open",
+    "title": "G3 frame gate not satisfied",
+    "detail": "W1/W2 member lengths, screw/connector patterns, top movement and end/corner/temporary restraint are required before frame work. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "connection.w1.stud-to-plate",
+      "connection.w2.stud-to-plate",
+      "connection.top.restraint"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p10-connector.conditional"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g4-ex1",
+    "severity": "major",
+    "status": "open",
+    "title": "G4 EX1 gate not satisfied",
+    "detail": "Wall role/services, the approved opening/header/jamb/exposure and the retained kitchen door must be settled before the passage. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "part.existing.ex1-wall",
+      "op.open-ex1-passage"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p20-ex1.hold"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g5-fixtures",
+    "severity": "major",
+    "status": "open",
+    "title": "G5 fixtures gate not satisfied",
+    "detail": "B1/B2/B3 actual widths, cabinet rail templates, shelf brackets/loads and GE operation are required before fixture loading. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "measurement.cabinets.combined",
+      "part.fixture.base-row",
+      "part.fixture.fridge",
+      "connection.backing.angle"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p27-fixtures.hold"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g6-closeup",
+    "severity": "major",
+    "status": "open",
+    "title": "G6 close-up gate not satisfied",
+    "detail": "Inspection and photographs of the studs, 25 blocks, fasteners, services and board edge supports are required before drywall close-up. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "part.w1.stud-s01",
+      "part.backing.top-b01",
+      "op.hang-drywall"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p25-drywall-hang.hold"
+    ]
+  },
+  {
+    "id": "issue.r35.gate-g7-finish",
+    "severity": "major",
+    "status": "open",
+    "title": "G7 finish gate not satisfied",
+    "detail": "Drywall product/face map, trim exposed lengths, cabinet/fridge and door function must be verified before finish sign-off. This gate is a release/acceptance gate: it is modelled as a held operation plus an acceptance gate record, and a browser checkbox never satisfies it.",
+    "affectedIds": [
+      "part.drywall.w1-p-01",
+      "part.trim.tr-01",
+      "part.fixture.fridge"
+    ],
+    "sourceRefIds": [
+      "citation.card.p28-gates.gates",
+      "citation.card.p26-finish.conditional"
+    ]
+  },
+  {
+    "id": "issue.r35.esr-opposing-angle",
+    "severity": "major",
+    "status": "open",
+    "title": "ESR-3096 opposing-angle 3-in minimum conflicts with 1.5-in studs",
+    "detail": "The rear cavity-side angle concept for the 25 backing blocks can require angles on both sides of a shared 1.5-in stud, but ESR-3096 Table 5 note 5 requires a minimum 3-in wood member thickness for opposing angles. There is no automatic vertical-stagger exception. Adjacent-bay arrangement, exact quantity and the block-to-stud load path are held; D4 depicts 2x4 backing, not this modification.",
+    "affectedIds": [
+      "connection.backing.angle",
+      "part.backing.top-b01",
+      "part.backing.base-b03"
+    ],
+    "sourceRefIds": [
+      "citation.card.p19-backing-connection.conflict",
+      "citation.esr.note5",
+      "citation.card.p10-connector.esr-limits"
+    ]
+  },
+  {
+    "id": "issue.r35.cabinet-seams",
+    "severity": "major",
+    "status": "open",
+    "title": "Individual cabinet seams unknown; combined width only",
+    "detail": "B1+B2+B3 are measured together at 106.5 in; the individual measured widths are null and the nominal 12/48/48 labels are not measured widths. Seams, fillers and cabinet screw paths stay schematic until B1/B2/B3 are measured separately and rail templates are obtained.",
+    "affectedIds": [
+      "measurement.cabinets.combined",
+      "part.fixture.base-row",
+      "part.fixture.fillers"
+    ],
+    "sourceRefIds": [
+      "citation.card.p03-elevation.boxes",
+      "citation.card.p27-fixtures.fronts"
+    ]
+  },
+  {
+    "id": "issue.r35.fridge-operating-fit",
+    "severity": "major",
+    "status": "open",
+    "title": "GE GSE25GYPHCFS operating fit is unresolved (warnings, not proof)",
+    "detail": "Project label GE GSE25GYPHCFS (side-by-side) with generic GE family data as the dimensional source. Warnings: the planned 3.25-in left-end allowance versus the family note's about 14.25-in freezer-side bin-removal requirement; the 37-in clear bay; the 26.75-in nominal closed-front clearance and the 11-in nominal 90-degree condition are depth-subtraction nominals with a 2-in rear gap. None of these proves door swing, bin removal, walking access or service removal; full-size operating and service checks are required before fixing W1 or the divider.",
+    "affectedIds": [
+      "part.fixture.fridge",
+      "part.fixture.fridge-bay",
+      "measurement.fridge.bin-removal-required",
+      "measurement.fridge.closed-front-clearance",
+      "measurement.fridge.door90-clearance"
+    ],
+    "sourceRefIds": [
+      "citation.card.p03-elevation.operating-fit",
+      "citation.card.p27-fixtures.steps",
+      "citation.json.fixtures.refrigerator.access"
+    ]
+  },
+  {
+    "id": "issue.r35.truss-trial",
+    "severity": "major",
+    "status": "open",
+    "title": "Roof-truss alignment is a trial, not field verification",
+    "detail": "The 68-in W1 line and the ~65.86-in candidate truss centre are A3/A7 drawing comparisons; the truss is not as-built verified and no truss attachment or top restraint is released. Ordinary rigid stud angles are not truss clips.",
+    "affectedIds": [
+      "part.reference.truss-band",
+      "measurement.truss.center-trial",
+      "connection.top.restraint"
+    ],
+    "sourceRefIds": [
+      "citation.json.roof.plan.alignment.status",
+      "citation.card.p02-plan.truss",
+      "citation.card.p16-plates.truss"
+    ]
+  },
+  {
+    "id": "issue.r35.source-age",
+    "severity": "major",
+    "status": "open",
+    "title": "Source-age and as-built mismatch",
+    "detail": "Original approved plans may omit finish/drywall thickness or differ from as-built conditions; the 111-in ceiling is a user report (design label 9 ft 4 in per the permit set); D4 shows 2x4 backing while the owner selected 2x6 flat blocking; manufacturer editions and field measurements are separate observations. No original-plan divergence substitutes for field measurement.",
+    "affectedIds": [
+      "measurement.ceiling.reported",
+      "part.backing.top-b01",
+      "measurement.closet.inside-width"
+    ],
+    "sourceRefIds": [
+      "citation.json.state",
+      "citation.card.p29-source-record.sources",
+      "citation.permit.p12.permit-d4-detail"
+    ]
+  },
+  {
+    "id": "issue.r35.member-heights",
+    "severity": "major",
+    "status": "open",
+    "title": "Wall member heights are field-fit; the 111-in ceiling is not a cut",
+    "detail": "Stud and top-plate heights depend on the actual installed plate faces and the unverified top restraint. Wall members and drywall panels are shown as plan footprints with no height or cut asserted; the reported 111-in ceiling is marked not_applicable for cutting and no cut operation may derive from it.",
+    "affectedIds": [
+      "measurement.ceiling.reported",
+      "part.w1.stud-s01",
+      "part.w2.stud-s01",
+      "part.drywall.w1-p-01"
+    ],
+    "sourceRefIds": [
+      "citation.card.p09-w1-frame.steps",
+      "citation.card.p21-drywall-faces.faces"
+    ]
+  },
+  {
+    "id": "issue.r35.jurisdiction",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Dade City/Pasco County profile is not a universal code rule",
+    "detail": "This pantry construction profile is City of Dade City, Florida; it must not become a universal code rule for future projects. The alteration permit and inspection sequence still require confirmation with the building department.",
+    "affectedIds": [],
+    "sourceRefIds": [
+      "citation.json.site.jurisdiction",
+      "citation.card.p29-source-record.sources"
+    ],
+    "resolution": "Accepted as a project-scope statement."
+  },
+  {
+    "id": "issue.r35.privacy",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Private source identity excluded from publication",
+    "detail": "The permit PDF, address/parcel/permit identity, raw source URLs and the raw conditional-manual JSON are private and are not copied into the bundle or release. Published source pages are text-only sanitized excerpt cards with printed page numbers; the private-to-public map is recorded in work/r35/private-public-map.json.",
+    "affectedIds": [
+      "source.r35.permit-pdf",
+      "source.r35.manual-json"
+    ],
+    "sourceRefIds": [
+      "citation.json.state"
+    ],
+    "resolution": "Sanitization policy applied; public assets contain no private identity."
+  },
+  {
+    "id": "issue.r35.nonselected-fasteners",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Nonselected fastening alternatives are reference-only",
+    "detail": "The A35 bent stud-to-plate A2/C2/D configuration (6 + 6 SD9112) and A1/C1/E (3 + 6) are reference-only and not selected; SDWS structural wood screws, generic mending plates and nail-only stud ties are explicitly nonselected. None of them may become a part, quantity or allowed substitute for the candidate A34/A34Z review.",
+    "affectedIds": [
+      "fastener.sd9112",
+      "connection.practice.angle-scrap"
+    ],
+    "sourceRefIds": [
+      "citation.card.p14-sd9112.nonselected",
+      "citation.card.p10-connector.candidate"
+    ],
+    "resolution": "Accepted as reference-only; candidate A34/A34Z with SD9112 remains unreleased for house work."
+  },
+  {
+    "id": "issue.r35.cart-history",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Cart statements reconciled temporally; procurement is non-authoritative",
+    "detail": "Publication-time statement: the R34 cart still included a framing nailer and nail strips and R35 did not mutate the live cart. Later change-record statement: the framing nailer was already absent when checked; framing nail strips were removed; the saw was restored; two A34Z angles, one 100-count SD9112 box and one 1/4-in nutsetter were added for loose practice; installed connector purchase remains held; the observed pickup-only cart was 49 units / $657.55 before tax with no checkout. These are consecutive observations, not a contradiction. Cart state is procurement history only and is non-authoritative for engineering properties; no stale nailer requirement survives.",
+    "affectedIds": [
+      "fastener.sd9112",
+      "material.lumber.practice"
+    ],
+    "sourceRefIds": [
+      "citation.card.p29-source-record.cart",
+      "citation.pvt.change-record.cart-later-state"
+    ],
+    "resolution": "Accepted with the temporal reconciliation recorded in work/r35/carry-forward-map.json."
+  },
+  {
+    "id": "issue.r35.practice-not-house",
+    "severity": "info",
+    "status": "accepted",
+    "title": "Loose-stock practice never counts as house framing",
+    "detail": "The practice board yields two 24-in plates and three 21-in studs for a 24x24-in mock rectangle plus a separate scrap angle-and-screw trial. Practice parts are a separate assembly, are excluded from takeoff, and never become installed house members or purchase quantities.",
+    "affectedIds": [
+      "part.practice.stock",
+      "part.practice.plate-a",
+      "part.practice.angle"
+    ],
+    "sourceRefIds": [
+      "citation.card.p13-practice.yield",
+      "citation.json.logistics.W1"
+    ],
+    "resolution": "Accepted as loose-stock practice under the ready practice scope only."
+  },
+  {
+    "id": "issue.r35.ex1-closet-scope",
+    "severity": "major",
+    "status": "open",
+    "title": "Closet 37/23 survey facts do not define the EX1 rough opening",
+    "detail": "The closet's 37-in inside width and 23-in depth are survey/reference facts only; they are not the EX1 rough opening, header or jamb sizes. The retained kitchen-side door/jamb/casing stays distinct from the new passage and the exact opening requires an accepted detail.",
+    "affectedIds": [
+      "measurement.closet.inside-width",
+      "measurement.closet.depth",
+      "part.existing.ex1-wall",
+      "part.existing.kitchen-door"
+    ],
+    "sourceRefIds": [
+      "citation.card.p20-ex1.steps",
+      "citation.card.p04-survey.steps"
+    ]
+  },
+  {
+    "id": "issue.r35.services-unknown",
+    "severity": "major",
+    "status": "open",
+    "title": "Service routing around slab and EX1 is unknown; no electrical design exists",
+    "detail": "No electrical circuit, cable, box, device or installation operation is modelled: the only electrical-related content is the unknown/held service investigation around the slab and EX1, captured as investigation stop conditions and hold points. A5 indicates under-slab conduit/condensate routes but cannot certify any hole clear, and EX1 role/services must be identified on both faces and above the ceiling.",
+    "affectedIds": [
+      "part.existing.slab",
+      "part.existing.ex1-wall",
+      "op.review-slab-base",
+      "op.open-ex1-passage"
+    ],
+    "sourceRefIds": [
+      "citation.card.p15-slab.steps",
+      "citation.card.p20-ex1.steps"
+    ]
+  },
+  {
+    "id": "issue.r35.backing-bands-provisional",
+    "severity": "major",
+    "status": "open",
+    "title": "Backing bands are provisional zones, not cabinet rail releases",
+    "detail": "The TOP/U3LOW/U1LOW/U2LOW/BASE bands are provisional zones set from actual cabinet mounting-rail/hole locations; the 25-block map is a layout concept and does not release loading or drywall closure. Shelf brackets use verified full studs with their own hardware.",
+    "affectedIds": [
+      "part.backing.top-b01",
+      "part.fixture.upper-u3",
+      "part.fixture.shelves"
+    ],
+    "sourceRefIds": [
+      "citation.json.backing.band.status",
+      "citation.card.p18-backing.hold",
+      "citation.json.backing.shelves"
+    ]
+  }
+]

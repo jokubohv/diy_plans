@@ -1,0 +1,22 @@
+{
+  "schema": "diy-guide",
+  "schemaVersion": "0.1.0",
+  "contentVersion": "R35",
+  "packageRevision": 1,
+  "minimumBuilderVersion": "0.1.0",
+  "capabilities": [
+    {
+      "name": "woodFraming",
+      "version": 1
+    },
+    {
+      "name": "drywall",
+      "version": 1
+    },
+    {
+      "name": "cabinetry",
+      "version": 1
+    }
+  ],
+  "notes": "Real-source Pantry R35 conditional concept. No electrical capability is declared: R35 has no sourced circuit/system design, only unknown/held service investigation around the slab and EX1. Only survey and practice_on_loose_scrap scopes are ready."
+}

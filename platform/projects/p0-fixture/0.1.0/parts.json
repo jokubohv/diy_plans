@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "part.existing.slab",
+    "name": "Existing slab",
+    "kind": "panel",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "general",
+    "stage": "existing",
+    "ifcClass": "IfcSlab",
+    "ifcGlobalId": "2TU1INEqTLnxpIUfFc3Vn3",
+    "materialId": null,
+    "description": "Existing concrete surface used as the demonstration floor.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1600,
+        1200,
+        -50
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        3200,
+        2400,
+        100
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.bottom-plate",
+    "name": "Bottom plate (continuous sole plate)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "28sD65d9fG4xVwMQMoBDWb",
+    "materialId": "material.lumber.plate",
+    "description": "Continuous sole plate anchored to the slab; the doorway section between the jack studs is cut out after anchoring, leaving the two remaining segments.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1219.2,
+        44.45,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        2438.4,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.bottom-plate-left",
+    "name": "Bottom plate, remaining left segment",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "05pMEDkvHHO8VKrri1NUOM",
+    "materialId": "material.lumber.plate",
+    "description": "Remaining sole-plate segment left of the door opening after the cut-out.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        622.3,
+        44.45,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1244.6,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.bottom-plate-right",
+    "name": "Bottom plate, remaining right segment",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "13gw4YMirNxuDJjkYe$Fq4",
+    "materialId": "material.lumber.plate",
+    "description": "Remaining sole-plate segment right of the door opening after the cut-out.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        2317.75,
+        44.45,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        241.3,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.top-plate",
+    "name": "Top plate (full length)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3l_FcKjBLQxPWKmuPgDjZu",
+    "materialId": "material.lumber.plate",
+    "description": "Single top plate used at full board length (documented synthetic choice).",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1219.2,
+        44.45,
+        2419.35
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        2438.4,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.stud-1",
+    "name": "Stud 1 (left end, flush)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2fUbmG3d5UvuLEjggLCe8D",
+    "materialId": "material.lumber.stud",
+    "description": "Stud 1 (left end, flush) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        19.05,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.stud-2",
+    "name": "Stud 2 (common, 16 in module)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3XyprN25zMeewZw7V2VE1T",
+    "materialId": "material.lumber.stud",
+    "description": "Stud 2 (common, 16 in module) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        406.4,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.stud-3",
+    "name": "Stud 3 (common, 32 in module)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "08N5LqS$DHdhBRlSb0SER6",
+    "materialId": "material.lumber.stud",
+    "description": "Stud 3 (common, 32 in module) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        812.8,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.stud-4",
+    "name": "Stud 4 (right end, flush)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0WhsAQW3rNLx6uSXnjXb2b",
+    "materialId": "material.lumber.stud",
+    "description": "Stud 4 (right end, flush) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        2419.35,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.king-left",
+    "name": "King stud (left of opening)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3VecaqO$fUCe$jszr8NP7n",
+    "materialId": "material.lumber.stud",
+    "description": "King stud (left of opening) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1187.45,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.king-right",
+    "name": "King stud (right of opening)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0rNfWHwDfO7R9it4WmmCEj",
+    "materialId": "material.lumber.stud",
+    "description": "King stud (right of opening) — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        2254.25,
+        44.45,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2362.2
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.jack-left",
+    "name": "Jack (trimmer) stud (left)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0xmG3TLn5PIOpmwS0CDs1w",
+    "materialId": "material.lumber.stud",
+    "description": "Jack stud carrying the left end of the doubled header.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1225.55,
+        44.45,
+        1054.1
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2032
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.jack-right",
+    "name": "Jack (trimmer) stud (right)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2YamX81vjR48sgnJn5xKn2",
+    "materialId": "material.lumber.stud",
+    "description": "Jack stud carrying the right end of the doubled header.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        2216.15,
+        44.45,
+        1054.1
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2032
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.header-ply-a",
+    "name": "Header ply A (front 2x6)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcBeam",
+    "ifcGlobalId": "1L6zuiPMXIxxEeZD7hGEpw",
+    "materialId": "material.lumber.header",
+    "description": "Front ply of the doubled 2x6 header (synthetic, non-structural demonstration).",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1720.85,
+        19.05,
+        2139.95
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1104.9,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.header-spacer",
+    "name": "Header spacer (1/2 in plywood)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "19RmS5ZATTzOV$OJW5xHmp",
+    "materialId": "material.panel.header-spacer",
+    "description": "Plywood spacer filling the wall thickness between the header plies.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1720.85,
+        44.45,
+        2139.95
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1104.9,
+        12.7,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.header-ply-b",
+    "name": "Header ply B (back 2x6)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcBeam",
+    "ifcGlobalId": "1Bqq41OHfN787OmiliK2MS",
+    "materialId": "material.lumber.header",
+    "description": "Back ply of the doubled 2x6 header.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1720.85,
+        69.85,
+        2139.95
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1104.9,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.cripple-1",
+    "name": "Cripple stud above header 1",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0sedJNfSfPneFP6rn4opVF",
+    "materialId": "material.lumber.stud",
+    "description": "Cripple stud above header 1 — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1562.1,
+        44.45,
+        2305.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        190.5
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.cripple-2",
+    "name": "Cripple stud above header 2",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "1c_RNWCcPT39r8oJD5DuCX",
+    "materialId": "material.lumber.stud",
+    "description": "Cripple stud above header 2 — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1879.6,
+        44.45,
+        2305.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        190.5
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.opening",
+    "name": "Door rough opening (void)",
+    "kind": "opening",
+    "role": "clearance",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcOpeningElement",
+    "ifcGlobalId": "3K6NFPmy5POAIeaojYjy_A",
+    "materialId": null,
+    "description": "Clear door rough opening between the jack studs, under the header. A semantic void, never a solid.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "void, excluded from takeoff"
+    },
+    "placement": {
+      "translationMm": [
+        1720.85,
+        44.45,
+        1054.1
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        952.5,
+        88.9,
+        2070.1
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.backing-a",
+    "name": "Cabinet backing block A (2x6 flat)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3hkNGfk6vOOebINm76Shel",
+    "materialId": "material.lumber.block",
+    "description": "Backing block fitted in the stud bay between stud 2 and stud 3.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        609.6,
+        -19.05,
+        1066.8
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.backing-b",
+    "name": "Cabinet backing block B (2x6 flat)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3J1rAihd1KCfgPEpCAc1EN",
+    "materialId": "material.lumber.block",
+    "description": "Backing block fitted in the stud bay between stud 3 and the left king stud.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        1000.125,
+        -19.05,
+        1066.8
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        336.55,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.wall-a.cover-panel",
+    "name": "Drywall cover panel (trimmed to the opening)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.wall-a.cover",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0mTsJ76I9TxfaZxRc_dlHX",
+    "materialId": "material.panel.drywall",
+    "description": "1/2 in gypsum panel covering the wall left of the door opening (demonstration).",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        622.3,
+        -6.35,
+        1219.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1244.6,
+        12.7,
+        2438.4
+      ]
+    }
+  },
+  {
+    "id": "part.cabinet.envelope",
+    "name": "Cabinet envelope",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.cabinet",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "3ccLM5vRPLqBo9yttz$wcH",
+    "materialId": null,
+    "description": "Wall cabinet envelope spanning both backing blocks (demonstration envelope).",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        914.4,
+        -235.5,
+        1320.8
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        609.6,
+        609.6,
+        812.8
+      ]
+    }
+  },
+  {
+    "id": "part.demo.temp-panel",
+    "name": "Temporary protection panel",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.demo",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "3D9ltP_45Lwvxk79mHBxBc",
+    "materialId": "material.panel.temp",
+    "description": "Reusable floor protection panel removed before cutting.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        622.3,
+        -990.6,
+        1219.2
+      ]
+    },
+    "initialState": "installed",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1244.6,
+        19.05,
+        2438.4
+      ]
+    }
+  },
+  {
+    "id": "part.demo.temp-racking-brace",
+    "name": "Temporary racking brace (in-plane diagonal)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.demo",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3iENY_XyDTpfJfjPC1HSIY",
+    "materialId": "material.lumber.brace",
+    "description": "Diagonal brace nailed flat to the framing face: it resists racking (in-plane shear) while the frame is anchored and inspected; it does not hold the wall plumb.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        829.9,
+        62.95,
+        619.05
+      ],
+      "rotationEulerDeg": [
+        0,
+        -60.409361,
+        0
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1336.16902,
+        38.1,
+        88.9
+      ]
+    }
+  },
+  {
+    "id": "part.demo.temp-plumb-prop",
+    "name": "Temporary plumb prop (out-of-plane)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.demo",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "1SEKs9lyXScxNcxrPCg2PP",
+    "materialId": "material.lumber.prop",
+    "description": "Prop leaning from the top plate to the floor in the depth direction: it holds the frame plumb (out of plane) until the bottom plate is anchored.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        753.4,
+        -219,
+        1175
+      ],
+      "rotationEulerDeg": [
+        -14.368489,
+        0,
+        0
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        2425.882108
+      ]
+    }
+  },
+  {
+    "id": "part.demo.cable",
+    "name": "Non-energized schematic cable",
+    "kind": "linear_member",
+    "role": "schematic",
+    "assemblyId": "assembly.demo",
+    "trade": "electrical",
+    "stage": "rough",
+    "ifcClass": "IfcCableSegment",
+    "ifcGlobalId": "36Kn9dF9XJQ8KbuqI5vcXL",
+    "materialId": "material.electrical.cable",
+    "description": "Schematic non-energized cable route through the wall cavity.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "schematic route length"
+    },
+    "placement": {
+      "translationMm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "path",
+      "pointsMm": [
+        [
+          152.4,
+          120,
+          1651
+        ],
+        [
+          152.4,
+          120,
+          2159
+        ],
+        [
+          990.6,
+          120,
+          2159
+        ],
+        [
+          990.6,
+          120,
+          1727.2
+        ]
+      ],
+      "radiusMm": 12.7
+    }
+  },
+  {
+    "id": "part.demo.junction-box",
+    "name": "Schematic junction box",
+    "kind": "fixture",
+    "role": "schematic",
+    "assemblyId": "assembly.demo",
+    "trade": "electrical",
+    "stage": "rough",
+    "ifcClass": "IfcJunctionBox",
+    "ifcGlobalId": "2mlzQErCPGugC6HPvV2Uzl",
+    "materialId": null,
+    "description": "Schematic junction box — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        152.4,
+        120,
+        1651
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        101.6,
+        50.8,
+        101.6
+      ]
+    }
+  },
+  {
+    "id": "part.demo.terminal",
+    "name": "Schematic terminal",
+    "kind": "fixture",
+    "role": "schematic",
+    "assemblyId": "assembly.demo",
+    "trade": "electrical",
+    "stage": "rough",
+    "ifcClass": "IfcOutlet",
+    "ifcGlobalId": "2eDdRosQvI5vwZ2EuxhZ5W",
+    "materialId": null,
+    "description": "Schematic terminal — synthetic demonstration framing member.",
+    "selectable": true,
+    "takeoff": {
+      "include": true
+    },
+    "placement": {
+      "translationMm": [
+        990.6,
+        120,
+        1727.2
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        76.2,
+        50.8,
+        114.3
+      ]
+    }
+  },
+  {
+    "id": "part.loose.angle-1",
+    "name": "Loose angle bracket 1",
+    "kind": "connector",
+    "role": "loose",
+    "assemblyId": "assembly.demo",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcDiscreteAccessory",
+    "ifcGlobalId": "2qXVFSR$PJbvn8ecZj1TG2",
+    "materialId": null,
+    "description": "Demonstration loose part, not installed.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "demonstration loose part (not installed)"
+    },
+    "placement": {
+      "translationMm": [
+        2900,
+        -400,
+        15.875
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        88.9,
+        88.9,
+        31.75
+      ]
+    }
+  },
+  {
+    "id": "part.loose.angle-2",
+    "name": "Loose angle bracket 2",
+    "kind": "connector",
+    "role": "loose",
+    "assemblyId": "assembly.demo",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcDiscreteAccessory",
+    "ifcGlobalId": "2nRyLdp_fT6eG1oSpIjdXC",
+    "materialId": null,
+    "description": "Demonstration loose part, not installed.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "demonstration loose part (not installed)"
+    },
+    "placement": {
+      "translationMm": [
+        3060,
+        -460,
+        15.875
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        88.9,
+        88.9,
+        31.75
+      ]
+    }
+  },
+  {
+    "id": "part.loose.angle-3",
+    "name": "Loose angle bracket 3",
+    "kind": "connector",
+    "role": "loose",
+    "assemblyId": "assembly.demo",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcDiscreteAccessory",
+    "ifcGlobalId": "3b1Qx5pI9I8gTC40LZ2cUi",
+    "materialId": null,
+    "description": "Demonstration loose part, not installed.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "demonstration loose part (not installed)"
+    },
+    "placement": {
+      "translationMm": [
+        3220,
+        -330,
+        15.875
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        88.9,
+        88.9,
+        31.75
+      ]
+    }
+  }
+]

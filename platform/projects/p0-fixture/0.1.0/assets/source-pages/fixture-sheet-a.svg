@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="700" fill="#f7f5ef"/>
+  <rect x="10" y="10" width="980" height="680" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="30" y="44" font-size="22" font-weight="bold">P0 FIXTURE SHEET A — WALL LAYOUT (SYNTHETIC, NOT A CONSTRUCTION DOCUMENT)</text>
+
+  <!-- survey region: 60,60,420,240 -->
+  <g>
+    <rect x="60" y="60" width="420" height="240" fill="#fff" stroke="#888"/>
+    <text x="76" y="88" font-size="18" font-weight="bold">WALL LAYOUT — FRAMED DIMENSIONS</text>
+    <rect x="96" y="150" width="348" height="18" fill="#e8dfc8" stroke="#555"/>
+    <rect x="96" y="260" width="348" height="18" fill="#e8dfc8" stroke="#555"/>
+    <rect x="108" y="168" width="12" height="92" fill="#e8dfc8" stroke="#555"/>
+    <rect x="250" y="168" width="12" height="92" fill="#e8dfc8" stroke="#555"/>
+    <rect x="392" y="168" width="12" height="92" fill="#e8dfc8" stroke="#555"/>
+    <line x1="96" y1="110" x2="444" y2="110" stroke="#333"/>
+    <text x="200" y="104" font-size="17">96 in = 2438.4 mm framed length</text>
+    <text x="104" y="240" font-size="15">height 96 in (2438.4 mm)</text>
+  </g>
+
+  <!-- wall-length region: 60,330,420,150 -->
+  <g>
+    <rect x="60" y="330" width="420" height="150" fill="#fff" stroke="#888"/>
+    <text x="76" y="358" font-size="18" font-weight="bold">DIMENSION CHAIN</text>
+    <line x1="80" y1="410" x2="460" y2="410" stroke="#333"/>
+    <line x1="80" y1="400" x2="80" y2="420" stroke="#333"/>
+    <line x1="460" y1="400" x2="460" y2="420" stroke="#333"/>
+    <text x="200" y="398" font-size="17">96 in (2438.4 mm) overall</text>
+    <text x="80" y="452" font-size="15">plates 1 1/2 in x 3 1/2 in actual</text>
+  </g>
+
+  <!-- opening region: 520,60,420,240 -->
+  <g>
+    <rect x="520" y="60" width="420" height="240" fill="#fff" stroke="#888"/>
+    <text x="536" y="88" font-size="18" font-weight="bold">DOOR ROUGH OPENING</text>
+    <rect x="620" y="150" width="200" height="120" fill="none" stroke="#333" stroke-dasharray="8 6"/>
+    <text x="646" y="200" font-size="17">37 1/2 in</text>
+    <text x="646" y="224" font-size="17">952.5 mm clear</text>
+    <text x="640" y="262" font-size="15">head 80 in (2032 mm)</text>
+    <text x="536" y="288" font-size="14">see field note 01 for conflicting measurement</text>
+  </g>
+
+  <!-- cabinet region: 520,330,420,300 -->
+  <g>
+    <rect x="520" y="330" width="420" height="300" fill="#fff" stroke="#888"/>
+    <text x="536" y="358" font-size="18" font-weight="bold">CABINET ELEVATION (ENVELOPE)</text>
+    <rect x="660" y="400" width="140" height="180" fill="#fff" stroke="#333"/>
+    <line x1="660" y1="490" x2="800" y2="490" stroke="#333" stroke-dasharray="6 4"/>
+    <text x="586" y="620" font-size="15">24 in (609.6 mm) wide envelope</text>
+  </g>
+
+  <!-- remove + general region: 60,510,420,150 / 60,510,880,150 -->
+  <g>
+    <rect x="60" y="510" width="420" height="150" fill="#fff" stroke="#888"/>
+    <text x="76" y="540" font-size="18" font-weight="bold">TEMP PROTECTION</text>
+    <text x="76" y="572" font-size="15">Fold and store the protection panel</text>
+    <text x="76" y="596" font-size="15">before framing work starts.</text>
+  </g>
+  <g>
+    <rect x="520" y="510" width="420" height="150" fill="#fff" stroke="#888"/>
+    <text x="536" y="540" font-size="18" font-weight="bold">GENERAL NOTES</text>
+    <text x="536" y="572" font-size="15">Synthetic fixture. Dimensions for pipeline</text>
+    <text x="536" y="596" font-size="15">proof only. No construction release.</text>
+  </g>
+  <text x="30" y="686" font-size="13" fill="#666">P0 fixture sheet A · generated for the DIY guide platform P0 gate · synthetic</text>
+</svg>

@@ -1,0 +1,850 @@
+{
+  "sourceRoot": "private://owner-supplied-r35",
+  "generatedBy": "work/r35/author-r35.mjs",
+  "summary": {
+    "pages": 29,
+    "represented": 29,
+    "reference_only": 0,
+    "excluded": 0
+  },
+  "rows": [
+    {
+      "page": 1,
+      "title": "Overview: build the pantry walls; READY survey/practice only",
+      "disposition": "represented",
+      "entityIds": [
+        "release.r35.survey",
+        "release.r35.practice",
+        "release.r35.plan"
+      ],
+      "operationIds": [],
+      "stepIds": [],
+      "viewIds": [
+        "view.iso"
+      ],
+      "citationIds": [
+        "citation.card.p01-overview.ready",
+        "citation.card.p01-overview.method",
+        "citation.card.p01-overview.next"
+      ],
+      "releaseStatus": "ready (survey/practice only)",
+      "notes": "Project intent, readiness statement and single-top-plate concept (see also the pantry-r35 listing and project.json). No house work is represented as ready."
+    },
+    {
+      "page": 2,
+      "title": "Read the finished plan: 149 / 68 / 63.5 / W2 / truss trial",
+      "disposition": "represented",
+      "entityIds": [
+        "measurement.w1.finished-inside",
+        "measurement.w1.outside-depth-trial",
+        "measurement.w1.clear-depth-derived",
+        "measurement.w2.finished-thickness",
+        "measurement.truss.center-trial"
+      ],
+      "operationIds": [
+        "op.survey-finished-faces"
+      ],
+      "stepIds": [
+        "step.p4-survey"
+      ],
+      "viewIds": [
+        "view.plan"
+      ],
+      "citationIds": [
+        "citation.card.p02-plan.inside",
+        "citation.card.p02-plan.outside",
+        "citation.card.p02-plan.clear",
+        "citation.card.p02-plan.return",
+        "citation.card.p02-plan.truss"
+      ],
+      "releaseStatus": "conditional arithmetic / ready survey",
+      "notes": "All dimension rows mapped to measurements with JSON Pointer holds; truss row is a layout target only."
+    },
+    {
+      "page": 3,
+      "title": "Read the cabinet elevation: fridge front, chains, operating-fit warnings",
+      "disposition": "represented",
+      "entityIds": [
+        "part.fixture.base-row",
+        "part.fixture.fridge",
+        "measurement.cabinets.combined",
+        "measurement.fridge.bin-removal-required",
+        "measurement.fridge.closed-front-clearance",
+        "measurement.fridge.door90-clearance",
+        "issue.r35.cabinet-seams"
+      ],
+      "operationIds": [
+        "op.dry-fit-fixtures",
+        "op.set-refrigerator"
+      ],
+      "stepIds": [
+        "step.p27-cabinets",
+        "step.p27-refrigerator"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p03-elevation.fronts",
+        "citation.card.p03-elevation.chain",
+        "citation.card.p03-elevation.operating-fit"
+      ],
+      "releaseStatus": "held (fixture loading)",
+      "notes": "Exact project label GE GSE25GYPHCFS; family-source distinction and operating-fit warnings attached to the fridge part and issue."
+    },
+    {
+      "page": 4,
+      "title": "Survey before cutting: taped faces, truss, boxes, EX1/trim photos",
+      "disposition": "represented",
+      "entityIds": [
+        "measurement.w1.finished-inside",
+        "measurement.truss.center-trial",
+        "measurement.cabinets.combined",
+        "measurement.closet.inside-width",
+        "measurement.closet.depth"
+      ],
+      "operationIds": [
+        "op.survey-finished-faces"
+      ],
+      "stepIds": [
+        "step.p4-survey"
+      ],
+      "viewIds": [
+        "view.iso"
+      ],
+      "citationIds": [
+        "citation.card.p04-survey.ready",
+        "citation.card.p04-survey.steps",
+        "citation.card.p04-survey.no-cut"
+      ],
+      "releaseStatus": "ready (survey scope)",
+      "notes": "Ready survey only; destructive exposure and drilling remain held."
+    },
+    {
+      "page": 5,
+      "title": "Remove only required baseboard: TR-01..TR-03 bounded removal",
+      "disposition": "represented",
+      "entityIds": [
+        "part.trim.tr-01",
+        "part.trim.tr-02",
+        "part.trim.tr-03",
+        "part.trim.tr-04",
+        "part.existing.kitchen-door"
+      ],
+      "operationIds": [
+        "op.survey-trim",
+        "op.remove-trim-selective"
+      ],
+      "stepIds": [
+        "step.p5-trim-survey",
+        "step.p5-trim-removal"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p05-trim.scope",
+        "citation.card.p05-trim.zones",
+        "citation.card.p05-trim.bounds"
+      ],
+      "releaseStatus": "survey ready / removal held",
+      "notes": "Non-destructive trim survey is ready; removal is held for marked contact areas and the EX1 opening boundary (TR-04 is conditional discovery only)."
+    },
+    {
+      "page": 6,
+      "title": "Set out the provisional parts: planning tray and stock study",
+      "disposition": "represented",
+      "entityIds": [
+        "material.lumber.w1-stud",
+        "material.lumber.w2-stud",
+        "material.lumber.backing",
+        "material.lumber.practice",
+        "material.gypsum.half",
+        "material.gypsum.five-eighth"
+      ],
+      "operationIds": [
+        "op.stage-tools",
+        "op.prepare-practice"
+      ],
+      "stepIds": [
+        "step.p7-setup",
+        "step.p13-practice"
+      ],
+      "viewIds": [],
+      "citationIds": [
+        "citation.card.p06-parts.tray",
+        "citation.card.p06-parts.tray-rows",
+        "citation.card.p06-parts.superseded",
+        "citation.card.p06-parts.stock"
+      ],
+      "releaseStatus": "conditional planning",
+      "notes": "Provisional quantities change with field measurements and connections; the superseded R27 material set is explicitly invalid."
+    },
+    {
+      "page": 7,
+      "title": "Set up the work area: READY protection, inventory and handling route",
+      "disposition": "represented",
+      "entityIds": [
+        "part.existing.tile-floor",
+        "part.w1.bottom-plate",
+        "part.w2.bottom-plate",
+        "tool.circular-saw",
+        "tool.drill-driver"
+      ],
+      "operationIds": [
+        "op.protect-route",
+        "op.stage-tools"
+      ],
+      "stepIds": [
+        "step.p7-setup"
+      ],
+      "viewIds": [
+        "view.installer-eye"
+      ],
+      "citationIds": [
+        "citation.card.p07-setup.ready",
+        "citation.card.p07-setup.steps",
+        "citation.card.p07-setup.method",
+        "citation.card.p07-setup.helper"
+      ],
+      "releaseStatus": "ready (survey/logistics scope)",
+      "notes": "Page-7 protection, inventory and handling-route actions are ready under the ready survey/logistics scope; no nailer/strip requirement exists."
+    },
+    {
+      "page": 8,
+      "title": "Mark W1 two plates: candidate centres and conditional plate arithmetic",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w1.bottom-plate",
+        "part.w1.top-plate",
+        "part.w1.stud-s01",
+        "part.w1.stud-s11",
+        "part.w1.stud-s12",
+        "measurement.w1.plate-156.75"
+      ],
+      "operationIds": [
+        "op.layout-w1-plates"
+      ],
+      "stepIds": [
+        "step.p8-w1-layout"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p08-w1-plates.centres",
+        "citation.card.p08-w1-plates.steps",
+        "citation.card.p08-w1-plates.arithmetic",
+        "citation.card.p08-w1-plates.hold"
+      ],
+      "releaseStatus": "conditional (marking) / cut held",
+      "notes": "Marking is conditional preview; the plate length is conditional arithmetic, not a saw cut."
+    },
+    {
+      "page": 9,
+      "title": "Build W1 in place: S01-S12, plates and candidate angle connections",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w1.stud-s01",
+        "part.w1.stud-s06",
+        "part.w1.stud-s12",
+        "connection.w1.stud-to-plate",
+        "measurement.ceiling.reported"
+      ],
+      "operationIds": [
+        "op.fit-w1-studs",
+        "op.fasten-w1-studs"
+      ],
+      "stepIds": [
+        "step.p9-w1-studs"
+      ],
+      "viewIds": [
+        "view.closeup-connector"
+      ],
+      "citationIds": [
+        "citation.card.p09-w1-frame.scope",
+        "citation.card.p09-w1-frame.steps",
+        "citation.card.p09-w1-frame.method-change"
+      ],
+      "releaseStatus": "held (frame cuts / connector placement)",
+      "notes": "No cut or installed connection is released; do not batch-cut from the reported 111-in ceiling."
+    },
+    {
+      "page": 10,
+      "title": "Screw-fastened metal angles: candidate A34/A34Z + ESR limits",
+      "disposition": "represented",
+      "entityIds": [
+        "connection.w1.stud-to-plate",
+        "fastener.sd9112",
+        "measurement.connector.bend",
+        "measurement.connector.leg",
+        "measurement.connector.screw-length",
+        "issue.r35.esr-opposing-angle"
+      ],
+      "operationIds": [
+        "op.review-connector"
+      ],
+      "stepIds": [
+        "step.p10-connector"
+      ],
+      "viewIds": [
+        "view.closeup-connector"
+      ],
+      "citationIds": [
+        "citation.card.p10-connector.candidate",
+        "citation.card.p10-connector.esr-limits",
+        "citation.card.p10-connector.limits"
+      ],
+      "releaseStatus": "conditional review / placement held",
+      "notes": "Candidate connector data only: installed quantity, orientation, rotation restraint and capacity are held; ESR-3096 excerpt card cited."
+    },
+    {
+      "page": 11,
+      "title": "Mark W2 2x8 frame: 8 3/8-in chain and 53 / 53 1/8-in comparisons",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w2.bottom-plate",
+        "part.w2.top-plate",
+        "measurement.w2.plate-53",
+        "measurement.w2.plate-53.125",
+        "measurement.column.projection"
+      ],
+      "operationIds": [
+        "op.layout-w2-plates"
+      ],
+      "stepIds": [
+        "step.p11-w2-layout"
+      ],
+      "viewIds": [
+        "view.elevation-w2"
+      ],
+      "citationIds": [
+        "citation.card.p11-w2-layout.chain",
+        "citation.card.p11-w2-layout.projection",
+        "citation.card.p11-w2-layout.hold"
+      ],
+      "releaseStatus": "conditional (marking) / cut held",
+      "notes": "Actual column contact governs; no W2 longitudinal cut is released."
+    },
+    {
+      "page": 12,
+      "title": "Build W2 and connect the walls: five studs, corner/column ties",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w2.stud-s01",
+        "part.w2.stud-s05",
+        "connection.w2.stud-to-plate",
+        "connection.corner.tie"
+      ],
+      "operationIds": [
+        "op.fit-w2-frame",
+        "op.fasten-w2-frame",
+        "op.tie-corner-column"
+      ],
+      "stepIds": [
+        "step.p12-w2-frame"
+      ],
+      "viewIds": [
+        "view.elevation-w2",
+        "view.closeup-corner"
+      ],
+      "citationIds": [
+        "citation.card.p12-w2-frame.scope",
+        "citation.card.p12-w2-frame.steps",
+        "citation.card.p12-w2-frame.stop"
+      ],
+      "releaseStatus": "held (W2 assembly / connector placement)",
+      "notes": "W2 depends on W1 stability and its own plate positioning/restraint; corner and column ties remain separate held connections."
+    },
+    {
+      "page": 13,
+      "title": "Practice the saw and driver: loose-stock yield and mock frame",
+      "disposition": "represented",
+      "entityIds": [
+        "part.practice.stock",
+        "part.practice.plate-a",
+        "part.practice.stud-a",
+        "measurement.practice.yield-net",
+        "material.lumber.practice"
+      ],
+      "operationIds": [
+        "op.prepare-practice",
+        "op.cut-practice",
+        "op.fit-practice-frame"
+      ],
+      "stepIds": [
+        "step.p13-practice"
+      ],
+      "viewIds": [
+        "view.practice-bench"
+      ],
+      "citationIds": [
+        "citation.card.p13-practice.ready",
+        "citation.card.p13-practice.yield",
+        "citation.card.p13-practice.limits"
+      ],
+      "releaseStatus": "ready (practice_on_loose_scrap)",
+      "notes": "Loose stock only: never house framing and never in the installed takeoff."
+    },
+    {
+      "page": 14,
+      "title": "Drive connector screws: SD9112 practice card and nonselected options",
+      "disposition": "represented",
+      "entityIds": [
+        "part.practice.angle",
+        "fastener.sd9112",
+        "connection.practice.angle-scrap",
+        "issue.r35.nonselected-fasteners"
+      ],
+      "operationIds": [
+        "op.read-connector-card",
+        "op.drive-practice-screws"
+      ],
+      "stepIds": [
+        "step.p14-sd9112"
+      ],
+      "viewIds": [
+        "view.practice-bench",
+        "view.closeup-connector"
+      ],
+      "citationIds": [
+        "citation.card.p14-sd9112.conditional",
+        "citation.card.p14-sd9112.spec",
+        "citation.card.p14-sd9112.nonselected"
+      ],
+      "releaseStatus": "ready (practice) / house placement held",
+      "notes": "Nonselected alternatives are reference-only; they never become parts, quantities or substitutes."
+    },
+    {
+      "page": 15,
+      "title": "Plan the tile-to-slab base: held until substrate/services/detail clear",
+      "disposition": "represented",
+      "entityIds": [
+        "part.existing.tile-floor",
+        "part.existing.slab",
+        "connection.base.anchor",
+        "issue.r35.services-unknown"
+      ],
+      "operationIds": [
+        "op.review-slab-base"
+      ],
+      "stepIds": [
+        "step.p15-slab"
+      ],
+      "viewIds": [
+        "view.closeup-slab"
+      ],
+      "citationIds": [
+        "citation.card.p15-slab.hold",
+        "citation.card.p15-slab.steps",
+        "citation.card.p15-slab.limits"
+      ],
+      "releaseStatus": "held (slab drilling)",
+      "notes": "No anchor type, spacing, edge distance, embedment or hole envelope is released; SD connector screws are not concrete anchors."
+    },
+    {
+      "page": 16,
+      "title": "Position plates and restrain walls: execute before stud installation",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w1.bottom-plate",
+        "part.w2.bottom-plate",
+        "part.w1.top-plate",
+        "part.w2.top-plate",
+        "connection.top.restraint"
+      ],
+      "operationIds": [
+        "op.set-bottom-plates",
+        "op.anchor-base-plates",
+        "op.restrain-top-plates"
+      ],
+      "stepIds": [
+        "step.p16-base-plates",
+        "step.p16-top-restraint"
+      ],
+      "viewIds": [
+        "view.plan"
+      ],
+      "citationIds": [
+        "citation.card.p16-plates.order",
+        "citation.card.p16-plates.steps",
+        "citation.card.p16-plates.truss"
+      ],
+      "releaseStatus": "held (frame/base/truss)",
+      "notes": "p16 depends on the marked plate layouts (p8/p11) and the p10/p15 reviews; top restraint is not a rigid stud angle."
+    },
+    {
+      "page": 17,
+      "title": "Make the frame straight: member selection, plane checks and corrections",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w1.stud-s01",
+        "part.w2.stud-s05"
+      ],
+      "operationIds": [
+        "op.check-straightness"
+      ],
+      "stepIds": [
+        "step.p17-straightening"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p17-straightening.hold",
+        "citation.card.p17-straightening.steps",
+        "citation.card.p17-straightening.correction",
+        "citation.card.p17-straightening.handbook"
+      ],
+      "releaseStatus": "held (frame)",
+      "notes": "Straightening/correction is held; the check itself cannot release screw or shim work."
+    },
+    {
+      "page": 18,
+      "title": "Add 2x6 cabinet backing: 25 flat blocks between W1 studs",
+      "disposition": "represented",
+      "entityIds": [
+        "part.backing.top-b01",
+        "part.backing.base-b03",
+        "measurement.backing.net-length",
+        "measurement.backing.band-base.low",
+        "measurement.backing.block-face"
+      ],
+      "operationIds": [
+        "op.fit-backing-blocks"
+      ],
+      "stepIds": [
+        "step.p18-backing"
+      ],
+      "viewIds": [
+        "view.closeup-backing"
+      ],
+      "citationIds": [
+        "citation.card.p18-backing.hold",
+        "citation.card.p18-backing.scope",
+        "citation.card.p18-backing.short-bay",
+        "citation.card.p18-backing.mix"
+      ],
+      "releaseStatus": "held (backing)",
+      "notes": "One part per CSV row; flat 2x6 orientation kept; no plywood substitute and no automatic fastener quantity."
+    },
+    {
+      "page": 19,
+      "title": "Connect the cabinet backing: opposing-angle conflict held",
+      "disposition": "represented",
+      "entityIds": [
+        "connection.backing.angle",
+        "issue.r35.esr-opposing-angle"
+      ],
+      "operationIds": [
+        "op.review-backing-connection",
+        "op.fasten-backing-blocks"
+      ],
+      "stepIds": [
+        "step.p19-backing-connection"
+      ],
+      "viewIds": [
+        "view.closeup-backing"
+      ],
+      "citationIds": [
+        "citation.card.p19-backing-connection.hold",
+        "citation.card.p19-backing-connection.conflict",
+        "citation.card.p19-backing-connection.quantity",
+        "citation.card.p19-backing-connection.space"
+      ],
+      "releaseStatus": "held (fixture loading / backing)",
+      "notes": "Exact backing detail, quantity and load path unresolved; shelf brackets stay on full studs."
+    },
+    {
+      "page": 20,
+      "title": "Make the new closet passage: EX1 held before demolition",
+      "disposition": "represented",
+      "entityIds": [
+        "part.existing.ex1-wall",
+        "part.existing.kitchen-door",
+        "measurement.closet.inside-width",
+        "measurement.closet.depth",
+        "issue.r35.ex1-closet-scope"
+      ],
+      "operationIds": [
+        "op.open-ex1-passage"
+      ],
+      "stepIds": [
+        "step.p20-ex1"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p20-ex1.hold",
+        "citation.card.p20-ex1.steps",
+        "citation.card.p20-ex1.scope-limits"
+      ],
+      "releaseStatus": "held (existing opening)",
+      "notes": "Closet 37/23 are survey facts only and do not define the rough opening; no demolition or exposure is released."
+    },
+    {
+      "page": 21,
+      "title": "Plan each drywall face: four faces, stock nest, EX1 patches excluded",
+      "disposition": "represented",
+      "entityIds": [
+        "part.drywall.w1-p-01",
+        "part.drywall.w2-r-01",
+        "material.gypsum.half",
+        "material.gypsum.five-eighth"
+      ],
+      "operationIds": [
+        "op.plan-drywall-faces",
+        "op.inspect-faces-supports"
+      ],
+      "stepIds": [
+        "step.p21-drywall-plan"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p21-drywall-faces.faces",
+        "citation.card.p21-drywall-faces.steps",
+        "citation.card.p21-drywall-faces.release"
+      ],
+      "releaseStatus": "held (drywall close-up)",
+      "notes": "Eight 1/2-in + two 5/8-in core sheets distinguished from one optional spare each; spares are never installed and EX1 patches stay out of the fixed nest."
+    },
+    {
+      "page": 22,
+      "title": "Four-face drywall map drawing (carried R34 layout)",
+      "disposition": "represented",
+      "entityIds": [
+        "part.drywall.w1-p-01",
+        "part.drywall.w1-p-04",
+        "part.drywall.w1-r-04",
+        "part.drywall.w2-p-02"
+      ],
+      "operationIds": [
+        "op.review-drywall-drawings"
+      ],
+      "stepIds": [
+        "step.p23-junction-drawings"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p22-drywall-map.w1p",
+        "citation.card.p22-drywall-map.w1r",
+        "citation.card.p22-drywall-map.w2p",
+        "citation.card.p22-drywall-map.w2r",
+        "citation.card.p22-drywall-map.heights"
+      ],
+      "releaseStatus": "held (drywall close-up)",
+      "notes": "Panel endpoints/faces from the R34 map; height is field-fit and the reported 111-in ceiling is not a cut."
+    },
+    {
+      "page": 23,
+      "title": "Wood junction drawing: W1 through / W2 butt footprints",
+      "disposition": "represented",
+      "entityIds": [
+        "part.w1.stud-s11",
+        "part.w1.stud-s12",
+        "part.w2.stud-s01",
+        "connection.corner.tie"
+      ],
+      "operationIds": [
+        "op.review-drywall-drawings"
+      ],
+      "stepIds": [
+        "step.p23-junction-drawings"
+      ],
+      "viewIds": [
+        "view.closeup-corner"
+      ],
+      "citationIds": [
+        "citation.card.p23-24-junction.junction",
+        "citation.card.p23-24-junction.footprints",
+        "citation.card.p23-24-junction.hold"
+      ],
+      "releaseStatus": "held (corner connection)",
+      "notes": "Butt contact about 1.5 in wide; connection type, fasteners, access and load path require acceptance."
+    },
+    {
+      "page": 24,
+      "title": "Wall and gypsum corner drawing: board laps and receiver limits",
+      "disposition": "represented",
+      "entityIds": [
+        "part.drywall.w1-r-04",
+        "part.drywall.w2-r-02",
+        "part.existing.column"
+      ],
+      "operationIds": [
+        "op.review-drywall-drawings"
+      ],
+      "stepIds": [
+        "step.p23-junction-drawings"
+      ],
+      "viewIds": [
+        "view.closeup-corner"
+      ],
+      "citationIds": [
+        "citation.card.p23-24-junction.corners",
+        "citation.card.p23-24-junction.chain",
+        "citation.card.p23-24-junction.hold"
+      ],
+      "releaseStatus": "held (corner/finish)",
+      "notes": "Top/truss movement and any rated/control joint need separate accepted details."
+    },
+    {
+      "page": 25,
+      "title": "Hang and fasten drywall: preclose inspection and panel handling",
+      "disposition": "represented",
+      "entityIds": [
+        "part.drywall.w1-p-01",
+        "part.w1.stud-s01",
+        "part.backing.top-b01",
+        "issue.r35.gate-g6-closeup"
+      ],
+      "operationIds": [
+        "op.inspect-preclose",
+        "op.hang-drywall",
+        "op.inspect-drywall"
+      ],
+      "stepIds": [
+        "step.p25-drywall-hang"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p25-drywall-hang.hold",
+        "citation.card.p25-drywall-hang.steps",
+        "citation.card.p25-drywall-hang.stop"
+      ],
+      "releaseStatus": "held (drywall close-up / G6)",
+      "notes": "Covering effects stay unapplied while held; the preclose inspection is a gate, never a browser checkbox."
+    },
+    {
+      "page": 26,
+      "title": "Tape, finish, paint and baseboard: conditional finish, held baseboard",
+      "disposition": "represented",
+      "entityIds": [
+        "part.drywall.w1-p-01",
+        "part.trim.tr-01",
+        "measurement.counter.top-elevation"
+      ],
+      "operationIds": [
+        "op.finish-drywall",
+        "op.install-baseboard"
+      ],
+      "stepIds": [
+        "step.p26-finish"
+      ],
+      "viewIds": [
+        "view.elevation-w1"
+      ],
+      "citationIds": [
+        "citation.card.p26-finish.conditional",
+        "citation.card.p26-finish.steps",
+        "citation.card.p26-finish.baseboard"
+      ],
+      "releaseStatus": "conditional (finish) / held (baseboard)",
+      "notes": "Movement joints never bridged; new baseboard waits for finished surfaces and measured exposed lengths."
+    },
+    {
+      "page": 27,
+      "title": "Install cabinets, shelves and GE refrigerator: full load path held",
+      "disposition": "represented",
+      "entityIds": [
+        "part.fixture.base-row",
+        "part.fixture.counter",
+        "part.fixture.upper-u1",
+        "part.fixture.shelves",
+        "part.fixture.fridge",
+        "issue.r35.gate-g5-fixtures"
+      ],
+      "operationIds": [
+        "op.dry-fit-fixtures",
+        "op.set-counter-uppers-shelves",
+        "op.set-refrigerator"
+      ],
+      "stepIds": [
+        "step.p27-cabinets",
+        "step.p27-refrigerator"
+      ],
+      "viewIds": [
+        "view.elevation-w1",
+        "view.plan"
+      ],
+      "citationIds": [
+        "citation.card.p27-fixtures.hold",
+        "citation.card.p27-fixtures.steps",
+        "citation.card.p27-fixtures.load-path"
+      ],
+      "releaseStatus": "held (fixture loading / G5)",
+      "notes": "Cabinet metadata, sizes and operations recorded; individual box widths remain null and the refrigerator operating fit is unresolved."
+    },
+    {
+      "page": 28,
+      "title": "Release and as-built checklist: G1-G7 gates",
+      "disposition": "represented",
+      "entityIds": [
+        "issue.r35.gate-g1-layout",
+        "issue.r35.gate-g2-floor",
+        "issue.r35.gate-g3-frame",
+        "issue.r35.gate-g4-ex1",
+        "issue.r35.gate-g5-fixtures",
+        "issue.r35.gate-g6-closeup",
+        "issue.r35.gate-g7-finish"
+      ],
+      "operationIds": [
+        "op.gate-g1-layout",
+        "op.gate-g2-floor",
+        "op.gate-g3-frame",
+        "op.gate-g4-ex1",
+        "op.gate-g5-fixtures",
+        "op.gate-g6-closeup",
+        "op.gate-g7-finish",
+        "op.update-field-model"
+      ],
+      "stepIds": [
+        "step.p28-gates"
+      ],
+      "viewIds": [
+        "view.iso"
+      ],
+      "citationIds": [
+        "citation.card.p28-gates.status",
+        "citation.card.p28-gates.gates",
+        "citation.card.p28-gates.process",
+        "citation.card.p28-gates.limits"
+      ],
+      "releaseStatus": "held (all gates)",
+      "notes": "Gates are held inspect/test operations plus acceptance records; no ready operation or checkbox satisfies them."
+    },
+    {
+      "page": 29,
+      "title": "Drawing and source record: limits, supersession and cart timeline",
+      "disposition": "represented",
+      "entityIds": [
+        "source.r35.permit-pdf",
+        "source.r35.esr",
+        "source.r35.change-record",
+        "source.r35.review"
+      ],
+      "operationIds": [
+        "op.record-source-status"
+      ],
+      "stepIds": [
+        "step.p29-source-record"
+      ],
+      "viewIds": [],
+      "citationIds": [
+        "citation.card.p29-source-record.status",
+        "citation.card.p29-source-record.sources",
+        "citation.card.p29-source-record.cart",
+        "citation.card.p29-source-record.review"
+      ],
+      "releaseStatus": "conditional (record only)",
+      "notes": "Source records, review scopes and the cart timeline recorded; no stale nailer requirement survives."
+    }
+  ]
+}

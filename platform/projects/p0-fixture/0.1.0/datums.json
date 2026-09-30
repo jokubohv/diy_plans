@@ -1,0 +1,24 @@
+[
+  {
+    "id": "datum.ff",
+    "name": "Finished floor",
+    "description": "Project origin at the finished-floor corner; all canonical coordinates are measured from here.",
+    "originMm": [0, 0, 0],
+    "axes": {
+      "x": "along the wall length",
+      "y": "into the room",
+      "z": "up"
+    }
+  },
+  {
+    "id": "datum.wall-a.origin",
+    "name": "Wall A framing origin",
+    "description": "Wall A framing origin placed at (347, 82, 0); wall-local coordinates are measured from here.",
+    "originMm": [347, 82, 0],
+    "axes": {
+      "x": "wall-a local length",
+      "y": "wall-a local depth (toward the room)",
+      "z": "up from finished floor"
+    }
+  }
+]

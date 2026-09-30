@@ -1,0 +1,46 @@
+{
+  "slug": "p0-fixture",
+  "title": "Wall Frame & Cabinet Backing",
+  "projectType": "fixture_demo",
+  "description": "Demonstration project for the guide platform: a conventionally framed 96 in wall with a continuous sole plate, a single top plate, flush end studs, common studs on the 16 in module, king and jack studs, a doubled 2x6 header with a plywood spacer and cripple studs above it, a door rough opening cut after anchoring, a temporary in-plane racking brace plus an out-of-plane plumb prop, and two cabinet backing blocks fitted in the stud bays. All data is synthetic fixture data, not a construction plan.",
+  "jurisdiction": "none (synthetic demonstration)",
+  "coordinateContract": {
+    "handedness": "right",
+    "upAxis": "Z",
+    "lengthUnit": "mm",
+    "description": "Right-handed Z-up millimetres; origin at the finished-floor corner. Wall A framing is placed at (347, 82, 0), so wall parts use wall-local coordinates and other assemblies use world coordinates."
+  },
+  "display": {
+    "unit": "in",
+    "precisionIn": 0.125
+  },
+  "releases": [
+    {
+      "id": "release.p0.demo",
+      "state": "ready",
+      "scope": "demonstration_only",
+      "issuer": "P0 fixture author (agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Synthetic fixture - no field verification",
+      "notes": "Demonstration-only release for survey, frame preparation, cutting, layout, assembly, anchoring, inspection, removal and routing steps that carry no withheld parameters."
+    },
+    {
+      "id": "release.p0.conditional",
+      "state": "conditional",
+      "scope": "demonstration_only",
+      "issuer": "P0 fixture author (agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Synthetic fixture - no field verification",
+      "notes": "Preview-only release. Sourced geometry may be shown with a CONDITIONAL label; conditions must be resolved by an authorized content revision before real work."
+    },
+    {
+      "id": "release.p0.held",
+      "state": "held",
+      "scope": "demonstration_only",
+      "issuer": "P0 fixture author (agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Synthetic fixture - no field verification",
+      "notes": "Held release: fastener type, length, spacing and edge distance are not released. The guide may only show a proposed connection location."
+    }
+  ]
+}

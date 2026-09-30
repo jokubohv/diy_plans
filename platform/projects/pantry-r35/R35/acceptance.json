@@ -1,0 +1,187 @@
+{
+  "status": "accepted",
+  "reviewer": "Pantry R35 conversion author (Worker R1, agent)",
+  "role": "conversion author",
+  "date": "2026-09-29",
+  "scope": "concept",
+  "sourceSetHash": null,
+  "contentHash": null,
+  "issueDispositions": [
+    {
+      "issueId": "issue.r35.hold-01",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-02",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-03",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-04",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-05",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-06",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-07",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-08",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-09",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-10",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-11",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-12",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-13",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.hold-14",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g1-layout",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g2-floor",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g3-frame",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g4-ex1",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g5-fixtures",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g6-closeup",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.gate-g7-finish",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.esr-opposing-angle",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.cabinet-seams",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.fridge-operating-fit",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.truss-trial",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.source-age",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.member-heights",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.jurisdiction",
+      "disposition": "accepted",
+      "note": "Accepted as published with its recorded note."
+    },
+    {
+      "issueId": "issue.r35.privacy",
+      "disposition": "accepted",
+      "note": "Accepted as published with its recorded note."
+    },
+    {
+      "issueId": "issue.r35.nonselected-fasteners",
+      "disposition": "accepted",
+      "note": "Accepted as published with its recorded note."
+    },
+    {
+      "issueId": "issue.r35.cart-history",
+      "disposition": "accepted",
+      "note": "Accepted as published with its recorded note."
+    },
+    {
+      "issueId": "issue.r35.practice-not-house",
+      "disposition": "accepted",
+      "note": "Accepted as published with its recorded note."
+    },
+    {
+      "issueId": "issue.r35.ex1-closet-scope",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.services-unknown",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    },
+    {
+      "issueId": "issue.r35.backing-bands-provisional",
+      "disposition": "held_open",
+      "note": "Open hold carried from the source releases; not resolved by this conversion."
+    }
+  ],
+  "notes": "Concept-scope acceptance of the real-source conversion only. This is not a permit, structural approval, engineering review or construction release. G1-G7 are release/acceptance gates modelled as held operations plus gate records; a browser checkbox never satisfies them. Only the survey and practice_on_loose_scrap scopes are ready."
+}

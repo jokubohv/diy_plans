@@ -1,0 +1,19 @@
+[
+  {
+    "id": "system.demo-nonenergized",
+    "name": "Non-energized demonstration route",
+    "kind": "electrical",
+    "energized": false,
+    "description": "Schematic cable route used to prove routing/terminal support. Not an electrical design and not energized.",
+    "circuits": [
+      {
+        "id": "circuit.demo",
+        "label": "DEMO-1 (non-energized)",
+        "description": "Demonstration circuit label for the schematic route; never energized.",
+        "conductorLabel": "schematic",
+        "citationIds": ["citation.sheet-c.route"]
+      }
+    ],
+    "citationIds": ["citation.sheet-c.route"]
+  }
+]

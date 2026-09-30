@@ -1,0 +1,62 @@
+[
+  {
+    "id": "datum.ff",
+    "name": "Finished floor (pantry)",
+    "description": "Z origin at the top of the retained finished tile. Layer stack below the tile is unresolved and investigated at step p15.",
+    "originMm": [
+      0,
+      0,
+      0
+    ],
+    "axes": {
+      "x": "from the foyer/W2 end toward the garage/refrigerator end",
+      "y": "from the W1 pantry finished face toward the existing EX1 wall/column",
+      "z": "up from the finished floor"
+    }
+  },
+  {
+    "id": "datum.w1.left-plate-end",
+    "name": "W1 left plate end / left finished reference",
+    "description": "R35 source x=0 left/refrigerator datum, registered at scene X=149 in. Source x increases toward W2; corrected scene +X points the opposite way, toward the garage/refrigerator end.",
+    "originMm": [
+      3784.6,
+      0,
+      0
+    ],
+    "axes": {
+      "x": "scene +X toward garage/refrigerator; source +x toward W2",
+      "y": "depth direction",
+      "z": "up"
+    }
+  },
+  {
+    "id": "datum.w1.pantry-face",
+    "name": "W1 pantry finished face",
+    "description": "Y datum zero: W1 pantry (cabinet) finished face; room face is at -4 1/2 in and the existing EX1 finished face is the 68-in trial depth basis.",
+    "originMm": [
+      0,
+      0,
+      0
+    ],
+    "axes": {
+      "x": "toward the garage/refrigerator end",
+      "y": "toward the existing closet wall/column",
+      "z": "up"
+    }
+  },
+  {
+    "id": "datum.w2.column-front",
+    "name": "W2 column front / plate end datum",
+    "description": "Conditional column-front plane at scene Y=52 5/8 in. W2 runs from its frame butt at Y=-1/2 in toward this retained-column end; its local q datum is q=Y+1/2.",
+    "originMm": [
+      0,
+      1336.675,
+      0
+    ],
+    "axes": {
+      "x": "W2 thickness direction; +X toward pantry",
+      "y": "W2 length direction toward the column",
+      "z": "up"
+    }
+  }
+]

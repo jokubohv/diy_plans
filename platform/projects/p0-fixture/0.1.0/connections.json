@@ -1,0 +1,123 @@
+{
+  "connections": [
+    {
+      "id": "connection.frame.plate-to-stud",
+      "fromPartId": "part.wall-a.bottom-plate",
+      "toPartId": "part.wall-a.stud-1",
+      "method": "screw",
+      "fastenerSpecId": "fastener.frame-screw",
+      "pattern": {
+        "type": "line",
+        "count": 2,
+        "spacingMm": 80,
+        "edgeDistanceMm": 40
+      },
+      "pilotHole": null,
+      "toolSetup": "Impact driver with the synthetic screw bit",
+      "declaredReleaseStatus": "ready",
+      "citationIds": [
+        "citation.sheet-d.joints"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.frame.plate-to-slab",
+      "fromPartId": "part.wall-a.bottom-plate",
+      "toPartId": "part.existing.slab",
+      "method": "mechanical_anchor",
+      "fastenerSpecId": "fastener.frame-anchor",
+      "pattern": {
+        "type": "line",
+        "count": 3,
+        "spacingMm": 609.6,
+        "endOffsetMm": 152.4,
+        "edgeDistanceMm": 100
+      },
+      "pilotHole": {
+        "required": true,
+        "diameterMm": 10,
+        "depthMm": 60
+      },
+      "toolSetup": "Hammer drill + torque wrench per the synthetic schedule",
+      "declaredReleaseStatus": "ready",
+      "citationIds": [
+        "citation.sheet-d.anchors"
+      ],
+      "proposedPointsMm": null
+    },
+    {
+      "id": "connection.backing-a.stud-2",
+      "fromPartId": "part.wall-a.backing-a",
+      "toPartId": "part.wall-a.stud-2",
+      "method": "screw",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "Backing fastener type, length, spacing and edge distance are not released for this synthetic fixture; the guide may only show proposed connection locations.",
+      "citationIds": [
+        "citation.sheet-b.connection"
+      ],
+      "proposedPointsMm": [
+        [
+          753.4,
+          43.9,
+          1066.8
+        ],
+        [
+          1159.8,
+          43.9,
+          1066.8
+        ]
+      ]
+    },
+    {
+      "id": "connection.backing-b.king-left",
+      "fromPartId": "part.wall-a.backing-b",
+      "toPartId": "part.wall-a.king-left",
+      "method": "screw",
+      "fastenerSpecId": null,
+      "pattern": null,
+      "pilotHole": null,
+      "toolSetup": null,
+      "declaredReleaseStatus": "held",
+      "holdReason": "Backing fastener type, length, spacing and edge distance are not released for this synthetic fixture; the guide may only show proposed connection locations.",
+      "citationIds": [
+        "citation.sheet-b.connection"
+      ],
+      "proposedPointsMm": [
+        [
+          1159.8,
+          43.9,
+          1066.8
+        ],
+        [
+          1534.45,
+          43.9,
+          1066.8
+        ]
+      ]
+    }
+  ],
+  "fastenerSpecs": [
+    {
+      "id": "fastener.frame-screw",
+      "name": "Synthetic structural screw 8 x 63 mm (demonstration)",
+      "description": "Two screws at every frame joint: 14 plate joints, 2 header joints and 4 cripple ends (20 joints, 40 screws). Synthetic demonstration value only.",
+      "lengthMm": 63,
+      "citationIds": [
+        "citation.sheet-d.joints"
+      ]
+    },
+    {
+      "id": "fastener.frame-anchor",
+      "name": "Synthetic mechanical anchor M10 x 100 mm (demonstration)",
+      "description": "Three anchors on permanent plate segments (152.4, 762 and 2320 mm), 10 mm x 60 mm pilot holes. Slab assumed sound for the demonstration; no anchor remains inside the door opening.",
+      "lengthMm": 100,
+      "citationIds": [
+        "citation.sheet-d.anchors"
+      ]
+    }
+  ]
+}

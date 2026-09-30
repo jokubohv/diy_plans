@@ -1,0 +1,19 @@
+{
+  "name": "@diyguide/schema",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Canonical DIY Guide Bundle JSON Schema (0.1.0) and TypeScript types.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema.json": "./src/diy-guide-0.1.0.schema.json"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

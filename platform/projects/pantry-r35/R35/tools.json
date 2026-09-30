@@ -1,0 +1,260 @@
+[
+  {
+    "id": "tool.tape-measure",
+    "name": "Tape measure",
+    "category": "measuring",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p07-setup.tools",
+      "citation.json.tools.R35"
+    ]
+  },
+  {
+    "id": "tool.pencil",
+    "name": "Pencil / marker",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.square",
+    "name": "Carpenter's square",
+    "category": "measuring",
+    "setup": "Check several joints with a square; never use screws to pull a twisted stud straight.",
+    "citationIds": [
+      "citation.card.p07-setup.tools",
+      "citation.card.p17-straightening.steps"
+    ]
+  },
+  {
+    "id": "tool.level-48",
+    "name": "Checked 48-in level",
+    "category": "measuring",
+    "setup": "Check the vial before use (source: checked 48-in level).",
+    "citationIds": [
+      "citation.card.p07-setup.tools",
+      "citation.json.straightening"
+    ]
+  },
+  {
+    "id": "tool.straightedge-laser",
+    "name": "8-ft straightedge or line laser",
+    "category": "measuring",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p07-setup.tools",
+      "citation.card.p17-straightening.steps"
+    ]
+  },
+  {
+    "id": "tool.mason-line",
+    "name": "Mason's line with two equal 1/2-in spacer blocks",
+    "category": "measuring",
+    "setup": "Spacers are equal; the line stays 1/2 in off each middle face (source schematic).",
+    "citationIds": [
+      "citation.card.p17-straightening.steps"
+    ]
+  },
+  {
+    "id": "tool.circular-saw",
+    "name": "Supported circular saw with a compatible wood blade",
+    "category": "cutting",
+    "setup": "Put the blade kerf on waste; leave the offcut free; unplug or remove the battery for blade/depth setup and check the guard.",
+    "citationIds": [
+      "citation.card.p13-practice.ready",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.drill-driver",
+    "name": "Owned Ryobi drill/driver (exact model not recorded)",
+    "category": "driving",
+    "setup": "Use the actual tool manual; no clutch/torque number is prescribed. No hammer-drill mode for driving wood/connector screws.",
+    "citationIds": [
+      "citation.card.p13-practice.limits",
+      "citation.json.tools.R35",
+      "citation.pvt.ref-ryobi-pbldd02.ryobi-manual"
+    ]
+  },
+  {
+    "id": "tool.hex-nutsetter",
+    "name": "1/4-in hex nut setter compatible with the SD Connector screws",
+    "category": "driving",
+    "setup": "Match the setter to the actual screw packaging and driver.",
+    "citationIds": [
+      "citation.card.p14-sd9112.spec",
+      "citation.json.tools.R35"
+    ]
+  },
+  {
+    "id": "tool.clamps",
+    "name": "Clamps",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p13-practice.ready",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.work-supports",
+    "name": "Stable saw/work supports",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p13-practice.ready",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.work-platform",
+    "name": "Stable work platform (helper for overhead plates)",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p07-setup.steps"
+    ]
+  },
+  {
+    "id": "tool.utility-knife",
+    "name": "Utility knife",
+    "category": "cutting",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p05-trim.scope",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.putty-knife",
+    "name": "Thin putty knife / wall-protection pad",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p05-trim.scope",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.pry-bar",
+    "name": "Small pry bar",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p05-trim.scope",
+      "citation.card.p07-setup.tools"
+    ]
+  },
+  {
+    "id": "tool.wood-pad",
+    "name": "Wood protection pad",
+    "category": "safety",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p05-trim.scope"
+    ]
+  },
+  {
+    "id": "tool.end-nippers",
+    "name": "End nippers (pull salvage nails through the back)",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p05-trim.scope"
+    ]
+  },
+  {
+    "id": "tool.eye-protection",
+    "name": "Eye, hearing and dust protection",
+    "category": "safety",
+    "setup": "Match protection to the tool in use.",
+    "citationIds": [
+      "citation.card.p07-setup.tools",
+      "citation.card.p13-practice.ready"
+    ]
+  },
+  {
+    "id": "tool.t-square",
+    "name": "Drywall T-square",
+    "category": "measuring",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p21-drywall-faces.steps",
+      "citation.card.p25-drywall-hang.steps"
+    ]
+  },
+  {
+    "id": "tool.rasp",
+    "name": "Rasp",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p25-drywall-hang.steps"
+    ]
+  },
+  {
+    "id": "tool.drywall-lift",
+    "name": "Panel lift/support",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p25-drywall-hang.steps"
+    ]
+  },
+  {
+    "id": "tool.screwgun",
+    "name": "Adjustable-depth screwgun",
+    "category": "driving",
+    "setup": "Practice on offcut at the same stud/backing stack; heads just below the face without tearing paper.",
+    "citationIds": [
+      "citation.card.p25-drywall-hang.steps"
+    ]
+  },
+  {
+    "id": "tool.rasp-taping",
+    "name": "Taping and finishing tools (knives, hawk, sanding with dust control)",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p26-finish.steps"
+    ]
+  },
+  {
+    "id": "tool.tile-bit",
+    "name": "Approved tile bit (only after the accepted detail)",
+    "category": "drilling",
+    "setup": "Permitted non-hammer mode only; no drilling is released.",
+    "citationIds": [
+      "citation.card.p15-slab.steps"
+    ]
+  },
+  {
+    "id": "tool.concrete-drill",
+    "name": "Concrete drill/bit with depth reference (only after the accepted detail)",
+    "category": "drilling",
+    "setup": "Specified concrete pilot without hammering the tile; no test holes to discover services.",
+    "citationIds": [
+      "citation.card.p15-slab.steps"
+    ]
+  },
+  {
+    "id": "tool.dust-control",
+    "name": "Dust control and cleaning/setting tools",
+    "category": "safety",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p15-slab.steps"
+    ]
+  },
+  {
+    "id": "tool.paint-tools",
+    "name": "Paint and trim finishing tools",
+    "category": "other",
+    "setup": null,
+    "citationIds": [
+      "citation.card.p26-finish.steps"
+    ]
+  }
+]

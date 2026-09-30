@@ -1,0 +1,196 @@
+{
+  "slug": "pantry-r35",
+  "title": "Pantry R35 — Wall Framing, Backing and Cabinet Plan (conditional concept)",
+  "projectType": "pantry",
+  "description": "Real-source conversion of the Pantry R35 conditional manual. Canonical Z-up millimetres registered to the A3 floor-plan orientation: the origin is the W1/W2 pantry-finish corner, +X runs from the foyer/W2 end toward the garage/refrigerator end, +Y runs from W1 toward the existing EX1 wall/column and +Z is up from the finished floor. R35 source coordinates are preserved in citations/descriptions and registered by X = 149 in - x_R35, Y = y_R35, Z = z_R35. In-place construction with a single top plate per wall: W1 2x4 studs S01-S12, W2 2x8 studs S01-S05, 25 flat 2x6 backing blocks and a four-face drywall map. Cuts, slab drilling, truss attachment, the EX1 opening, drywall close-up, fixture loading, selective trim removal and new baseboard are held exactly as the source releases state; only survey and loose-scrap practice are ready. Member heights are field-fit and unresolved: wall members are shown as plan footprints with no cut height asserted. No electrical circuit/system design exists or is modelled.",
+  "jurisdiction": "City of Dade City, Florida",
+  "coordinateContract": {
+    "handedness": "right",
+    "upAxis": "Z",
+    "lengthUnit": "mm",
+    "description": "Right-handed A3-oriented Z-up millimetres. Origin at finished tile where the W1 and W2 pantry finished faces meet. +X runs along W1 from the foyer/W2 end toward the garage/refrigerator end; +Y runs from W1 toward the existing EX1 wall/column; +Z is up. Conversion from the R35 source drawing is X = 149 in - x_R35, Y = y_R35, Z = z_R35. Reported/user values keep their original inch text plus exact 25.4 mm/in canonical strings."
+  },
+  "display": {
+    "unit": "in",
+    "precisionIn": 0.125
+  },
+  "releases": [
+    {
+      "id": "release.r35.survey",
+      "state": "ready",
+      "scope": "design_review",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: survey_and_removable_floor_tape = ready",
+      "affectedIds": [
+        "op.survey-finished-faces",
+        "op.survey-trim",
+        "op.protect-route",
+        "op.stage-tools"
+      ],
+      "notes": "Non-destructive survey, removable floor tape, non-destructive trim survey and the page-7 protection/inventory/handling-route actions only. Destructive exposure and drilling remain held."
+    },
+    {
+      "id": "release.r35.practice",
+      "state": "ready",
+      "scope": "practice_on_loose_scrap",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: practice_on_loose_scrap = ready",
+      "affectedIds": [
+        "op.prepare-practice",
+        "op.cut-practice",
+        "op.fit-practice-frame",
+        "op.read-connector-card",
+        "op.drive-practice-screws"
+      ],
+      "notes": "Loose-stock saw/driver/SD9112 practice only, after tool and product checks; never house framing and never installed takeoff."
+    },
+    {
+      "id": "release.r35.plan",
+      "state": "conditional",
+      "scope": "design_review",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Conditional arithmetic and candidate layouts; no cuts or fasteners released",
+      "affectedIds": [
+        "op.layout-w1-plates",
+        "op.layout-w2-plates",
+        "op.review-connector",
+        "op.finish-drywall",
+        "op.record-source-status"
+      ],
+      "notes": "Preview-only conditional content: sourced geometry may be shown with a CONDITIONAL label; conditions must be resolved by an authorized content revision before real work."
+    },
+    {
+      "id": "release.r35.frame-cuts",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: frame_cuts = held",
+      "affectedIds": [
+        "op.set-bottom-plates",
+        "op.restrain-top-plates",
+        "op.fit-w1-studs",
+        "op.fasten-w1-studs",
+        "op.fit-w2-frame",
+        "op.fasten-w2-frame"
+      ],
+      "notes": "No house member cut is released: plate cut lengths, stud heights and connections are field-fit/held."
+    },
+    {
+      "id": "release.r35.slab-drilling",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: slab_drilling = held",
+      "affectedIds": [
+        "op.review-slab-base",
+        "op.anchor-base-plates",
+        "connection.base.anchor"
+      ],
+      "notes": "No drilling: the layer stack, hidden services, hole envelopes and a tested anchor detail are unresolved; tile/mortar is never anchor embedment."
+    },
+    {
+      "id": "release.r35.truss-attachment",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: truss_attachment = held",
+      "affectedIds": [
+        "op.restrain-top-plates",
+        "connection.top.restraint",
+        "part.reference.truss-band"
+      ],
+      "notes": "The physical truss must be located and a nonbearing movement detail accepted; rigid stud angles are not truss clips."
+    },
+    {
+      "id": "release.r35.existing-opening",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: existing_opening = held",
+      "affectedIds": [
+        "op.open-ex1-passage",
+        "part.existing.ex1-wall"
+      ],
+      "notes": "EX1 wall role/services and the approved walk-through opening detail are unresolved; the closet 37/23 dimensions do not define the rough opening."
+    },
+    {
+      "id": "release.r35.drywall-closeup",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: drywall_closeup = held",
+      "affectedIds": [
+        "op.plan-drywall-faces",
+        "op.inspect-preclose",
+        "op.hang-drywall",
+        "op.inspect-drywall"
+      ],
+      "notes": "Held for the preclose inspection, panel map, board-specific screw schedule, board selection and EX1 patches; panel heights are field-fit."
+    },
+    {
+      "id": "release.r35.fixture-loading",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: fixture_loading = held",
+      "affectedIds": [
+        "op.dry-fit-fixtures",
+        "op.set-counter-uppers-shelves",
+        "op.set-refrigerator",
+        "connection.backing.angle"
+      ],
+      "notes": "Held for actual cabinet rail templates, shelf bracket loads, the complete backing/load path and GE operating-fit checks."
+    },
+    {
+      "id": "release.r35.trim-removal",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: selective_existing_trim_removal = held for marked contact areas and EX1 opening boundary; non-destructive trim survey ready",
+      "affectedIds": [
+        "op.remove-trim-selective",
+        "part.trim.tr-01",
+        "part.trim.tr-02",
+        "part.trim.tr-03",
+        "part.trim.tr-04"
+      ],
+      "notes": "Removal is held until the marked contact areas and the EX1 opening boundaries are verified; the non-destructive trim survey is ready under the survey scope."
+    },
+    {
+      "id": "release.r35.baseboard",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Source state: new_baseboard_installation = held for finished drywall/cabinet fit and as-built exposed lengths",
+      "affectedIds": [
+        "op.install-baseboard"
+      ],
+      "notes": "New baseboard waits for finished drywall, cabinet/fridge fit and measured exposed lengths; trim removal authorizes neither tile removal nor drilling."
+    },
+    {
+      "id": "release.r35.connector-placement",
+      "state": "held",
+      "scope": "site_installation",
+      "issuer": "Pantry R35 conversion (Worker R1, agent)",
+      "issuedDate": "2026-09-29",
+      "evidence": "Candidate A34/A34Z only; installed_quantity null; no capacity claim",
+      "affectedIds": [
+        "connection.w1.stud-to-plate",
+        "connection.w2.stud-to-plate",
+        "connection.corner.tie"
+      ],
+      "notes": "Stud-angle count, orientation, rotation restraint and loaded-wall capacity require manufacturer/qualified acceptance; retained geometry alone does not release the screw method."
+    }
+  ]
+}

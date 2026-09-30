@@ -1,0 +1,173 @@
+[
+  {
+    "id": "view.iso",
+    "name": "Isometric overview",
+    "kind": "iso",
+    "camera": {
+      "positionMm": [
+        3950,
+        -3150,
+        2400
+      ],
+      "targetMm": [
+        1450,
+        0,
+        1150
+      ],
+      "fov": 45
+    },
+    "description": "Isometric overview — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.elevation",
+    "name": "Wall elevation",
+    "kind": "elevation",
+    "camera": {
+      "positionMm": [
+        1800,
+        -6000,
+        1200
+      ],
+      "targetMm": [
+        1800,
+        0,
+        1200
+      ],
+      "fov": 45
+    },
+    "description": "Wall elevation — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.plan",
+    "name": "Plan",
+    "kind": "plan",
+    "camera": {
+      "positionMm": [
+        1500,
+        -1200,
+        5200
+      ],
+      "targetMm": [
+        1500,
+        0,
+        600
+      ],
+      "fov": 45
+    },
+    "description": "Plan — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.closeup-band",
+    "name": "Backing close-up",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1144,
+        -1600,
+        1300
+      ],
+      "targetMm": [
+        1144,
+        0,
+        1070
+      ],
+      "fov": 45
+    },
+    "description": "Backing close-up — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.installer-eye",
+    "name": "Installer eye line",
+    "kind": "installer_eye",
+    "camera": {
+      "positionMm": [
+        1400,
+        -2600,
+        1500
+      ],
+      "targetMm": [
+        1100,
+        -200,
+        1100
+      ],
+      "fov": 50
+    },
+    "description": "Installer eye line — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.frame",
+    "name": "Wall frame overview",
+    "kind": "iso",
+    "camera": {
+      "positionMm": [
+        3300,
+        -2600,
+        2100
+      ],
+      "targetMm": [
+        1500,
+        0,
+        1200
+      ],
+      "fov": 45
+    },
+    "description": "Wall frame overview — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.frame-flat",
+    "name": "Frame layout (flat)",
+    "kind": "plan",
+    "camera": {
+      "positionMm": [
+        3300,
+        -2900,
+        3400
+      ],
+      "targetMm": [
+        1500,
+        -1100,
+        0
+      ],
+      "fov": 45
+    },
+    "description": "Frame layout (flat) — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.raise",
+    "name": "Raising the frame",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1500,
+        -3000,
+        1700
+      ],
+      "targetMm": [
+        1100,
+        -200,
+        1200
+      ],
+      "fov": 50
+    },
+    "description": "Raising the frame — deterministic camera preset for the synthetic demonstration."
+  },
+  {
+    "id": "view.anchor",
+    "name": "Bottom plate anchors (all three)",
+    "kind": "closeup",
+    "camera": {
+      "positionMm": [
+        1583,
+        -1900,
+        750
+      ],
+      "targetMm": [
+        1583,
+        0,
+        70
+      ],
+      "fov": 50
+    },
+    "description": "Wide view of the bottom plate showing all three permanent-segment anchor locations."
+  }
+]

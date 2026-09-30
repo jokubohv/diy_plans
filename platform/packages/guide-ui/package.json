@@ -1,0 +1,28 @@
+{
+  "name": "@diyguide/guide-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable React components: library cards, project overview, guided build rail, inspect panel, citation viewer.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@diyguide/schema": "0.1.0",
+    "@diyguide/viewer-core": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,1256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://diyguide.local/schema/0.1.0/bundle.json",
+  "title": "DIY Guide Bundle v0.1.0 (authored files)",
+  "description": "Canonical authored-bundle contract. Authored files are modular JSON documents under projects/<slug>/<content-version>/. The compiler produces a single compiled guide from these files. Canonical units are millimetres; rotationEulerDeg is [rx,ry,rz] degrees applied as R = Rz * Ry * Rx to column vectors. Transforms are column-major 4x4 with translation at indices 12-14.",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-zA-Z0-9]*([._-][a-zA-Z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 160
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,62}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "vec3": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "mat4": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 16,
+      "maxItems": 16
+    },
+    "decimal": {
+      "type": "string",
+      "pattern": "^-?\\d+(\\.\\d+)?$"
+    },
+    "unit": { "enum": ["mm", "cm", "m", "in", "ft"] },
+    "releaseStatus": {
+      "enum": ["ready", "conditional", "held", "superseded", "not_applicable"]
+    },
+    "evidenceStatus": {
+      "enum": [
+        "field_verified",
+        "document_verified",
+        "manufacturer_verified",
+        "reported",
+        "derived",
+        "candidate",
+        "conflicted",
+        "unknown"
+      ]
+    },
+    "partState": {
+      "enum": ["absent", "existing", "removed", "cut", "positioned", "installed", "covered"]
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "placement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["translationMm"],
+      "properties": {
+        "translationMm": { "$ref": "#/$defs/vec3" },
+        "rotationEulerDeg": { "$ref": "#/$defs/vec3" },
+        "scale": { "$ref": "#/$defs/vec3" }
+      }
+    },
+    "boundsMm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "$ref": "#/$defs/vec3" },
+        "max": { "$ref": "#/$defs/vec3" }
+      }
+    },
+    "datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "originMm"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "originMm": { "$ref": "#/$defs/vec3" },
+        "axes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["x", "y", "z"],
+          "properties": {
+            "x": { "type": "string" },
+            "y": { "type": "string" },
+            "z": { "type": "string" }
+          }
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "state", "scope", "issuer", "issuedDate"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "state": { "$ref": "#/$defs/releaseStatus" },
+        "scope": {
+          "enum": ["demonstration_only", "practice_on_loose_scrap", "site_installation", "design_review"]
+        },
+        "issuer": { "type": "string" },
+        "issuedDate": { "type": "string" },
+        "evidence": { "type": "string" },
+        "affectedIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "title",
+        "projectType",
+        "description",
+        "coordinateContract",
+        "display",
+        "releases"
+      ],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string" },
+        "projectType": {
+          "enum": [
+            "fixture_demo",
+            "pantry",
+            "wall",
+            "closet",
+            "cabinet",
+            "bathroom",
+            "flooring",
+            "deck",
+            "plumbing",
+            "electrical",
+            "other"
+          ]
+        },
+        "description": { "type": "string" },
+        "jurisdiction": { "type": "string" },
+        "coordinateContract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["handedness", "upAxis", "lengthUnit", "description"],
+          "properties": {
+            "handedness": { "const": "right" },
+            "upAxis": { "const": "Z" },
+            "lengthUnit": { "const": "mm" },
+            "description": { "type": "string" }
+          }
+        },
+        "display": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["unit", "precisionIn"],
+          "properties": {
+            "unit": { "enum": ["in", "mm", "cm", "ft"] },
+            "precisionIn": { "enum": [0.0625, 0.125, 0.25, 0.5, 1] }
+          }
+        },
+        "releases": { "type": "array", "items": { "$ref": "#/$defs/release" } }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "privacy"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": {
+          "enum": [
+            "fixture_sheet",
+            "pdf_page",
+            "drawing_region",
+            "field_note",
+            "product_manual",
+            "code_section",
+            "table_row",
+            "photo",
+            "user_instruction"
+          ]
+        },
+        "title": { "type": "string" },
+        "authority": { "type": "string" },
+        "date": { "type": "string" },
+        "revision": { "type": "string" },
+        "privacy": { "enum": ["public", "private", "excerpt_only"] },
+        "assetPath": { "type": "string" },
+        "checksum": { "$ref": "#/$defs/sha256" },
+        "page": { "type": "integer", "minimum": 1 },
+        "relationship": {
+          "enum": ["current", "carry_forward", "superseded", "reference"]
+        },
+        "locatorNote": { "type": "string" }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sourceId", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "sourceId": { "$ref": "#/$defs/id" },
+        "label": { "type": "string" },
+        "kind": {
+          "enum": [
+            "page",
+            "region",
+            "element",
+            "table_cell",
+            "note",
+            "manual_page",
+            "field_note",
+            "code_section"
+          ]
+        },
+        "region": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["x", "y", "width", "height"],
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" },
+            "width": { "type": "number" },
+            "height": { "type": "number" }
+          }
+        },
+        "elementId": { "type": "string" },
+        "row": { "type": "integer", "minimum": 1 },
+        "note": { "type": "string" },
+        "excerpt": { "type": "string" }
+      }
+    },
+    "sourcesFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources", "citations"],
+      "properties": {
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+        "citations": { "type": "array", "items": { "$ref": "#/$defs/citation" } }
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "original",
+        "canonicalMm",
+        "evidenceStatus",
+        "declaredReleaseStatus",
+        "citationIds"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string" },
+        "original": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["display", "value", "unit"],
+          "properties": {
+            "display": { "type": "string" },
+            "value": { "type": "string" },
+            "unit": { "$ref": "#/$defs/unit" }
+          }
+        },
+        "canonicalMm": { "$ref": "#/$defs/decimal" },
+        "installationToleranceMm": { "type": ["number", "null"] },
+        "evidenceStatus": { "$ref": "#/$defs/evidenceStatus" },
+        "declaredReleaseStatus": { "$ref": "#/$defs/releaseStatus" },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "derivedFromMeasurementIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "conflictNote": { "type": "string" }
+      }
+    },
+    "geometryBox": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "sizeMm"],
+      "properties": {
+        "shape": { "const": "box" },
+        "sizeMm": { "$ref": "#/$defs/vec3" }
+      }
+    },
+    "geometryPath": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "pointsMm"],
+      "properties": {
+        "shape": { "const": "path" },
+        "pointsMm": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/vec3" },
+          "minItems": 2
+        },
+        "radiusMm": { "type": "number", "exclusiveMinimum": 0 },
+        "dashed": { "type": "boolean" }
+      }
+    },
+    "geometryMarkers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "pointsMm"],
+      "properties": {
+        "shape": { "const": "markers" },
+        "pointsMm": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/vec3" },
+          "minItems": 1
+        },
+        "markerRadiusMm": { "type": "number", "exclusiveMinimum": 0 },
+        "proposed": { "type": "boolean" }
+      }
+    },
+    "part": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "role",
+        "assemblyId",
+        "trade",
+        "stage",
+        "ifcClass",
+        "ifcGlobalId",
+        "description",
+        "selectable",
+        "initialState",
+        "geometry"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "kind": {
+          "enum": [
+            "linear_member",
+            "panel",
+            "layered_surface",
+            "opening",
+            "fixture",
+            "connector",
+            "mesh_asset"
+          ]
+        },
+        "role": {
+          "enum": ["installed", "existing", "removed", "clearance", "overlay", "schematic", "loose"]
+        },
+        "assemblyId": { "$ref": "#/$defs/id" },
+        "trade": {
+          "enum": [
+            "general",
+            "framing",
+            "drywall",
+            "electrical",
+            "plumbing",
+            "cabinetry",
+            "appliances",
+            "finishes"
+          ]
+        },
+        "stage": {
+          "enum": ["existing", "demo", "rough", "inspection", "cover", "finish", "fixture"]
+        },
+        "ifcClass": { "type": "string", "minLength": 3 },
+        "ifcGlobalId": { "type": "string", "minLength": 22, "maxLength": 22 },
+        "materialId": { "type": ["string", "null"] },
+        "description": { "type": "string" },
+        "selectable": { "type": "boolean" },
+        "takeoff": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["include"],
+          "properties": {
+            "include": { "type": "boolean" },
+            "quantity": { "type": "number", "exclusiveMinimum": 0 },
+            "note": { "type": "string" }
+          }
+        },
+        "placement": { "$ref": "#/$defs/placement" },
+        "initialState": { "$ref": "#/$defs/partState" },
+        "geometry": {
+          "oneOf": [
+            { "$ref": "#/$defs/geometryBox" },
+            { "$ref": "#/$defs/geometryPath" },
+            { "$ref": "#/$defs/geometryMarkers" }
+          ]
+        },
+        "worldTransform": { "$ref": "#/$defs/mat4" },
+        "boundsMm": { "$ref": "#/$defs/boundsMm" }
+      }
+    },
+    "assembly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "parentId", "trade", "stage"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "parentId": { "type": ["string", "null"] },
+        "trade": { "type": "string" },
+        "stage": { "type": "string" },
+        "placement": { "$ref": "#/$defs/placement" }
+      }
+    },
+    "fastenerPattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["line", "edge", "field"] },
+        "count": { "type": ["integer", "null"], "minimum": 1 },
+        "spacingMm": { "type": ["number", "null"] },
+        "startOffsetMm": { "type": ["number", "null"] },
+        "endOffsetMm": { "type": ["number", "null"] },
+        "edgeDistanceMm": { "type": ["number", "null"] }
+      }
+    },
+    "pilotHole": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "diameterMm", "depthMm"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "diameterMm": { "type": ["number", "null"] },
+        "depthMm": { "type": ["number", "null"] }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "fromPartId",
+        "toPartId",
+        "method",
+        "declaredReleaseStatus",
+        "citationIds"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "fromPartId": { "$ref": "#/$defs/id" },
+        "toPartId": { "$ref": "#/$defs/id" },
+        "method": {
+          "enum": [
+            "mechanical_anchor",
+            "screw",
+            "nail",
+            "bolt",
+            "adhesive",
+            "clamp",
+            "bracket",
+            "other"
+          ]
+        },
+        "fastenerSpecId": { "type": ["string", "null"] },
+        "pattern": {
+          "oneOf": [{ "$ref": "#/$defs/fastenerPattern" }, { "type": "null" }]
+        },
+        "pilotHole": {
+          "oneOf": [{ "$ref": "#/$defs/pilotHole" }, { "type": "null" }]
+        },
+        "toolSetup": { "type": ["string", "null"] },
+        "declaredReleaseStatus": { "$ref": "#/$defs/releaseStatus" },
+        "holdReason": { "type": "string" },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "proposedPointsMm": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/vec3" }
+        },
+        "effectiveReleaseStatus": { "$ref": "#/$defs/releaseStatus" }
+      }
+    },
+    "connectionsFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["connections", "fastenerSpecs"],
+      "properties": {
+        "connections": { "type": "array", "items": { "$ref": "#/$defs/connection" } },
+        "fastenerSpecs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "citationIds"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "lengthMm": { "type": ["number", "null"] },
+              "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+            }
+          }
+        }
+      }
+    },
+    "material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "category", "unit", "quantityProposed", "citationIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "category": {
+          "enum": ["lumber", "panel", "fastener", "electrical", "adhesive", "other"]
+        },
+        "sizeLabel": { "type": ["string", "null"] },
+        "actualSizeMm": {
+          "oneOf": [{ "$ref": "#/$defs/vec3" }, { "type": "null" }]
+        },
+        "unit": { "enum": ["each", "sheet", "board", "m", "ft", "tube", "box"] },
+        "quantityProposed": { "type": "number", "exclusiveMinimum": 0 },
+        "spareQuantity": { "type": ["number", "null"] },
+        "notes": { "type": "string" },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "category", "citationIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "category": {
+          "enum": ["measuring", "cutting", "driving", "drilling", "routing", "safety", "other"]
+        },
+        "setup": { "type": ["string", "null"] },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kind", "energized", "description", "circuits", "citationIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "kind": { "enum": ["electrical", "plumbing", "hvac"] },
+        "energized": { "type": "boolean" },
+        "description": { "type": "string" },
+        "circuits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "citationIds"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "label": { "type": "string" },
+              "description": { "type": "string" },
+              "conductorLabel": { "type": ["string", "null"] },
+              "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+            }
+          }
+        },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "qualityCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instruction"],
+      "properties": {
+        "instruction": { "type": "string", "minLength": 3 },
+        "evidenceRequired": {
+          "enum": ["visual", "field_measurement_or_photo", "photo", "measurement", "none"]
+        },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "stateEffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["partId", "toState"],
+      "properties": {
+        "partId": { "$ref": "#/$defs/id" },
+        "fromState": { "$ref": "#/$defs/partState" },
+        "toState": { "$ref": "#/$defs/partState" }
+      }
+    },
+    "presentationRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reveal": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "ghostPrevious": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "translateFrom": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["partId", "offsetMm"],
+          "properties": {
+            "partId": { "$ref": "#/$defs/id" },
+            "offsetMm": { "$ref": "#/$defs/vec3" }
+          }
+        },
+        "showFastenerPoints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["connectionId"],
+          "properties": {
+            "connectionId": { "$ref": "#/$defs/id" },
+            "proposed": { "type": "boolean" }
+          }
+        },
+        "driveFasteners": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["connectionId"],
+          "properties": { "connectionId": { "$ref": "#/$defs/id" } }
+        },
+        "routePath": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["partId"],
+          "properties": { "partId": { "$ref": "#/$defs/id" } }
+        },
+        "cutaway": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled"],
+          "properties": { "enabled": { "type": "boolean" } }
+        },
+        "layFlat": {
+          "description": "Presentation-only pose: rotate the listed parts about an axis through a pivot. Deterministic on every seek; never changes data, takeoff or IFC.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["partIds", "axis", "angleDeg", "pivotMm"],
+          "properties": {
+            "partIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+            "axis": { "enum": ["x", "y", "z"] },
+            "angleDeg": { "type": "number" },
+            "pivotMm": { "$ref": "#/$defs/vec3" }
+          }
+        },
+        "schematicElevation": {
+          "description": "Presentation-only elevation for field-fit wall members and drywall sheets stored as plan footprints. Never changes canonical geometry, dimensions, takeoff or IFC.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "studPartIds",
+            "topPlatePartIds",
+            "overallHeightMm",
+            "bottomPlateThicknessMm",
+            "topPlateThicknessMm",
+            "label"
+          ],
+          "properties": {
+            "studPartIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+            "topPlatePartIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+            "panelPartIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+            "contextPartIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+            "overallHeightMm": { "type": "number", "exclusiveMinimum": 0 },
+            "bottomPlateThicknessMm": { "type": "number", "minimum": 0 },
+            "topPlateThicknessMm": { "type": "number", "exclusiveMinimum": 0 },
+            "label": { "type": "string", "minLength": 3 }
+          }
+        },
+        "boxTransforms": {
+          "description": "Presentation-only per-part transforms. Canonical placement, geometry, dimensions, takeoff and IFC remain unchanged.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["partId"],
+            "properties": {
+              "partId": { "$ref": "#/$defs/id" },
+              "offsetMm": { "$ref": "#/$defs/vec3" },
+              "scale": { "$ref": "#/$defs/vec3" }
+            }
+          }
+        },
+        "requirementPreview": {
+          "description": "Presentation-only held spatial requirements. These envelopes are not Parts and never enter canonical geometry, state, takeoff or IFC.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["measurementIds", "label", "boxes"],
+          "properties": {
+            "measurementIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+            "label": { "type": "string", "minLength": 3 },
+            "boxes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["id", "label", "centerMm", "sizeMm", "style"],
+                "properties": {
+                  "id": { "$ref": "#/$defs/id" },
+                  "label": { "type": "string", "minLength": 3 },
+                  "centerMm": { "$ref": "#/$defs/vec3" },
+                  "sizeMm": { "$ref": "#/$defs/vec3" },
+                  "style": { "enum": ["context", "target", "extension"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "operationView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["highlightPartIds", "hiddenPartIds", "recipe"],
+      "properties": {
+        "cameraPresetId": { "type": ["string", "null"] },
+        "highlightPartIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "hiddenPartIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "recipe": { "$ref": "#/$defs/presentationRecipe" }
+      }
+    },
+    "operationBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "targetPartIds",
+        "dependencyOperationIds",
+        "citationIds",
+        "declaredReleaseStatus",
+        "stateEffects",
+        "view",
+        "parameters"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string" },
+        "kind": {
+          "enum": [
+            "survey",
+            "prepare",
+            "remove",
+            "cut",
+            "position",
+            "fasten",
+            "drill",
+            "route",
+            "terminate",
+            "finish",
+            "inspect",
+            "test"
+          ]
+        },
+        "targetPartIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "dependencyOperationIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "declaredReleaseStatus": { "$ref": "#/$defs/releaseStatus" },
+        "releaseId": { "type": ["string", "null"] },
+        "preconditions": { "type": "array", "items": { "type": "string" } },
+        "qualityChecks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/qualityCheck" }
+        },
+        "stopConditions": { "type": "array", "items": { "type": "string" } },
+        "stateEffects": { "type": "array", "items": { "$ref": "#/$defs/stateEffect" } },
+        "view": { "$ref": "#/$defs/operationView" },
+        "parameters": { "type": "object" },
+        "holdReason": { "type": "string" },
+        "effectiveReleaseStatus": { "$ref": "#/$defs/releaseStatus" }
+      }
+    },
+    "operation": {
+      "$comment": "Discriminated union: base + per-kind parameters contract.",
+      "allOf": [
+        { "$ref": "#/$defs/operationBase" },
+        {
+          "if": { "properties": { "kind": { "const": "survey" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["measurementIds", "checkInstruction"],
+                "properties": {
+                  "measurementIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+                  "checkInstruction": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "prepare" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["materialIds", "toolIds", "instruction"],
+                "properties": {
+                  "materialIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+                  "toolIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+                  "instruction": { "type": "string", "minLength": 3 },
+                  "cutOperationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+                  "note": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "remove" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["disposition"],
+                "properties": {
+                  "disposition": { "enum": ["discard", "store", "reuse"] },
+                  "note": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "cut" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["cuts"],
+                "properties": {
+                  "cuts": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["partId", "finalLengthMm"],
+                      "properties": {
+                        "partId": { "$ref": "#/$defs/id" },
+                        "finalLengthMm": { "$ref": "#/$defs/decimal" },
+                        "note": { "type": "string" }
+                      }
+                    }
+                  },
+                  "toolId": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "position" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["datumNote"],
+                "properties": {
+                  "datumNote": { "type": "string" },
+                  "fromPartId": { "type": ["string", "null"] },
+                  "offsetsMm": {
+                    "oneOf": [{ "$ref": "#/$defs/vec3" }, { "type": "null" }]
+                  },
+                  "toolId": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "fasten" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["connectionIds", "proposed"],
+                "properties": {
+                  "connectionIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+                  "pointsMm": {
+                    "type": ["array", "null"],
+                    "items": { "$ref": "#/$defs/vec3" }
+                  },
+                  "proposed": { "type": "boolean" },
+                  "toolId": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "drill" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["holeDiameterMm", "depthMm", "pointsMm"],
+                "properties": {
+                  "holeDiameterMm": { "type": ["number", "null"] },
+                  "depthMm": { "type": ["number", "null"] },
+                  "pointsMm": {
+                    "type": ["array", "null"],
+                    "items": { "$ref": "#/$defs/vec3" }
+                  },
+                  "toolId": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "route" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["systemId", "pathPointsMm", "demonstrationOnly"],
+                "properties": {
+                  "systemId": { "$ref": "#/$defs/id" },
+                  "circuitId": { "type": ["string", "null"] },
+                  "pathPointsMm": {
+                    "type": ["array", "null"],
+                    "items": { "$ref": "#/$defs/vec3" }
+                  },
+                  "conductorLabel": { "type": ["string", "null"] },
+                  "demonstrationOnly": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "terminate" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["systemId", "diagramCitationIds"],
+                "properties": {
+                  "systemId": { "$ref": "#/$defs/id" },
+                  "circuitId": { "type": ["string", "null"] },
+                  "terminalPartId": { "type": ["string", "null"] },
+                  "diagramCitationIds": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "$ref": "#/$defs/id" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "finish" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["levelLabel"],
+                "properties": {
+                  "levelLabel": { "type": "string" },
+                  "passes": { "type": ["integer", "null"] }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "inspect" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["inspectWhat", "criteria", "evidenceRequired"],
+                "properties": {
+                  "inspectWhat": { "type": "string" },
+                  "criteria": { "type": "string" },
+                  "evidenceRequired": {
+                    "enum": ["visual", "field_measurement_or_photo", "photo", "measurement", "none"]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "test" } } },
+          "then": {
+            "required": ["parameters"],
+            "properties": {
+              "parameters": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["testType", "expectedResult"],
+                "properties": {
+                  "testType": { "type": "string" },
+                  "expectedResult": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence",
+        "title",
+        "prerequisiteStepIds",
+        "operationIds",
+        "visibleAssemblyIds",
+        "toolIds",
+        "qualityChecks",
+        "stopConditions",
+        "declaredReleaseStatus",
+        "citationIds"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "sequence": { "type": "integer", "minimum": 0 },
+        "title": { "type": "string" },
+        "phaseLabel": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "prerequisiteStepIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "operationIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+        "visibleAssemblyIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "toolIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "qualityChecks": { "type": "array", "items": { "$ref": "#/$defs/qualityCheck" } },
+        "stopConditions": { "type": "array", "items": { "type": "string" } },
+        "declaredReleaseStatus": { "$ref": "#/$defs/releaseStatus" },
+        "citationIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "effectiveReleaseStatus": { "$ref": "#/$defs/releaseStatus" }
+      }
+    },
+    "view": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kind", "camera"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "kind": { "enum": ["iso", "elevation", "plan", "section", "closeup", "installer_eye"] },
+        "camera": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["positionMm", "targetMm"],
+          "properties": {
+            "positionMm": { "$ref": "#/$defs/vec3" },
+            "targetMm": { "$ref": "#/$defs/vec3" },
+            "upMm": { "$ref": "#/$defs/vec3" },
+            "fov": { "type": "number", "minimum": 10, "maximum": 110 }
+          }
+        },
+        "description": { "type": "string" }
+      }
+    },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "severity", "status", "title", "detail", "affectedIds", "sourceRefIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "severity": { "enum": ["blocking", "major", "minor", "info"] },
+        "status": { "enum": ["open", "resolved", "accepted"] },
+        "title": { "type": "string" },
+        "detail": { "type": "string" },
+        "affectedIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "sourceRefIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "resolution": { "type": "string" }
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "role", "date", "scope", "sourceSetHash", "contentHash", "issueDispositions"],
+      "properties": {
+        "status": { "enum": ["accepted", "rejected", "pending"] },
+        "reviewer": { "type": "string" },
+        "role": { "type": "string" },
+        "date": { "type": "string" },
+        "scope": { "enum": ["concept", "build_guide", "demo"] },
+        "sourceSetHash": {
+          "oneOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "contentHash": {
+          "oneOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "issueDispositions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["issueId", "disposition"],
+            "properties": {
+              "issueId": { "$ref": "#/$defs/id" },
+              "disposition": { "type": "string" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "listing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "title",
+        "summary",
+        "projectType",
+        "scope",
+        "revision",
+        "updated",
+        "thumbnailAssetPath"
+      ],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "projectType": { "type": "string" },
+        "scope": { "enum": ["concept", "build_guide"] },
+        "revision": { "type": "string" },
+        "updated": { "type": "string" },
+        "thumbnailAssetPath": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "schemaVersion",
+        "contentVersion",
+        "packageRevision",
+        "minimumBuilderVersion",
+        "capabilities"
+      ],
+      "properties": {
+        "schema": { "const": "diy-guide" },
+        "schemaVersion": { "const": "0.1.0" },
+        "contentVersion": { "type": "string" },
+        "packageRevision": { "type": "integer", "minimum": 1 },
+        "minimumBuilderVersion": { "type": "string" },
+        "capabilities": { "type": "array", "items": { "$ref": "#/$defs/capability" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "partStateEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["partId", "state"],
+      "properties": {
+        "partId": { "$ref": "#/$defs/id" },
+        "state": { "$ref": "#/$defs/partState" }
+      }
+    },
+    "overlayObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "operationId", "state", "label", "inTakeoff"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["fastener_point", "route_path", "tool_proxy", "dimension"] },
+        "operationId": { "$ref": "#/$defs/id" },
+        "partId": { "type": ["string", "null"] },
+        "toolId": { "type": ["string", "null"] },
+        "positionMm": {
+          "oneOf": [{ "$ref": "#/$defs/vec3" }, { "type": "null" }]
+        },
+        "pathPointsMm": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/vec3" }
+        },
+        "radiusMm": { "type": ["number", "null"] },
+        "state": { "enum": ["proposed", "released"] },
+        "label": { "type": "string" },
+        "inTakeoff": { "const": false }
+      }
+    },
+    "stepState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "stepId", "status", "applied", "reason", "before", "after", "overlayIds"],
+      "properties": {
+        "index": { "type": "integer", "minimum": 0 },
+        "stepId": { "$ref": "#/$defs/id" },
+        "status": { "$ref": "#/$defs/releaseStatus" },
+        "applied": { "type": "boolean" },
+        "reason": { "type": ["string", "null"] },
+        "before": { "type": "array", "items": { "$ref": "#/$defs/partStateEntry" } },
+        "after": { "type": "array", "items": { "$ref": "#/$defs/partStateEntry" } },
+        "overlayIds": { "type": "array", "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "idMap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "parts"],
+      "properties": {
+        "version": { "const": "0.1.0" },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["partId", "ifcGlobalId", "ifcClass"],
+            "properties": {
+              "partId": { "$ref": "#/$defs/id" },
+              "ifcGlobalId": { "type": "string", "minLength": 22, "maxLength": 22 },
+              "ifcClass": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

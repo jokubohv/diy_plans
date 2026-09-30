@@ -1,0 +1,3052 @@
+[
+  {
+    "id": "part.existing.tile-floor",
+    "name": "Retained finished tile floor",
+    "kind": "layered_surface",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0yUblyHMHNmRjbk_UfUPMJ",
+    "materialId": null,
+    "description": "Retained finished tile. Reference volume at the floor plane only: the tile/mortar/slab layer stack and hidden services are unresolved (see the tile/slab investigation hold).",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing surface; retained; not part of the new takeoff"
+    },
+    "placement": {
+      "translationMm": [
+        1784.6,
+        310,
+        -10
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        4400,
+        2820,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.existing.slab",
+    "name": "Existing concrete slab (below tile)",
+    "kind": "layered_surface",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "general",
+    "stage": "existing",
+    "ifcClass": "IfcSlab",
+    "ifcGlobalId": "2TU1INEqTLnxpIUfFc3Vn3",
+    "materialId": null,
+    "description": "Existing concrete below the tile. Reference volume only; thickness, reinforcement, tendons and under-slab services are unresolved and no hole envelope is released.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing substrate; anchor target only after the accepted detail"
+    },
+    "placement": {
+      "translationMm": [
+        1784.6,
+        310,
+        -60
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        4400,
+        2820,
+        80
+      ]
+    }
+  },
+  {
+    "id": "part.existing.ex1-wall",
+    "name": "Existing EX1 wall / closet back (reference)",
+    "kind": "layered_surface",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "general",
+    "stage": "existing",
+    "ifcClass": "IfcWall",
+    "ifcGlobalId": "2LYEXfwZ5OoA0R5BtjZ1oj",
+    "materialId": null,
+    "description": "Existing wall/closet back at the surveyed depth-zero plane (finished face at the 68-in trial basis). Plan footprint only: role, services, structure and any approved opening remain held (EX1). Alteration is not released.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing wall; excluded from the new-wall takeoff"
+    },
+    "placement": {
+      "translationMm": [
+        1784.6,
+        1657.35,
+        10
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        4400,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.existing.kitchen-door",
+    "name": "Retained kitchen-side pantry door, jamb and casing (reference)",
+    "kind": "fixture",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcDoor",
+    "ifcGlobalId": "1Aa30X1jfK1wUGXBSSa_M9",
+    "materialId": null,
+    "description": "Retained kitchen-side door, jamb and casing. Reference marker only: the exact position is not surveyed and is not modelled; the passage opening is through EX1 and does not replace this door.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "retained existing element; never replaced or taken off by this guide"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          -2000,
+          1657.35,
+          10
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.existing.column",
+    "name": "Existing column (reported 10 7/8 in projection x 8 3/8 in width)",
+    "kind": "linear_member",
+    "role": "existing",
+    "assemblyId": "assembly.existing",
+    "trade": "general",
+    "stage": "existing",
+    "ifcClass": "IfcColumn",
+    "ifcGlobalId": "0Q_S$_YJnPMgyA8LJTU8sO",
+    "materialId": null,
+    "description": "Existing column at the W2 terminus. Cross-section from the user-reported projection (10 7/8 in) and finished width (8 3/8 in); height and exact contact plane are reported, not field-verified. No frame passes through the column.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing column; retained, never cut"
+    },
+    "placement": {
+      "translationMm": [
+        -106.3625,
+        1474.7875,
+        10
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        212.725,
+        276.225,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.reference.truss-band",
+    "name": "Roof-truss candidate reference band (unverified)",
+    "kind": "linear_member",
+    "role": "clearance",
+    "assemblyId": "assembly.existing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0EHNBnAd9QN97SUnulLodP",
+    "materialId": null,
+    "description": "Candidate roof-truss centreline reference from the A3/A7 comparison (about 65.86 in from the existing finished face). Trial only: the physical chord must be located before any top restraint; no truss attachment is released.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "candidate clearance reference; no fastener point"
+    },
+    "placement": {
+      "translationMm": [
+        1784.6,
+        -59.944,
+        10
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        4400,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.existing.ceiling-report",
+    "name": "Reported 111-in ceiling reference (user report; not a cut)",
+    "kind": "linear_member",
+    "role": "clearance",
+    "assemblyId": "assembly.existing",
+    "trade": "general",
+    "stage": "existing",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "2auZICLe1T4eLQRUOov3YZ",
+    "materialId": null,
+    "description": "Reference marker for the reported 111-in finished ceiling height. User report only, not field-verified, and explicitly not a stud cut or panel cut height. Member heights remain field-fit.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "reported reference only; never a stud or panel cut"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          -2000,
+          310,
+          2819.4
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.trim.tr-01",
+    "name": "Trim zone TR-01: existing receiver at W1 left end, if baseboard/shoe is present",
+    "kind": "linear_member",
+    "role": "existing",
+    "assemblyId": "assembly.trim",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "0f$fkRRC9RX9vIe8b9zwRP",
+    "materialId": null,
+    "description": "remove only the portion obstructing the verified W1 wall footprint and finish tie-in; protect adjacent run Length null in the source; status: field mark after W1 end surface is confirmed. Removal is held for marked contact areas and the EX1 opening boundary; only the non-destructive trim survey is ready.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing trim; lengths field-measured; nothing taken off"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          0,
+          -44.45,
+          0
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.trim.tr-02",
+    "name": "Trim zone TR-02: existing column at W2 termination, including any wrapped baseboard/shoe",
+    "kind": "linear_member",
+    "role": "existing",
+    "assemblyId": "assembly.trim",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "24gXum_Q9O0fOSBIYuKHG0",
+    "materialId": null,
+    "description": "remove the portion preventing full-height W2 connection and drywall/trim transition; retain sound column and adjacent trim Length null in the source; status: field mark after column contact surface is exposed and accepted. Removal is held for marked contact areas and the EX1 opening boundary; only the non-destructive trim survey is ready.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing trim; lengths field-measured; nothing taken off"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          -3890.9625,
+          1474.7875,
+          0
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.trim.tr-03",
+    "name": "Trim zone TR-03: both accessible faces of EX1 existing closet back wall at planned new passage",
+    "kind": "linear_member",
+    "role": "existing",
+    "assemblyId": "assembly.trim",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "191gwdm8jI48BPm5ZKhGzC",
+    "materialId": null,
+    "description": "remove baseboard/shoe within approved opening and jamb/return finish limits; keep the current kitchen-side pantry door and casing Length null in the source; status: hold until EX1 location, wall role, service map and opening detail are accepted. Removal is held for marked contact areas and the EX1 opening boundary; only the non-destructive trim survey is ready.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing trim; lengths field-measured; nothing taken off"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          -2000,
+          1612.9,
+          0
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.trim.tr-04",
+    "name": "Trim zone TR-04: any further existing baseboard crossing a confirmed new-wall footprint",
+    "kind": "linear_member",
+    "role": "existing",
+    "assemblyId": "assembly.trim",
+    "trade": "finishes",
+    "stage": "existing",
+    "ifcClass": "IfcBuildingElementProxy",
+    "ifcGlobalId": "3$4OHpob5HxOUY3nqJJbdP",
+    "materialId": null,
+    "description": "document and selectively remove before framing; no assumed extent Length null in the source; status: conditional discovery only. Removal is held for marked contact areas and the EX1 opening boundary; only the non-destructive trim survey is ready.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "existing trim; lengths field-measured; nothing taken off"
+    },
+    "placement": {
+      "translationMm": [
+        3784.6,
+        0,
+        0
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "markers",
+      "pointsMm": [
+        [
+          -2000,
+          -203.2,
+          0
+        ]
+      ],
+      "markerRadiusMm": 25,
+      "proposed": true
+    }
+  },
+  {
+    "id": "part.w1.bottom-plate",
+    "name": "W1 treated bottom plate (candidate, 2x4x16)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "1UEA5KZb9UufOIIxXaIlhd",
+    "materialId": "material.lumber.w1-bottom-plate",
+    "description": "Single treated candidate bottom plate laid on the verified line; candidate comparison length 156 3/4 in from the through-corner arithmetic. Treatment, bearing/separation stack and anchor detail are held; no cut is released.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate plate; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        1793.875,
+        -57.15,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        3981.45,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.w1.top-plate",
+    "name": "W1 single top plate (candidate, 2x4x16)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "1ZGddJPObOuwMqo49Ia2Lc",
+    "materialId": "material.lumber.w1-top-plate",
+    "description": "Single top plate (one plate per wall concept). Plan footprint shown at an offset presentation height: the top-plate elevation depends on the field-fit stud lengths and the unverified truss line, so no elevation or cut is asserted.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "single top plate concept; elevation and restraint held"
+    },
+    "placement": {
+      "translationMm": [
+        1793.875,
+        -57.15,
+        45
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        3981.45,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s01",
+    "name": "W1 candidate stud S01 (2x4, centre 0.75 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3vLsYyyFnRkPirzje3wjkE",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        3765.55,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s02",
+    "name": "W1 candidate stud S02 (2x4, centre 16 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3JnYPZZMvJAQFEpPjZIYaj",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        3378.2,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s03",
+    "name": "W1 candidate stud S03 (2x4, centre 32 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3u1QSUD8DSohuRrxUOdgUQ",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        2971.8,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s04",
+    "name": "W1 candidate stud S04 (2x4, centre 48 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3wz_GGMO9GpAb7aC6x$kjy",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        2565.4,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s05",
+    "name": "W1 candidate stud S05 (2x4, centre 64 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0627yXwdDSVOoJP1JIfIPT",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        2159,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s06",
+    "name": "W1 candidate stud S06 (2x4, centre 80 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "1TheuKBuzG0w5yGt_D_4N3",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        1752.6,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s07",
+    "name": "W1 candidate stud S07 (2x4, centre 96 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3euiywdmLHyu2HB0U8SucL",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        1346.2,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s08",
+    "name": "W1 candidate stud S08 (2x4, centre 112 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "19jjY_H09JuB_EwOOk1Pgh",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        939.8,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s09",
+    "name": "W1 candidate stud S09 (2x4, centre 128 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3FZCurjSfTeQtGmnX5Al9W",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        533.4,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s10",
+    "name": "W1 candidate stud S10 (2x4, centre 144 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0ZAJaUXYLKrOsVI4ltvYX5",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        127,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s11",
+    "name": "W1 candidate stud S11 (2x4, centre 148.75 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2KyiKfsRTGcBXDidebiiEG",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        6.35,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w1.stud-s12",
+    "name": "W1 candidate stud S12 (2x4, centre 156 in from the left plate end)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w1",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "1mH5mtXQLUywehmvZlIyRt",
+    "materialId": "material.lumber.w1-stud",
+    "description": "Candidate 2x4 stud position (actual thickness 1.5 in x depth 3.5 in). Plan footprint only: the member height is field-fit between the installed plates and is not asserted. No header and no door opening exists in W1.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -177.8,
+        -57.15,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w2.bottom-plate",
+    "name": "W2 treated bottom plate (candidate, 2x8x8)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0BWUURtlrSkesl07mEDb5e",
+    "materialId": "material.lumber.w2-bottom-plate",
+    "description": "Single treated candidate bottom plate for W2, candidate length 53 to 53 1/8 in (the 53 1/8-in comparison is used for presentation). Actual column contact, grade, bearing and anchors are held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate plate; column contact governs"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        661.9875,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        1349.375,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.w2.top-plate",
+    "name": "W2 single top plate (candidate, 2x8x8)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0gjr517OvVNhZJvoC7py$p",
+    "materialId": "material.lumber.w2-top-plate",
+    "description": "Single top plate for W2. Plan footprint only: elevation follows the field-fit studs and the held top restraint; no elevation or cut is asserted.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "single top plate concept; elevation and restraint held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        661.9875,
+        45
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        1349.375,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.w2.stud-s01",
+    "name": "W2 candidate stud S01 (2x8, centre 1/4 in from the W1 pantry face)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0rKQU8zBjGQO3tFO8RKmKc",
+    "materialId": "material.lumber.w2-stud",
+    "description": "Candidate 2x8 stud position (actual thickness 1.5 in x depth 7.25 in). Plan footprint only: member height is field-fit and not asserted. A wider 2x8 is not covered by the W1 2x4 joint detail.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        6.35,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        38.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w2.stud-s02",
+    "name": "W2 candidate stud S02 (2x8, centre 31/2 in from the W1 pantry face)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2xZb7SQ_vGNBOBlf0vXl0r",
+    "materialId": "material.lumber.w2-stud",
+    "description": "Candidate 2x8 stud position (actual thickness 1.5 in x depth 7.25 in). Plan footprint only: member height is field-fit and not asserted. A wider 2x8 is not covered by the W1 2x4 joint detail.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        393.7,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        38.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w2.stud-s03",
+    "name": "W2 candidate stud S03 (2x8, centre 63/2 in from the W1 pantry face)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "00zHFnRaPSFfuLPcFaDkw7",
+    "materialId": "material.lumber.w2-stud",
+    "description": "Candidate 2x8 stud position (actual thickness 1.5 in x depth 7.25 in). Plan footprint only: member height is field-fit and not asserted. A wider 2x8 is not covered by the W1 2x4 joint detail.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        800.1,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        38.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w2.stud-s04",
+    "name": "W2 candidate stud S04 (2x8, centre 95/2 in from the W1 pantry face)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0ATXXA1bfKT8EaRstlldZ5",
+    "materialId": "material.lumber.w2-stud",
+    "description": "Candidate 2x8 stud position (actual thickness 1.5 in x depth 7.25 in). Plan footprint only: member height is field-fit and not asserted. A wider 2x8 is not covered by the W1 2x4 joint detail.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        1206.5,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        38.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.w2.stud-s05",
+    "name": "W2 candidate stud S05 (2x8, centre 415/8 in from the W1 pantry face)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.w2",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0EZd1JVWfQ6xxJyTDiOAXv",
+    "materialId": "material.lumber.w2-stud",
+    "description": "Candidate 2x8 stud position (actual thickness 1.5 in x depth 7.25 in). The CSV leaves the last centre blank (field-fit at the column end); the R34 face map records the last candidate centre as 51 7/8 in from the W1 pantry face and that value is shown as a candidate only. Actual column contact governs.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate stud position; height and connection held"
+    },
+    "placement": {
+      "translationMm": [
+        -104.775,
+        1317.625,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        184.15,
+        38.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b01",
+    "name": "Backing block TOP-B01 (flat 2x6, 13.75 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2uRpgTwV9IYvTJ9KR4ODk9",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        3571.875,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        349.25,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b02",
+    "name": "Backing block TOP-B02 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2akZ$0G7bQIg4XxRsVnn_n",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        3175,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b03",
+    "name": "Backing block TOP-B03 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "24MZExpS5Km8rzqb4W09Xp",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2768.6,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b04",
+    "name": "Backing block TOP-B04 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2YasZz4rPUVfsdIblmDGvt",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2362.2,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b05",
+    "name": "Backing block TOP-B05 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0YyxcG9vbU9xtTR3cV0jaJ",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        1955.8,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b08",
+    "name": "Backing block TOP-B08 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3Pn2d5QcjM2AJsG4oM7b2c",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        736.6,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b09",
+    "name": "Backing block TOP-B09 (flat 2x6, 14.5 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "1PIMA4qLXIVhB3a_KGCDl2",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        330.2,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.top-b10",
+    "name": "Backing block TOP-B10 (flat 2x6, 3.25 in, TOP band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "1yt3oRwmfHDBTL7tHrV2qr",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the TOP provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        66.675,
+        -31.75,
+        2387.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        82.55,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u3low-b01",
+    "name": "Backing block U3LOW-B01 (flat 2x6, 13.75 in, U3LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0tUtqYyrLSzvfE4jd47kIs",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U3LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        3571.875,
+        -31.75,
+        1879.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        349.25,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u3low-b02",
+    "name": "Backing block U3LOW-B02 (flat 2x6, 14.5 in, U3LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2LWbYzJRTMZf3x_8nlG3PC",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U3LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        3175,
+        -31.75,
+        1879.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u3low-b03",
+    "name": "Backing block U3LOW-B03 (flat 2x6, 14.5 in, U3LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0PyJCo1o1KFOz7tdH4Zdx1",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U3LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2768.6,
+        -31.75,
+        1879.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u1low-b03",
+    "name": "Backing block U1LOW-B03 (flat 2x6, 14.5 in, U1LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2jEI8qZ2zHNOrV$HbqTVTg",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U1LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2768.6,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u1low-b04",
+    "name": "Backing block U1LOW-B04 (flat 2x6, 14.5 in, U1LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "00a$jXZ1DUrA1wGeGhxqj4",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U1LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2362.2,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u1low-b05",
+    "name": "Backing block U1LOW-B05 (flat 2x6, 14.5 in, U1LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "06V9HVU_vSqvoNW1NSDXnM",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U1LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        1955.8,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u2low-b08",
+    "name": "Backing block U2LOW-B08 (flat 2x6, 14.5 in, U2LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "38J$U0BfPLZAkafMYc6TmQ",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U2LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        736.6,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u2low-b09",
+    "name": "Backing block U2LOW-B09 (flat 2x6, 14.5 in, U2LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0klcs0pv1P4PoPHZ4Z2NrA",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U2LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        330.2,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.u2low-b10",
+    "name": "Backing block U2LOW-B10 (flat 2x6, 3.25 in, U2LOW band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3lZmEilNjRXQbWqpUfAbok",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the U2LOW provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        66.675,
+        -31.75,
+        1625.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        82.55,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b03",
+    "name": "Backing block BASE-B03 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3_8psk_EbSk8HbcTkrnU_u",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2768.6,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b04",
+    "name": "Backing block BASE-B04 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2eaHu30wTQhPESUkPsnpj_",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        2362.2,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b05",
+    "name": "Backing block BASE-B05 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "27IwcBaSzMORgPdcmx4Loh",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        1955.8,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b06",
+    "name": "Backing block BASE-B06 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3O5TPNmqHLjw3xvSPvjRXf",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        1549.4,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b07",
+    "name": "Backing block BASE-B07 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3nRH2dagPJ8f41WhlJYafE",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        1143,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b08",
+    "name": "Backing block BASE-B08 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0pVL1kGgPLmfBo7m4$7MQm",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        736.6,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b09",
+    "name": "Backing block BASE-B09 (flat 2x6, 14.5 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "2L$dnNrF9JUA4hd1SIjIkj",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        330.2,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        368.3,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.backing.base-b10",
+    "name": "Backing block BASE-B10 (flat 2x6, 3.25 in, BASE band)",
+    "kind": "linear_member",
+    "role": "installed",
+    "assemblyId": "assembly.backing",
+    "trade": "framing",
+    "stage": "rough",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "3bjZO$ALfGXfQwt1_WnF2S",
+    "materialId": "material.lumber.backing",
+    "description": "Flat dry 2x6 block: 5 1/2-in vertical face flush to the pantry-side stud faces, 1 1/2-in depth into the 3.5-in cavity, in the BASE provisional band. Length equals the candidate bay clear span; every bay is field-fit and the block-to-stud load path is held.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "one part per CSV row; field-fit, no automatic fastener quantity"
+    },
+    "placement": {
+      "translationMm": [
+        66.675,
+        -31.75,
+        793.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        82.55,
+        38.1,
+        139.7
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-p-01",
+    "name": "Drywall panel W1-P-01 (W1-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0oIKfF8jnS8h3b6dRDa1YP",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 PANTRY FACE (W1-P) panel, ½-in board, source horizontal extent 0 to 48 in on datum “x from W1 left plate end”; corrected scene X=101 to 149 in; face envelope y=-1/2…0 in; pantry finish y=0; core-nest stock H01 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S01; right W1-S04 at seam x=48. Scheduled internal seam receiver touching this sheet: 48 in at S04. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        3175,
+        -6.35,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1219.2,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-p-02",
+    "name": "Drywall panel W1-P-02 (W1-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0MkaoWRuTV0PK11Js2ZiZp",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 PANTRY FACE (W1-P) panel, ½-in board, source horizontal extent 48 to 96 in on datum “x from W1 left plate end”; corrected scene X=53 to 101 in; face envelope y=-1/2…0 in; pantry finish y=0; core-nest stock H02 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S04; right W1-S07 at seam x=96. Scheduled internal seam receivers touching this sheet: 48 in at S04; 96 in at S07. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        1955.8,
+        -6.35,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1219.2,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-p-03",
+    "name": "Drywall panel W1-P-03 (W1-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "1fHhcZahfLsOkmIVSKaQpu",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 PANTRY FACE (W1-P) panel, ½-in board, source horizontal extent 96 to 144 in on datum “x from W1 left plate end”; corrected scene X=5 to 53 in; face envelope y=-1/2…0 in; pantry finish y=0; core-nest stock H03 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S07; right W1-S10 at seam x=144. Scheduled internal seam receivers touching this sheet: 96 in at S07; 144 in at S10. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        736.6,
+        -6.35,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1219.2,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-p-04",
+    "name": "Drywall panel W1-P-04 (W1-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "1k30laM5TQqR463Z1BWgsR",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 PANTRY FACE (W1-P) panel, ½-in board, source horizontal extent 144 to 149½ in on datum “x from W1 left plate end”; corrected scene X=-0.5 to 5 in; face envelope y=-1/2…0 in; pantry finish y=0; core-nest stock H08 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S10; right W1-S11 corner-support footprint. Scheduled internal seam receiver touching this sheet: 144 in at S10. At the pantry-side inside corner, W1-P continues through and W2-P butts to it; the final receiver and fastening remain held. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        57.15,
+        -6.35,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        139.7,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-r-01",
+    "name": "Drywall panel W1-R-01 (W1-R, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "3EgygciEfMwhvBX7KvZFLZ",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 ROOM FACE (W1-R) panel, ½-in board, source horizontal extent 0 to 16 in on datum “same x origin; x increases on this diagram”; corrected scene X=133 to 149 in; face envelope y=-4 1/2…-4 in; room finish y=-4 1/2; core-nest stock H07 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S01; right W1-S02 at seam x=16. Scheduled internal seam receiver touching this sheet: 16 in at S02. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        3581.4,
+        -107.95,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        406.4,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-r-02",
+    "name": "Drywall panel W1-R-02 (W1-R, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "3lSsJtSc1OfeYXoYalvJIc",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 ROOM FACE (W1-R) panel, ½-in board, source horizontal extent 16 to 64 in on datum “same x origin; x increases on this diagram”; corrected scene X=85 to 133 in; face envelope y=-4 1/2…-4 in; room finish y=-4 1/2; core-nest stock H04 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S02; right W1-S05 at seam x=64. Scheduled internal seam receivers touching this sheet: 16 in at S02; 64 in at S05. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        2768.6,
+        -107.95,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1219.2,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-r-03",
+    "name": "Drywall panel W1-R-03 (W1-R, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0b6bar4wDQjPTq5rY4gIJ6",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 ROOM FACE (W1-R) panel, ½-in board, source horizontal extent 64 to 112 in on datum “same x origin; x increases on this diagram”; corrected scene X=37 to 85 in; face envelope y=-4 1/2…-4 in; room finish y=-4 1/2; core-nest stock H05 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S05; right W1-S08 at seam x=112. Scheduled internal seam receivers touching this sheet: 64 in at S05; 112 in at S08. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        1549.4,
+        -107.95,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1219.2,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w1-r-04",
+    "name": "Drywall panel W1-R-04 (W1-R, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "20EenB2UfQDuwUcbbS0xVZ",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W1 ROOM FACE (W1-R) panel, ½-in board, source horizontal extent 112 to 157⅜ in on datum “same x origin; x increases on this diagram”; corrected scene X=-8.375 to 37 in; face envelope y=-4 1/2…-4 in; room finish y=-4 1/2; core-nest stock H06 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W1-S08; right W1-S12 vicinity, with outside-edge fastening unresolved. Scheduled internal seam receiver touching this sheet: 112 in at S08. At the room-side outside corner, W1-R laps W2-R; the accepted bead/control/movement detail remains held. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        363.5375,
+        -107.95,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        1152.525,
+        12.7,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w2-p-01",
+    "name": "Drywall panel W2-P-01 (W2-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "1WyRmq8N5GNOHub56Boof5",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W2 PANTRY FACE (W2-P) panel, ½-in board, source horizontal extent 0 to 31½ in on datum “y from W1 pantry finished face”; corrected scene Y equals the listed source y extent; face envelope scene X=-1/2…0 in; pantry finish X=0 (source x=149…149 1/2); core-nest stock H07 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W2-S01; right W2-S03 at seam y=31 1/2 (q=32). Scheduled internal seam receiver touching this sheet: 31.5 in at S03 / q=32. At the pantry-side inside corner, this W2-P sheet butts to the through W1-P sheet; the final receiver and fastening remain held. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        -6.35,
+        400.05,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        12.7,
+        800.1,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w2-p-02",
+    "name": "Drywall panel W2-P-02 (W2-P, ½ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "0_ia52AmrIIwpuRfZvgLtd",
+    "materialId": "material.gypsum.half",
+    "description": "Candidate W2 PANTRY FACE (W2-P) panel, ½-in board, source horizontal extent 31½ to 52⅝ in on datum “y from W1 pantry finished face”; corrected scene Y equals the listed source y extent; face envelope scene X=-1/2…0 in; pantry finish X=0 (source x=149…149 1/2); core-nest stock H08 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W2-S03; right conditional W2-S05/column termination. Scheduled internal seam receiver touching this sheet: 31.5 in at S03 / q=32. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        -6.35,
+        1068.3875,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        12.7,
+        536.575,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w2-r-01",
+    "name": "Drywall panel W2-R-01 (W2-R, ⅝ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "2ejbZsClzSrfrzJggPiTbu",
+    "materialId": "material.gypsum.five-eighth",
+    "description": "Candidate W2 ROOM FACE (W2-R) panel, ⅝-in board, source horizontal extent -4 to 15½ in on datum “y starts at −4; q starts at W2 plate end”; corrected scene Y equals the listed source y extent; face envelope scene X=-8 3/8…-7 3/4 in; room finish X=-8 3/8 (source x=156 3/4…157 3/8); core-nest stock E01 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: W1-S12 side-face wrap and W2-S01 at the corner; right W2-S02 at seam y=15 1/2 (q=16). Scheduled internal seam receiver touching this sheet: 15.5 in at S02 / q=16. At the room-side outside corner, this W2-R sheet is lapped by W1-R; the accepted bead/control/movement detail remains held. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        -204.7875,
+        146.05,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        15.875,
+        495.3,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.drywall.w2-r-02",
+    "name": "Drywall panel W2-R-02 (W2-R, ⅝ in board)",
+    "kind": "panel",
+    "role": "installed",
+    "assemblyId": "assembly.drywall",
+    "trade": "drywall",
+    "stage": "cover",
+    "ifcClass": "IfcCovering",
+    "ifcGlobalId": "1u7g20lFDJvf3HOwv2t2E3",
+    "materialId": "material.gypsum.five-eighth",
+    "description": "Candidate W2 ROOM FACE (W2-R) panel, ⅝-in board, source horizontal extent 15½ to 52⅝ in on datum “y starts at −4; q starts at W2 plate end”; corrected scene Y equals the listed source y extent; face envelope scene X=-8 3/8…-7 3/4 in; room finish X=-8 3/8 (source x=156 3/4…157 3/8); core-nest stock E02 (not a spare). Candidate orientation is vertical with the 120-in stock direction vertical. Candidate vertical-edge receivers: left W2-S02; right conditional W2-S05/column termination. Scheduled internal seam receiver touching this sheet: 15.5 in at S02 / q=16. Plan footprint at the sourced face plane only: the interactive viewer raises it to the labelled schematic height, while its real height stays field-fit between accepted upper/lower board-edge elevations. Taper compatibility, horizontal top/bottom plate receiver use, bottom gap, top movement joint and board-specific fastening remain held; never bridge an intended movement joint with ordinary fixed-joint fastening, tape or adhesive. The reported 111-in ceiling is never a cut.",
+    "selectable": true,
+    "takeoff": {
+      "include": true,
+      "note": "candidate panel; height field-fit; no cut released"
+    },
+    "placement": {
+      "translationMm": [
+        -204.7875,
+        865.1875,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        15.875,
+        942.975,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.practice.stock",
+    "name": "Practice stock 2x4x10 (loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2op8M4z9fOsBDlfEOX3K3h",
+    "materialId": "material.lumber.practice",
+    "description": "Separate dry 2x4x10 practice board for the loose-stock saw/driver practice. Never a house part and never in the installed takeoff.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice stock; never house framing"
+    },
+    "placement": {
+      "translationMm": [
+        1524,
+        0,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        3048,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.practice.plate-a",
+    "name": "Practice plate A (24 in, loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "0a5WlCai9PaBrLQK05XMD8",
+    "materialId": "material.lumber.practice",
+    "description": "Practice mock-frame plate (24 in) cut only from the separate practice board; never house framing.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice part"
+    },
+    "placement": {
+      "translationMm": [
+        304.8,
+        0,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        609.6,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.practice.plate-b",
+    "name": "Practice plate B (24 in, loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcPlate",
+    "ifcGlobalId": "09BG3UO2TM98NUzD6VyCHG",
+    "materialId": "material.lumber.practice",
+    "description": "Practice mock-frame plate (24 in) cut only from the separate practice board; never house framing.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice part"
+    },
+    "placement": {
+      "translationMm": [
+        -304.8,
+        0,
+        19.05
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        609.6,
+        88.9,
+        38.1
+      ]
+    }
+  },
+  {
+    "id": "part.practice.stud-a",
+    "name": "Practice stud A (21 in, loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "2kthy6QMjU0Q8_rOsZTOf$",
+    "materialId": "material.lumber.practice",
+    "description": "Practice mock-frame stud (21 in) for the 24x24-in loose dry-fit rectangle; never house framing.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice part"
+    },
+    "placement": {
+      "translationMm": [
+        19.05,
+        -250,
+        285.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        533.4
+      ]
+    }
+  },
+  {
+    "id": "part.practice.stud-b",
+    "name": "Practice stud B (21 in, loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "3lDuIrA_nGRgXvOUDvAZxO",
+    "materialId": "material.lumber.practice",
+    "description": "Practice mock-frame stud (21 in) for the 24x24-in loose dry-fit rectangle; never house framing.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice part"
+    },
+    "placement": {
+      "translationMm": [
+        304.8,
+        -250,
+        285.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        533.4
+      ]
+    }
+  },
+  {
+    "id": "part.practice.stud-c",
+    "name": "Practice stud C (21 in, loose)",
+    "kind": "linear_member",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "general",
+    "stage": "demo",
+    "ifcClass": "IfcMember",
+    "ifcGlobalId": "0vLfywG$TIMgUhfVv7rk9C",
+    "materialId": "material.lumber.practice",
+    "description": "Practice mock-frame stud (21 in) for the 24x24-in loose dry-fit rectangle; never house framing.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice part"
+    },
+    "placement": {
+      "translationMm": [
+        590.55,
+        -250,
+        285.75
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        88.9,
+        533.4
+      ]
+    }
+  },
+  {
+    "id": "part.practice.angle",
+    "name": "Practice A34-family angle (loose candidate)",
+    "kind": "connector",
+    "role": "loose",
+    "assemblyId": "assembly.practice",
+    "trade": "framing",
+    "stage": "demo",
+    "ifcClass": "IfcDiscreteAccessory",
+    "ifcGlobalId": "2dQAiAtdLLc8FJdx429k4i",
+    "materialId": null,
+    "description": "Loose A34/A34Z-family angle for the separate scrap angle-and-screw trial. Candidate product family only: installed quantity, orientation and capacity are not released.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "loose practice connector; candidate only"
+    },
+    "placement": {
+      "translationMm": [
+        0,
+        -420,
+        10
+      ]
+    },
+    "initialState": "existing",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        63.5,
+        36.5125,
+        1.2
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.fridge-bay",
+    "name": "Refrigerator clear bay (37 in)",
+    "kind": "opening",
+    "role": "clearance",
+    "assemblyId": "assembly.fixtures",
+    "trade": "general",
+    "stage": "fixture",
+    "ifcClass": "IfcVirtualElement",
+    "ifcGlobalId": "0ZZw8ZJbHVOhlXwm3y6j1v",
+    "materialId": null,
+    "description": "37-in clear finished bay for the refrigerator, at the left end beside the 3 1/4-in left space. Width sourced; depth/height not modelled and the operating fit is unresolved.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        939.8,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.divider",
+    "name": "Refrigerator/base-cabinet divider (3/4 in)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "302j$Ry1XK$fqH8vPlkqGN",
+    "materialId": null,
+    "description": "Separator panel between the refrigerator and the base cabinet group; 3/4-in design choice with final scribe field-fit. Depth/elevation follow the accepted cabinet fit.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        2752.725,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        19.05,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.base-row",
+    "name": "Base cabinet row B1+F1+B2+F2+B3 (108 in envelope; individual widths unknown)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "26gkyrCZLIiByaJBUpRd9W",
+    "materialId": null,
+    "description": "Base cabinet row envelope: B1+B2+B3 measured together at 106 1/2 in plus two 3/4-in fillers = the 108-in installed row, ending at the W2 pantry face. B1 is the nominal 12-in one-drawer-over-one-door base directly beside the refrigerator; B2/B3 are larger three-drawer fronts. Individual measured widths are null and the seams are schematic; no cut or mounting location is authoritative. Height, depth, toe-kick and scribe are field-verified.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        1371.6,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        2743.2,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.fillers",
+    "name": "Between-box fillers F1 and F2 (3/4 in each)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "3di0ZQPeDL9hlj7EXIinRS",
+    "materialId": null,
+    "description": "Two 3/4-in fillers (F1 between B1 and B2, F2 between B2 and B3), user-selected design choice with final scribe field-fit. Positions between the unmeasured individual boxes are schematic and not modelled.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        1371.6,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        38.1,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.fridge",
+    "name": "Refrigerator GE GSE25GYPHCFS (project label; family-source dimensions)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "2jkIjc6jPVuQTQlQgFGKTx",
+    "materialId": null,
+    "description": "Project refrigerator label GE GSE25GYPHCFS (side-by-side, 37-in clear bay). Reference marker only: the project label is distinct from the generic GE family data source, and physical size, door swing, bin removal, walking access and service removal are unresolved. 3.25-in left allowance vs the family note's about 14.25-in freezer-bin removal requirement; 26.75-in nominal closed-front clearance and 11-in nominal 90-degree condition are depth-subtraction nomials, not fit proof.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        50.8,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        20,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.counter",
+    "name": "Butcher-block counter (108 in, intended 36-in top)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "31zbIKy7DNXuX9k2AUlSkk",
+    "materialId": null,
+    "description": "Butcher-block counter over the base row: intended 36-in top elevation only after base heights and top thickness are measured; thickness and depth are field-measured. 26-in planned clear distance to the U1/U2 bottoms at 62 in.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        1371.6,
+        10,
+        904.4
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        2743.2,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.upper-u1",
+    "name": "Upper cabinet U1 (36 x 34)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "2qArvGivHS2QDAby1Q5W2C",
+    "materialId": null,
+    "description": "Upper cabinet U1, 36 in wide x 34 in high at the reported 62-in bottom elevation (conditional design value). Mounting rails/holes and the load path are held.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        2286,
+        10,
+        2006.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        914.4,
+        20,
+        863.6
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.upper-u2",
+    "name": "Upper cabinet U2 (36 x 34)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "3IVTno5fLVifNAew8AuynI",
+    "materialId": null,
+    "description": "Upper cabinet U2, 36 in wide x 34 in high, on the same intended 62-in bottom elevation. Mounting rails/holes and the load path are held.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        457.2,
+        10,
+        2006.6
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        914.4,
+        20,
+        863.6
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.upper-u3",
+    "name": "Over-fridge upper cabinet U3 (36 x 24)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "3X0ID8PYfGWhN$wMBq4wjn",
+    "materialId": null,
+    "description": "Over-fridge upper cabinet U3, 36 in wide x 24 in high. Elevation shown from the 71 1/4-in lower edge of the provisional U3 backing band; the real rail elevation and mounting plane are field-fit, and the backing band is not a load release.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        10,
+        2114.55
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        914.4,
+        20,
+        609.6
+      ]
+    }
+  },
+  {
+    "id": "part.fixture.shelves",
+    "name": "Three butcher-block shelves (36 in, bracket concept)",
+    "kind": "fixture",
+    "role": "installed",
+    "assemblyId": "assembly.fixtures",
+    "trade": "cabinetry",
+    "stage": "fixture",
+    "ifcClass": "IfcFurniture",
+    "ifcGlobalId": "1EWtM5FgfMGPUn6SrWfA7M",
+    "materialId": null,
+    "description": "Three 36-in butcher-block shelves on visible heavy-duty brackets fixed into verified full studs with their own hardware; shelf elevations, depths and bracket loads are not modelled and remain field-set after load-path review.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        1371.6,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        914.4,
+        20,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.clearance.fridge-closed",
+    "name": "Nominal closed-front clearance volume (26.75 in)",
+    "kind": "opening",
+    "role": "clearance",
+    "assemblyId": "assembly.fixtures",
+    "trade": "general",
+    "stage": "fixture",
+    "ifcClass": "IfcVirtualElement",
+    "ifcGlobalId": "3s1BnbroPQZuYnoo4dhw1L",
+    "materialId": null,
+    "description": "Nominal closed-refrigerator-front-to-opposite-wall clearance from a simple depth subtraction with GE family dimensions and a 2-in rear gap. Not door-sweep proof.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        1273.175,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        939.8,
+        679.45,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.clearance.fridge-door90",
+    "name": "Nominal 90-degree door condition volume (11 in)",
+    "kind": "opening",
+    "role": "clearance",
+    "assemblyId": "assembly.fixtures",
+    "trade": "general",
+    "stage": "fixture",
+    "ifcClass": "IfcVirtualElement",
+    "ifcGlobalId": "2MIGvFW_nNYgE1uyu4x0R_",
+    "materialId": null,
+    "description": "Nominal 11-in condition at the stated 90-degree door projection; a nominal reference only, never a confirmed service clearance.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        1473.2,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        939.8,
+        279.4,
+        20
+      ]
+    }
+  },
+  {
+    "id": "part.clearance.aisle-note",
+    "name": "Aisle depth-subtraction note reference",
+    "kind": "opening",
+    "role": "clearance",
+    "assemblyId": "assembly.fixtures",
+    "trade": "general",
+    "stage": "fixture",
+    "ifcClass": "IfcVirtualElement",
+    "ifcGlobalId": "0SeximwMjHUuOehyPUAvp3",
+    "materialId": null,
+    "description": "Reference marker for the aisle note: a simple depth subtraction with GE family dimensions and a 2-in rear gap, not door-sweep proof. Full-size operating and service checks are required.",
+    "selectable": true,
+    "takeoff": {
+      "include": false,
+      "note": "envelope/clearance reference only; not a purchase quantity or fit proof"
+    },
+    "placement": {
+      "translationMm": [
+        3232.15,
+        10,
+        10
+      ]
+    },
+    "initialState": "absent",
+    "geometry": {
+      "shape": "box",
+      "sizeMm": [
+        939.8,
+        20,
+        20
+      ]
+    }
+  }
+]

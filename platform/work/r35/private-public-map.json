@@ -1,0 +1,575 @@
+{
+  "sourceRoot": "private://owner-supplied-r35",
+  "generatedBy": "work/r35/author-r35.mjs",
+  "policy": "Publication projection removes private identity (address, parcel, permit number, raw URLs) but cannot change geometry, instructions or releases. Permitted values are unchanged.",
+  "mapping": [
+    {
+      "privateSourceId": "source.r35.manual-json",
+      "privateFile": "output/data/project-R35-conditional-manual.json",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p01-overview.svg",
+          "page": 1
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p02-plan.svg",
+          "page": 2
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p03-elevation.svg",
+          "page": 3
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p04-survey.svg",
+          "page": 4
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p05-trim.svg",
+          "page": 5
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p06-parts.svg",
+          "page": 6
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p07-setup.svg",
+          "page": 7
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p08-w1-plates.svg",
+          "page": 8
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p09-w1-frame.svg",
+          "page": 9
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p10-connector.svg",
+          "page": 10
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p11-w2-layout.svg",
+          "page": 11
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p12-w2-frame.svg",
+          "page": 12
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p13-practice.svg",
+          "page": 13
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p14-sd9112.svg",
+          "page": 14
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p15-slab.svg",
+          "page": 15
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p16-plates.svg",
+          "page": 16
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p17-straightening.svg",
+          "page": 17
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p18-backing.svg",
+          "page": 18
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p19-backing-connection.svg",
+          "page": 19
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p20-ex1.svg",
+          "page": 20
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p22-drywall-map.svg",
+          "page": 22
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p23-24-junction.svg",
+          "page": 23
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p25-drywall-hang.svg",
+          "page": 25
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p26-finish.svg",
+          "page": 26
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p27-fixtures.svg",
+          "page": 27
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p28-gates.svg",
+          "page": 28
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p29-source-record.svg",
+          "page": 29
+        }
+      ],
+      "policy": "JSON Pointer locators stay on citations; only sanitized quote cards are published."
+    },
+    {
+      "privateSourceId": "source.r35.manual-pdf",
+      "privateFile": "output/pdf/pantry-complete-framing-drywall-and-cabinet-plan-R35.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p01-overview.svg",
+          "page": 1
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p02-plan.svg",
+          "page": 2
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p03-elevation.svg",
+          "page": 3
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p04-survey.svg",
+          "page": 4
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p05-trim.svg",
+          "page": 5
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p06-parts.svg",
+          "page": 6
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p07-setup.svg",
+          "page": 7
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p08-w1-plates.svg",
+          "page": 8
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p09-w1-frame.svg",
+          "page": 9
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p10-connector.svg",
+          "page": 10
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p11-w2-layout.svg",
+          "page": 11
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p12-w2-frame.svg",
+          "page": 12
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p13-practice.svg",
+          "page": 13
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p14-sd9112.svg",
+          "page": 14
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p15-slab.svg",
+          "page": 15
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p16-plates.svg",
+          "page": 16
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p17-straightening.svg",
+          "page": 17
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p18-backing.svg",
+          "page": 18
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p19-backing-connection.svg",
+          "page": 19
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p20-ex1.svg",
+          "page": 20
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p22-drywall-map.svg",
+          "page": 22
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p23-24-junction.svg",
+          "page": 23
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p25-drywall-hang.svg",
+          "page": 25
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p26-finish.svg",
+          "page": 26
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p27-fixtures.svg",
+          "page": 27
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p28-gates.svg",
+          "page": 28
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p29-source-record.svg",
+          "page": 29
+        }
+      ],
+      "policy": "One card per page family with printed page numbers; the raw PDF is not published."
+    },
+    {
+      "privateSourceId": "source.r35.layout-pdf",
+      "privateFile": "output/pdf/pantry-wall-framing-drywall-layout-R35.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p02-plan.svg",
+          "page": 2
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p11-w2-layout.svg",
+          "page": 11
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p16-plates.svg",
+          "page": 16
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p17-straightening.svg",
+          "page": 17
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p22-drywall-map.svg",
+          "page": 22
+        }
+      ],
+      "policy": "Cross-check facts are carried on page cards; the address-bearing layout PDF is never published."
+    },
+    {
+      "privateSourceId": "source.r35.change-record",
+      "privateFile": "output/data/R35-change-record.md",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p06-parts.svg",
+          "page": 6
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p29-source-record.svg",
+          "page": 29
+        }
+      ],
+      "policy": "Supersession and cart statements quoted on the source-record card only."
+    },
+    {
+      "privateSourceId": "source.r35.review",
+      "privateFile": "output/data/review-R35-conditional-manual.md",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p29-source-record.svg",
+          "page": 29
+        }
+      ],
+      "policy": "Review scopes and limits quoted on the source-record card; not engineering approval."
+    },
+    {
+      "privateSourceId": "source.r35.csv.parts",
+      "privateFile": "output/data/parts-R33-CONCEPT.csv",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p06-parts.svg",
+          "page": 6
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p08-w1-plates.svg",
+          "page": 8
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p11-w2-layout.svg",
+          "page": 11
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p13-practice.svg",
+          "page": 13
+        }
+      ],
+      "policy": "Row+id locators stay on citations; row data is reconciled in work/r35/reconciliation.json."
+    },
+    {
+      "privateSourceId": "source.r35.csv.backing",
+      "privateFile": "output/data/cabinet-backing-R31-CONCEPT.csv",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p18-backing.svg",
+          "page": 18
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p19-backing-connection.svg",
+          "page": 19
+        }
+      ],
+      "policy": "Block rows reconcile to parts; card quotes the mix and orientation."
+    },
+    {
+      "privateSourceId": "source.r35.csv.panels",
+      "privateFile": "output/data/drywall-panel-schedule-R34-CONCEPT.csv",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p22-drywall-map.svg",
+          "page": 22
+        }
+      ],
+      "policy": "Panel endpoints reconcile to parts; card quotes face widths."
+    },
+    {
+      "privateSourceId": "source.r35.csv.materials",
+      "privateFile": "output/data/materials-R35-CONCEPT.csv",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p06-parts.svg",
+          "page": 6
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p18-backing.svg",
+          "page": 18
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        }
+      ],
+      "policy": "Planning quantities map to material records; excluded rows are listed in reconciliation.json."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r33-cabinet-elevation",
+      "privateFile": "output/images/pantry-R33-cabinet-elevation.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p03-elevation.svg",
+          "page": 3
+        }
+      ],
+      "policy": "SVG element/region locators stay on citations; card quotes the front/label text."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r31-truss",
+      "privateFile": "output/images/pantry-R31-truss-line-layout.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p02-plan.svg",
+          "page": 2
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p11-w2-layout.svg",
+          "page": 11
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p16-plates.svg",
+          "page": 16
+        }
+      ],
+      "policy": "Region locators stay on citations; truss trial text quoted."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r31-backing",
+      "privateFile": "output/images/pantry-R31-2x6-backing.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p18-backing.svg",
+          "page": 18
+        }
+      ],
+      "policy": "Region locators stay on citations; band and z-report text quoted."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r32-baseboard",
+      "privateFile": "output/images/pantry-R32-baseboard-removal-map.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p05-trim.svg",
+          "page": 5
+        }
+      ],
+      "policy": "Region locators stay on citations; TR label text quoted."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r34-drywall-layout",
+      "privateFile": "output/images/pantry-R34-drywall-layout.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p22-drywall-map.svg",
+          "page": 22
+        }
+      ],
+      "policy": "Region locators stay on citations; face widths and height rule quoted."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r34-wood-junction",
+      "privateFile": "output/images/pantry-R34-wood-junction.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p23-24-junction.svg",
+          "page": 23
+        }
+      ],
+      "policy": "Region locators stay on citations; junction text quoted."
+    },
+    {
+      "privateSourceId": "source.r35.svg.r34-corners",
+      "privateFile": "output/images/pantry-R34-wall-and-gypsum-corners.svg",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p23-24-junction.svg",
+          "page": 23
+        }
+      ],
+      "policy": "Region locators stay on citations; the shared junction/corner card quotes the corner text."
+    },
+    {
+      "privateSourceId": "source.r35.permit-manifest",
+      "privateFile": "private://permit/source-manifest.json",
+      "publicCards": [],
+      "policy": "No asset: permit number, parcel, address and download URLs are private identity and are withheld entirely."
+    },
+    {
+      "privateSourceId": "source.r35.permit-pdf",
+      "privateFile": "private://permit/approved-drawing-set.pdf",
+      "publicCards": [],
+      "policy": "No asset: permit number, parcel, address and download URLs are private identity and withheld entirely; only identity-free sheet references (A3/A5/A7/D4/D5) appear on the source-record card and in citations."
+    },
+    {
+      "privateSourceId": "source.r35.esr",
+      "privateFile": "output/reference/screws-R35/ICC-ES-ESR-3096.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-esr-3096-excerpt.svg",
+          "page": 8
+        }
+      ],
+      "policy": "Sanitized text-only excerpt of Table 5, Figure 5 and notes 4-6."
+    },
+    {
+      "privateSourceId": "source.r35.ref.ge-catalog",
+      "privateFile": "output/reference/R23-fridge/GE-full-line-catalog-1-G0300.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p27-fixtures.svg",
+          "page": 27
+        }
+      ],
+      "policy": "Family-source distinction quoted on page cards; cached file not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.usg-j371",
+      "privateFile": "output/reference/R22-drywall/USG-J371-installation-finishing.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p25-drywall-hang.svg",
+          "page": 25
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p26-finish.svg",
+          "page": 26
+        }
+      ],
+      "policy": "Board-specific handling reference; product not selected and file not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.ngc-guide",
+      "privateFile": "output/reference/R24-materials/NGC-Construction-Guide-15th.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p17-straightening.svg",
+          "page": 17
+        }
+      ],
+      "policy": "Straightening/handbook reference quoted on the page card; file not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.goldbond-hsl",
+      "privateFile": "output/reference/R24-materials/GoldBond-HSL-submittal.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p21-drywall-faces.svg",
+          "page": 21
+        }
+      ],
+      "policy": "Candidate board system; not selected and not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.proform-tape",
+      "privateFile": "output/reference/R24-materials/ProForm-Tape-submittal.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p26-finish.svg",
+          "page": 26
+        }
+      ],
+      "policy": "Candidate tape system; not selected and not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.ryobi-pbldd02",
+      "privateFile": "output/reference/R24-materials/RYOBI-PBLDD02-manual.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p07-setup.svg",
+          "page": 7
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p13-practice.svg",
+          "page": 13
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p14-sd9112.svg",
+          "page": 14
+        }
+      ],
+      "policy": "Owned-tool family manual; exact purchased model not recorded; file not published."
+    },
+    {
+      "privateSourceId": "source.r35.ref.simpson-tech",
+      "privateFile": "output/reference/R24-materials/Simpson-C-F-2025TECHSUP.pdf",
+      "publicCards": [
+        {
+          "assetPath": "assets/source-pages/r35-p10-connector.svg",
+          "page": 10
+        },
+        {
+          "assetPath": "assets/source-pages/r35-p14-sd9112.svg",
+          "page": 14
+        }
+      ],
+      "policy": "Connector/fastener substitution reference; file not published."
+    }
+  ]
+}

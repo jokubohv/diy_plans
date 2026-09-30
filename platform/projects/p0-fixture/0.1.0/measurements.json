@@ -1,0 +1,292 @@
+[
+  {
+    "id": "measurement.wall-a.length",
+    "label": "Wall A framed length",
+    "original": {
+      "display": "96 in",
+      "value": "96",
+      "unit": "in"
+    },
+    "canonicalMm": "2438.400",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "measurement.wall-a.height",
+    "label": "Wall A framed height",
+    "original": {
+      "display": "8 ft",
+      "value": "8",
+      "unit": "in"
+    },
+    "canonicalMm": "2438.400",
+    "installationToleranceMm": null,
+    "evidenceStatus": "document_verified",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.survey"
+    ]
+  },
+  {
+    "id": "measurement.wall-a.opening.width",
+    "label": "Door rough opening width",
+    "original": {
+      "display": "37 1/2 in",
+      "value": "37 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "952.500",
+    "installationToleranceMm": null,
+    "evidenceStatus": "conflicted",
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.sheet-a.opening",
+      "citation.field-note.opening"
+    ],
+    "conflictNote": "Sheet A dimension chain gives 952.5 mm (37 1/2 in) clear opening; field note 01 reports 965 mm to the finished face."
+  },
+  {
+    "id": "measurement.opening.height",
+    "label": "Door rough opening height",
+    "original": {
+      "display": "81 1/2 in",
+      "value": "81 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "2070.100",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.stud.length",
+    "label": "Full-height stud length (common and king)",
+    "original": {
+      "display": "93 in",
+      "value": "93",
+      "unit": "in"
+    },
+    "canonicalMm": "2362.200",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.jack.length",
+    "label": "Jack (trimmer) stud length",
+    "original": {
+      "display": "80 in",
+      "value": "80",
+      "unit": "in"
+    },
+    "canonicalMm": "2032.000",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.header.ply.length",
+    "label": "Header ply length",
+    "original": {
+      "display": "43 1/2 in",
+      "value": "43 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "1104.900",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.header.spacer.length",
+    "label": "Header spacer length",
+    "original": {
+      "display": "43 1/2 in",
+      "value": "43 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "1104.900",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.cripple.length",
+    "label": "Cripple stud length",
+    "original": {
+      "display": "7 1/2 in",
+      "value": "7 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "190.500",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "measurement.stud-1.centreline",
+    "label": "Stud 1 (flush end) centreline from wall origin",
+    "original": {
+      "display": "3/4 in",
+      "value": "3/4",
+      "unit": "in"
+    },
+    "canonicalMm": "19.050",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "measurement.stud-2.centreline",
+    "label": "Stud 2 centreline from wall origin (16 in module)",
+    "original": {
+      "display": "16 in",
+      "value": "16",
+      "unit": "in"
+    },
+    "canonicalMm": "406.400",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "measurement.stud-3.centreline",
+    "label": "Stud 3 centreline from wall origin (32 in module)",
+    "original": {
+      "display": "32 in",
+      "value": "32",
+      "unit": "in"
+    },
+    "canonicalMm": "812.800",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "measurement.stud-4.centreline",
+    "label": "Stud 4 (flush end) centreline from wall origin",
+    "original": {
+      "display": "95 1/4 in",
+      "value": "95 1/4",
+      "unit": "in"
+    },
+    "canonicalMm": "2419.350",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "measurement.plate-left.remaining",
+    "label": "Sole plate remaining left segment after the cut-out",
+    "original": {
+      "display": "49 in",
+      "value": "49",
+      "unit": "in"
+    },
+    "canonicalMm": "1244.600",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.inspection"
+    ]
+  },
+  {
+    "id": "measurement.plate-right.remaining",
+    "label": "Sole plate remaining right segment after the cut-out",
+    "original": {
+      "display": "9 1/2 in",
+      "value": "9 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "241.300",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.inspection"
+    ]
+  },
+  {
+    "id": "measurement.block-a.length",
+    "label": "Backing block A length (stud 2 to stud 3 bay)",
+    "original": {
+      "display": "14 1/2 in",
+      "value": "14 1/2",
+      "unit": "in"
+    },
+    "canonicalMm": "368.300",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.sheet-b.band"
+    ]
+  },
+  {
+    "id": "measurement.block-b.length",
+    "label": "Backing block B length (stud 3 to king bay)",
+    "original": {
+      "display": "13 1/4 in",
+      "value": "13 1/4",
+      "unit": "in"
+    },
+    "canonicalMm": "336.550",
+    "installationToleranceMm": null,
+    "evidenceStatus": "derived",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.sheet-b.band"
+    ]
+  },
+  {
+    "id": "measurement.cabinet.width",
+    "label": "Cabinet envelope width",
+    "original": {
+      "display": "24 in",
+      "value": "24",
+      "unit": "in"
+    },
+    "canonicalMm": "609.600",
+    "installationToleranceMm": null,
+    "evidenceStatus": "reported",
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.sheet-a.cabinet"
+    ]
+  }
+]

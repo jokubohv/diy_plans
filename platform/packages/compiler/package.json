@@ -1,0 +1,20 @@
+{
+  "name": "@diyguide/compiler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Authored DIY Guide Bundle -> validated compiled guide, hashes, ID map, release output.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "compile": "tsx src/cli.ts compile --project ../../projects/p0-fixture/0.1.0",
+    "validate": "tsx src/cli.ts validate --project ../../projects/p0-fixture/0.1.0",
+    "data": "tsx src/cli.ts data --projects ../../projects --out ../../apps/guide-site/public/data",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@diyguide/schema": "0.1.0"
+  }
+}

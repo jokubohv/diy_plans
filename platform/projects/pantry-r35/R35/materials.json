@@ -1,0 +1,152 @@
+[
+  {
+    "id": "material.lumber.w1-stud",
+    "name": "Dry 2x4x10 studs (W1, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x4x10",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 12,
+    "spareQuantity": 1,
+    "notes": "Candidate net 12 with 1 candidate spare. Heights and connections are held; the spare is a planning allowance only and is never installed. Proposal only: quantity as proposed, not purchased and not engineering-approved (height and connections held).",
+    "citationIds": [
+      "citation.csv.materials.l-w1-s.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.w2-stud",
+    "name": "Dry 2x8x10 studs (W2, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x8x10",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 5,
+    "spareQuantity": 1,
+    "notes": "Candidate net 5 with 1 candidate spare. W2 member/connection detail is held; the spare is never installed. Proposal only: quantity as proposed, not purchased and not engineering-approved (W2 member/connection detail held).",
+    "citationIds": [
+      "citation.csv.materials.l-w2-s.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.w1-top-plate",
+    "name": "Dry 2x4x16 top plate (W1, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x4x16",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Candidate net 1. Conditional 156.75-in plate comparison; no cut released. Proposal only: quantity as proposed, not purchased and not engineering-approved (conditional 156.75-in plate comparison; no cut).",
+    "citationIds": [
+      "citation.csv.materials.l-w1-tp.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.w1-bottom-plate",
+    "name": "Treated 2x4x16 bottom plate (W1, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x4x16",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Candidate net 1. Treatment, bearing and anchor detail held; no cut released. Proposal only: quantity as proposed, not purchased and not engineering-approved (treatment, bearing and anchor detail held).",
+    "citationIds": [
+      "citation.csv.materials.l-w1-bp.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.w2-top-plate",
+    "name": "Dry 2x8x8 top plate (W2, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x8x8",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Candidate net 1. Conditional 53-53.125-in plate comparison; no cut released. Proposal only: quantity as proposed, not purchased and not engineering-approved (conditional 53–53.125-in plate comparison; no cut).",
+    "citationIds": [
+      "citation.csv.materials.l-w2-tp.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.w2-bottom-plate",
+    "name": "Treated 2x8x8 bottom plate (W2, candidate)",
+    "category": "lumber",
+    "sizeLabel": "2x8x8",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Candidate net 1. Treatment, bearing and anchor detail held; no cut released. Proposal only: quantity as proposed, not purchased and not engineering-approved (treatment, bearing and anchor detail held).",
+    "citationIds": [
+      "citation.csv.materials.l-w2-bp.planning_net",
+      "citation.card.p06-parts.tray-rows"
+    ]
+  },
+  {
+    "id": "material.lumber.backing",
+    "name": "Dry 2x6x8 backing boards (flat blocks)",
+    "category": "lumber",
+    "sizeLabel": "2x6x8",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 4,
+    "spareQuantity": 1,
+    "notes": "4 boards pack on paper for the 25 field-fit blocks (net 327.25 in) plus 1 field-fit/defect allowance. Actual rail locations and fasteners held; the allowance is never installed as a member by this guide. Proposal only: quantity as proposed, not purchased and not engineering-approved (25 field-fit blocks; actual rail locations and fasteners held).",
+    "citationIds": [
+      "citation.csv.materials.l-back.planning_net",
+      "citation.card.p18-backing.mix"
+    ]
+  },
+  {
+    "id": "material.lumber.practice",
+    "name": "Dry 2x4x10 board for the loose practice frame",
+    "category": "lumber",
+    "sizeLabel": "2x4x10",
+    "actualSizeMm": null,
+    "unit": "board",
+    "quantityProposed": 1,
+    "spareQuantity": 0,
+    "notes": "Separate loose-stock practice only: two 24-in plates and three 21-in studs (net 111 in of cuts); never house framing and never in the installed takeoff. Proposal only: quantity as proposed, not purchased and not engineering-approved (separate from house parts).",
+    "citationIds": [
+      "citation.csv.materials.l-practice.planning_net",
+      "citation.card.p13-practice.yield"
+    ]
+  },
+  {
+    "id": "material.gypsum.half",
+    "name": "1/2-in gypsum 4x10 (W1 both faces and W2 pantry face)",
+    "category": "panel",
+    "sizeLabel": "1/2 in 4x10",
+    "actualSizeMm": null,
+    "unit": "sheet",
+    "quantityProposed": 8,
+    "spareQuantity": 1,
+    "notes": "8 core sheets in the R34-specific conditional H01-H08 nest plus 1 optional spare (never installed; 12 total before EX1 patches only if the spare is taken). EX1 patches stay out of the fixed nest; field heights, edge receivers and product are held. Proposal only: quantity as proposed, not purchased and not engineering-approved (R34 specific conditional H01-H08 panel nest; field heights, edge receivers, EX1 patches and product held).",
+    "citationIds": [
+      "citation.csv.materials.g-1-2.planning_net",
+      "citation.card.p21-drywall-faces.steps"
+    ]
+  },
+  {
+    "id": "material.gypsum.five-eighth",
+    "name": "5/8-in gypsum 4x10 (W2 room face)",
+    "category": "panel",
+    "sizeLabel": "5/8 in 4x10",
+    "actualSizeMm": null,
+    "unit": "sheet",
+    "quantityProposed": 2,
+    "spareQuantity": 1,
+    "notes": "2 core sheets in the R34-specific conditional E01-E02 nest plus 1 optional spare (never installed). Field heights, edge receivers, EX1 patches and product are held. Proposal only: quantity as proposed, not purchased and not engineering-approved (R34 specific conditional E01-E02 panel nest; field heights, edge receivers, EX1 patches and product held).",
+    "citationIds": [
+      "citation.csv.materials.g-5-8.planning_net",
+      "citation.card.p21-drywall-faces.steps"
+    ]
+  }
+]

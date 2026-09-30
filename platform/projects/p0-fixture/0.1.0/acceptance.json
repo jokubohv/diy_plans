@@ -1,0 +1,27 @@
+{
+  "status": "accepted",
+  "reviewer": "P0 fixture author (agent)",
+  "role": "fixture author",
+  "date": "2026-09-29",
+  "scope": "demo",
+  "sourceSetHash": null,
+  "contentHash": null,
+  "issueDispositions": [
+    {
+      "issueId": "issue.p0-01",
+      "disposition": "accepted",
+      "note": "Accepted as published: the opening width stays conflicted and held for this demonstration fixture."
+    },
+    {
+      "issueId": "issue.p0-02",
+      "disposition": "accepted",
+      "note": "Accepted as published: the fastener specification stays unreleased and the fasten operation stays held."
+    },
+    {
+      "issueId": "issue.p0-03",
+      "disposition": "accepted",
+      "note": "Accepted as published: loose parts are demonstration-only and not installed."
+    }
+  ],
+  "notes": "Synthetic P0 demonstration data. Not a construction authorization."
+}

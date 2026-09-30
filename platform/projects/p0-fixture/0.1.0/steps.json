@@ -1,0 +1,514 @@
+[
+  {
+    "id": "step.survey-wall",
+    "sequence": 10,
+    "title": "Verify wall-frame dimensions",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [],
+    "operationIds": [
+      "op.survey-wall"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.tape",
+      "tool.level",
+      "tool.pencil"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.survey",
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "step.prepare-frame",
+    "sequence": 20,
+    "title": "Prepare frame materials and tools",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.survey-wall"
+    ],
+    "operationIds": [
+      "op.prepare-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.tape",
+      "tool.pencil",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts",
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "step.remove-temp",
+    "sequence": 30,
+    "title": "Remove temporary protection",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.prepare-frame"
+    ],
+    "operationIds": [
+      "op.remove-temp"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.utility-knife"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.remove"
+    ]
+  },
+  {
+    "id": "step.cut-frame",
+    "sequence": 40,
+    "title": "Cut frame members",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.remove-temp"
+    ],
+    "operationIds": [
+      "op.cut-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.miter-saw",
+      "tool.tape",
+      "tool.pencil",
+      "tool.safety-glasses"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts",
+      "citation.sheet-a.wall-length"
+    ]
+  },
+  {
+    "id": "step.layout-frame",
+    "sequence": 50,
+    "title": "Lay out the frame (flat)",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.cut-frame"
+    ],
+    "operationIds": [
+      "op.layout-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.pencil",
+      "tool.tape",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-a.wall-length",
+      "citation.sheet-a.opening",
+      "citation.sheet-d.cuts"
+    ]
+  },
+  {
+    "id": "step.assemble-frame",
+    "sequence": 60,
+    "title": "Assemble the frame (flat)",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.layout-frame"
+    ],
+    "operationIds": [
+      "op.assemble-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.driver",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.joints"
+    ]
+  },
+  {
+    "id": "step.raise-frame",
+    "sequence": 70,
+    "title": "Raise the frame and fit the temporary bracing",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.assemble-frame"
+    ],
+    "operationIds": [
+      "op.raise-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.level",
+      "tool.driver"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.inspection",
+      "citation.sheet-a.general"
+    ]
+  },
+  {
+    "id": "step.anchor-frame",
+    "sequence": 80,
+    "title": "Anchor the bottom plate",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.raise-frame"
+    ],
+    "operationIds": [
+      "op.anchor-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.drill",
+      "tool.tape"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.anchors"
+    ]
+  },
+  {
+    "id": "step.open-doorway",
+    "sequence": 90,
+    "title": "Open the door rough opening",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.anchor-frame"
+    ],
+    "operationIds": [
+      "op.open-doorway"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.hand-saw",
+      "tool.utility-knife"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.cuts",
+      "citation.sheet-a.opening"
+    ]
+  },
+  {
+    "id": "step.inspect-frame",
+    "sequence": 100,
+    "title": "Inspect the frame",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.open-doorway"
+    ],
+    "operationIds": [
+      "op.inspect-frame"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.tape",
+      "tool.level",
+      "tool.square"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.inspection",
+      "citation.sheet-a.survey"
+    ]
+  },
+  {
+    "id": "step.remove-brace",
+    "sequence": 110,
+    "title": "Remove the temporary bracing",
+    "phaseLabel": "Wall frame",
+    "prerequisiteStepIds": [
+      "step.inspect-frame"
+    ],
+    "operationIds": [
+      "op.remove-brace",
+      "op.remove-plumb-prop"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.driver"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-d.inspection"
+    ]
+  },
+  {
+    "id": "step.cut-backing",
+    "sequence": 120,
+    "title": "Cut backing blocks",
+    "phaseLabel": "Cabinet backing",
+    "prerequisiteStepIds": [
+      "step.remove-brace"
+    ],
+    "operationIds": [
+      "op.cut-backing"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.miter-saw",
+      "tool.tape"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.sheet-b.band"
+    ]
+  },
+  {
+    "id": "step.position-backing",
+    "sequence": 130,
+    "title": "Position backing blocks",
+    "phaseLabel": "Cabinet backing",
+    "prerequisiteStepIds": [
+      "step.cut-backing"
+    ],
+    "operationIds": [
+      "op.position-backing"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.level",
+      "tool.driver"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-b.band",
+      "citation.sheet-b.inspect"
+    ]
+  },
+  {
+    "id": "step.fasten-backing",
+    "sequence": 140,
+    "title": "Fasten backing blocks (held)",
+    "phaseLabel": "Cabinet backing",
+    "prerequisiteStepIds": [
+      "step.position-backing"
+    ],
+    "operationIds": [
+      "op.fasten-backing"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "held",
+    "citationIds": [
+      "citation.sheet-b.connection"
+    ]
+  },
+  {
+    "id": "step.inspect-backing",
+    "sequence": 150,
+    "title": "Inspect backing blocks",
+    "phaseLabel": "Cabinet backing",
+    "prerequisiteStepIds": [
+      "step.fasten-backing"
+    ],
+    "operationIds": [
+      "op.inspect-backing"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.tape"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-b.inspect"
+    ]
+  },
+  {
+    "id": "step.route-cable",
+    "sequence": 160,
+    "title": "Route schematic cable",
+    "phaseLabel": "Services & finish",
+    "prerequisiteStepIds": [
+      "step.inspect-frame"
+    ],
+    "operationIds": [
+      "op.route-cable"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.utility-knife"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-c.route"
+    ]
+  },
+  {
+    "id": "step.cover-wall",
+    "sequence": 170,
+    "title": "Cover wall",
+    "phaseLabel": "Services & finish",
+    "prerequisiteStepIds": [
+      "step.inspect-backing",
+      "step.route-cable"
+    ],
+    "operationIds": [
+      "op.cover-drywall"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.driver",
+      "tool.utility-knife"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "ready",
+    "citationIds": [
+      "citation.sheet-b.cover"
+    ]
+  },
+  {
+    "id": "step.position-cabinet",
+    "sequence": 180,
+    "title": "Position cabinet envelope",
+    "phaseLabel": "Services & finish",
+    "prerequisiteStepIds": [
+      "step.cover-wall"
+    ],
+    "operationIds": [
+      "op.position-cabinet"
+    ],
+    "visibleAssemblyIds": [
+      "assembly.existing",
+      "assembly.wall-a",
+      "assembly.cabinet",
+      "assembly.demo"
+    ],
+    "toolIds": [
+      "tool.level",
+      "tool.driver"
+    ],
+    "qualityChecks": [],
+    "stopConditions": [],
+    "declaredReleaseStatus": "conditional",
+    "citationIds": [
+      "citation.sheet-a.cabinet"
+    ]
+  }
+]
